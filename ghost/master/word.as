@@ -97,6 +97,26 @@ function Greetings
 	]);
 }
 
+function Homebody
+{
+	return Random.Select([
+		"The Homebody",
+		"Master of the Chicken Coop",
+		"Queen of Crochet",
+	]);
+}
+
+function Sincerely
+{
+	return Random.Select([
+		"Sincerely",
+		"With Love",
+		"Yours",
+		"Until next time",
+		"Will pester you another day",
+	]);
+}
+
 function stew
 {
 	return Random.Select([

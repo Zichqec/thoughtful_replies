@@ -8,5 +8,8 @@ talk BootTalk
 
 talk CloseTalk
 {
-	Close
+	My, it's later than I thought. I had best send myself off to bed.
+	
+	{Sincerely},
+	{Homebody}
 }
