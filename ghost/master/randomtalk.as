@@ -33,3 +33,8 @@ talk three
 {
 	three
 }
+
+talk RandomTalk
+{
+	We should get {style("strike","pizza for dinner")} {style("strike","hotdogs for dinner")} {style("underline","chicken for dinner.")}
+}
