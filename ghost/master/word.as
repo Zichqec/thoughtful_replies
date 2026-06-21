@@ -97,6 +97,17 @@ function Greetings
 	]);
 }
 
+function stew
+{
+	return Random.Select([
+		"stew",
+		"a savory pie",
+		"mince",
+		"dumplings",
+		"roast",
+	]);
+}
+
 function Wanderer
 {
 	return Random.Select([
@@ -107,6 +118,70 @@ function Wanderer
 		"Heavy-pocketed Friend",
 		"Sweets Stealer",
 		"Hunter of Barn Mice",
+	]);
+}
+
+function weathergreeting
+{
+	return Random.Select([
+		{type: "{rainy}", detail: "{rainydetail}"},
+		{type: "{sunny}", detail: "{sunnydetail}"},
+		{type: "{cloudy}", detail: "{cloudydetail}"},
+	]);
+}
+
+function cloudy
+{
+	return Random.Select([
+		"cloudy",
+		"overcast",
+		"a somber and grey day",
+	]);
+}
+
+function cloudydetail
+{
+	return Random.Select([
+		"Not that it has been entirely unpleasant. The shade is nice for getting the harder work done, and makes the occasional burst of sunlight a suitable excuse for a break.",
+		"I had thought it would only be a misty morning, but to my surprise, a haze lingered on the horizon for most of the day. A good day for {stew}.",
+		"It seems I was not the only one that had wanted to sleep in. The sun did not show itself once!",
+	]);
+}
+
+function rainy
+{
+	return Random.Select([
+		"raining all day",
+		"downpouring",
+		"hours of gentle rain",
+		"a surprising outdoor bath of a day",
+	]);
+}
+
+function rainydetail
+{
+	return Random.Select([
+		"At this point, I may very well need to choose a set of boots to sacrifice to the mud. There will be no hope to clean them!",
+		"The chickens will have a feast from all of the worms that have come to say 'hello'.",
+		"Thankfully the roof has been holding, but I fear there are some places that will need patching soon.",
+	]);
+}
+
+function sunny
+{
+	return Random.Select([
+		"rather sunny",
+		"warm and bright",
+		"a pristine blue sky",
+	]);
+}
+
+function sunnydetail
+{
+	return Random.Select([
+		"The birds have done nothing but lay about all day! I'm surprised any even bothered to forage as melted to the ground as they have been.",
+		"It made the morning chores much more pleasant to suffer through.",
+		"Wonderful weather for hanging up the laundry. I almost wish there was more of it to manage!"
 	]);
 }
 

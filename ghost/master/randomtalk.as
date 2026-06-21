@@ -38,3 +38,8 @@ talk RandomTalk
 {
 	We should get {style("strike","pizza for dinner")} {style("strike","hotdogs for dinner")} {style("underline","chicken for dinner.")}
 }
+
+talk RandomTalk
+{
+	I fear Abigail has become enamored with the stream again, judging by the puddles she has left on the floor.
+}
