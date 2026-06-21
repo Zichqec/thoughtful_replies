@@ -1,6 +1,6 @@
 function ParagraphBreak
 {
-	return "\n\n\n\n";
+	return "\n\n\n";
 }
 
 function BalloonIsOpen
