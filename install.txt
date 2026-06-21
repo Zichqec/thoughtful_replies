@@ -1,0 +1,4 @@
+charset,UTF-8
+type,ghost
+name,Thoughtful Replies
+directory,thoughtful_replies_bgvz

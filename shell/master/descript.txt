@@ -1,0 +1,9 @@
+charset,UTF-8
+type,shell
+name,Default
+
+craftman,Blue & Zichqec
+craftmanw,Blue & Zichqec
+craftmanurl,https://www.tumblr.com/bluetheanimator
+
+seriko.use_self_alpha,1
