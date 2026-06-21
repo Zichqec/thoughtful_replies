@@ -46,11 +46,6 @@ function OnAITalk
 	return TalkTimer.CallRandomTalk();
 }
 
-function OnLastTalk
-{
-	return OnLetterDisplay;
-}
-
 function OnLetterDisplay
 {
 	

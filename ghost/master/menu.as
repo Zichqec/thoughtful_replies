@@ -35,6 +35,11 @@ function OnMainMenu(cause)
 	return m;
 }
 
+function OnLastTalk
+{
+	return OnLetterDisplay;
+}
+
 function OnChangeTalkRate
 {
 	local time = Shiori.Reference[0].ToNumber();
