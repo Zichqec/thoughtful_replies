@@ -23,7 +23,7 @@ function OnMainMenu(cause)
 	m += "Talk rate: ";
 	foreach (talkrate in talkrates)
 	{
-		if (talkrate.time == Save.Data.TalkInterval) m += "\_a[OnChangeTalkRate,{talkrate.time}]{talkrate.label}\_a";
+		if (talkrate.time == Save.Data.TalkInterval) m += "\f[underline,1]\_a[OnChangeTalkRate,{talkrate.time}]{talkrate.label}\_a\f[underline,default]";
 		else  m += "\__q[OnChangeTalkRate,{talkrate.time}]{talkrate.label}\__q";
 		m += "  ";
 	}
