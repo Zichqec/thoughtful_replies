@@ -1,6 +1,7 @@
 function OnAosoraDefaultSaveData
 {
 	Save.Data.TalkInterval = 300;
+	Save.Data.BalloonLines = 10; //TODO adjust this based on our default balloon
 }
 
 function OnAosoraLoad
@@ -15,7 +16,7 @@ function OnAosoraLoad
 function OnBoot
 {
 	LastTalk = BootTalk();
-	return OnLetterDisplay();
+	return  OnLetterDisplay() + OnBalloonLinesCommand();
 }
 
 function OnClose
@@ -60,7 +61,8 @@ function OnLetterDisplay
 		if (i > 0) display += "\n\n\n\n";
 		display += TodaysLetter[i];
 	}
-	if (TodaysLetter.length > 0) display += "\n\n\n\n"; //TODO it couuuld maybe be nice to set this up to jump so that all the previous text is off the balloon, then come back up? but only when set to the custom balloon, which we don't have yet...
+	if (TodaysLetter.length > 0) display += "\n\n\n\n";
+	if (TodaysLetter.length > 0) display += "\n[{Save.Data.BalloonLines}00] \n[-{Save.Data.BalloonLines}00]\n[50]"; //TODO that \n[50] on the end there may need to be removed or adjusted... it works for the SSP default balloon, but...
 	display += "\![quicksection,0]";
 	display += LastTalk;
 	return display;
@@ -146,4 +148,30 @@ function OnKeyPress
 function OnMouseDoubleClick
 {
 	if (Shiori.Reference[3] == 0 && Shiori.Reference[5] == 0) return OnMainMenu("init");
+}
+
+function BalloonIsOpen
+{
+	if ((Shiori.Headers.Status.ToString()).Contains("balloon")) return true;
+	else return false;
+}
+
+//This may need to change if we end up using multiple balloon sizes...
+function OnBalloonLinesCommand
+{
+	return "\![get,property,OnBalloonLinesCheck,currentghost.balloon.scope(0).lines.initial]";
+}
+
+function OnBalloonLinesCheck
+{
+	//Saving this purely so that it doesn't get lost when reloading
+	Save.Data.BalloonLines = Shiori.Reference[0].ToNumber();
+}
+
+function OnBalloonChange
+{
+	local output = "";
+	if (BalloonIsOpen()) output += "\C";
+	output += OnBalloonLinesCommand();
+	return output;
 }
