@@ -11,6 +11,8 @@ function OnAosoraLoad
 	TodaysLetter = [];
 	ChainTalkQueue = [];
 	LastTalk = "";
+	TimeSinceLastTalk = Time.GetNowUnixEpoch();
+	SetSurfaceRestoreRand();
 }
 
 function OnBoot
@@ -95,4 +97,29 @@ function OnBalloonChange
 	if (BalloonIsOpen()) output += "\C";
 	output += OnBalloonLinesCommand();
 	return output;
+}
+
+function OnSecondChange
+{
+	if (Shiori.Reference[3] == 0) TimeSinceLastTalk = Time.GetNowUnixEpoch();
+	
+	local since = Time.GetNowUnixEpoch() - TimeSinceLastTalk;
+	
+	Debug.WriteLine("since: {since} | SurfaceRestoreRand: {SurfaceRestoreRand}");
+	if (since >= SurfaceRestoreRand) return OnSurfaceRestore;
+}
+
+function OnSurfaceRestore, OnWindowStateRestore
+{
+	TimeSinceLastTalk = Time.GetNowUnixEpoch();
+	
+	local output = "";
+	output += "\1\s[-1]";
+	output += "\0\s[0]";
+	return output;
+}
+
+function SetSurfaceRestoreRand
+{
+	SurfaceRestoreRand = Random.GetIndex(30,180);
 }
