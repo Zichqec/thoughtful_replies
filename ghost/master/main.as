@@ -20,7 +20,7 @@ function OnBoot
 
 function OnClose
 {
-	LastTalk = CloseTalk();
+	LastTalk = CloseTalk() + "\x";
 	return OnLetterDisplay();
 }
 
