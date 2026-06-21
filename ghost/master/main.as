@@ -48,18 +48,32 @@ function OnAITalk
 
 function OnLetterDisplay
 {
-	
 	local display = "";
 	display += "\![quicksection,1]";
 	for (local i = 0; i < TodaysLetter.length; i++)
 	{
-		if (i > 0) display += "\n\n\n\n";
+		if (i > 0) display += ParagraphBreak();
 		display += TodaysLetter[i];
 	}
-	if (TodaysLetter.length > 0) display += "\n\n\n\n";
+	if (TodaysLetter.length > 0) display += ParagraphBreak();
 	if (TodaysLetter.length > 0) display += "\n[{Save.Data.BalloonLines}00] \n[-{Save.Data.BalloonLines}00]\n[50]"; //TODO that \n[50] on the end there may need to be removed or adjusted... it works for the SSP default balloon, but...
 	display += "\![quicksection,0]";
 	display += LastTalk;
+	return display;
+}
+
+function OnReviewAll
+{
+	local display = "";
+	display += "\![quicksection,1]\![set,autoscroll,disable]";
+	for (local i = 0; i < TodaysLetter.length; i++)
+	{
+		if (i > 0) display += ParagraphBreak();
+		display += TodaysLetter[i];
+	}
+	if (TodaysLetter.length > 0) display += ParagraphBreak();
+	display += CleanLetterTags(LastTalk);
+	display += "\![quicksection,0]\x";
 	return display;
 }
 
@@ -169,4 +183,9 @@ function OnBalloonChange
 	if (BalloonIsOpen()) output += "\C";
 	output += OnBalloonLinesCommand();
 	return output;
+}
+
+function ParagraphBreak
+{
+	return "\n\n\n\n";
 }

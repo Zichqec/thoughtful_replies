@@ -5,9 +5,14 @@ function OnMainMenu(cause)
 	if (cause == "init") m += "\C\![lock,balloonrepaint]\c";
 	m += "\0\b[0]\![quicksection,true]\![set,autoscroll,disable]";
 	
-	m += "\![*]\__q[OnAITalk]Write more\__q  \![*]";
-	if (LastTalk == "") m += "\f[color,disable]Reread\f[color,default]"; //Shouldn't happen under normal circumstances, but may happen in edge cases
-	else m += "\__q[OnLastTalk]Reread\__q";
+	m += "\![*]\__q[OnAITalk]Next\__q";
+	//Shouldn't happen under normal circumstances, but may happen in edge cases
+	m += "  ";
+	if (LastTalk == "") m += "\![*]\f[color,disable]Replay\f[color,default]";
+	else m += "\![*]\__q[OnLastTalk]Replay\__q";
+	m += "  ";
+	if (LastTalk == "") m += "\![*]\f[color,disable]Review\f[color,default]";
+	else m += "\![*]\__q[OnReviewAll]Review\__q";
 	
 	m += "\n\n";
 	
