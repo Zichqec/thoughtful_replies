@@ -142,3 +142,8 @@ function OnKeyPress
 	else if (Shiori.Reference[0] == "r") return OnLastTalk;
 	else if (Shiori.Reference[0] == "f1") return "\![open,readme]";
 }
+
+function OnMouseDoubleClick
+{
+	if (Shiori.Reference[3] == 0 && Shiori.Reference[5] == 0) return OnMainMenu("init");
+}
