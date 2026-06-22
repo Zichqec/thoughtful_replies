@@ -89,7 +89,7 @@ function Greetings
 		"To My Beloved",
 		"Most Respected",
 		"Blessed Day",
-		"For The Eyes of My"
+		"For The Eyes of My",
 		"I hope this letter finds you {well}",
 		"Good Tidings",
 		"My Dearest",
@@ -216,5 +216,89 @@ function well
 		"in wealth and happiness",
 		"with claws sharpened",
 		"with fur and fangs clean",
+	]);
+}
+
+function lostitem
+{
+	return Random.Select([
+		"{weapon}",
+		"{accessory}",
+		"{otheritem}"
+	]);
+}
+
+function weapon
+{
+	return Random.Select([
+		"carving knife",
+		"short sword",
+		"ceremonial halberd",
+		"wood-chopping axe",
+		"stone-crushing hammer",
+		"fireball wand",
+		"thunder wand",
+		"blizzard wand",
+		"double-sided spear",
+		"three-pronged trident"
+	]);
+}
+
+function accessory
+{
+	return Random.Select([
+		"well worn scarf",
+		"reading glasses",
+		"felt cap",
+		"leather pouch",
+		"jeweled necklace",
+		"ambiguously cursed amulet passed down through many generations",
+		"ear cuff in the shape of a dragon",
+		"set of ten matching rings"
+	]);
+}
+
+function otheritem
+{
+	return Random.Select([
+		"metal flask",
+		"heirloom coin",
+		"dusty tome",
+		"dice set made of bone",
+		"notebook containing spells in shorthand",
+		"mug carved from oak"
+	]);
+}
+
+function location
+{
+	return Random.Select([
+		"at the base of the volcano",
+		"deep in the northern tundra",
+		"at the shores of the deepest lake",
+		"in the middle of the bridge spanning the widest river",
+		"in the midst of a desert sandstorm",
+		"at the bottom of a rock quarry"
+	]);
+}
+
+function crochetproject {
+		return Random.Select([
+		"granny square blanket",
+		"produce bag for the market",
+		"set of dish scrubbers",
+		"set of coasters for drinks",
+		"woolen cowl",
+		"fringed scarf",
+		"striped throw blanket",
+		"family of plush mice",
+		"pair of chunky mittens",
+		"hammock for the chickens",
+		"ribbed beanie",
+		"lightweight cardigan",
+		"twisted headband",
+		"pair of cozy leg warmers",
+		"pair of socks that have a fish pattern on the ankle",
+		"set of matching mug cozies"
 	]);
 }
