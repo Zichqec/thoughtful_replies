@@ -31,6 +31,7 @@ function CleanLetterTags(talkstr)
 	talkstr = talkstr.Replace("\_w[","\![dummy-"); //This is lazy of me, but I haven't messed with regex in Aosora yet...
 	talkstr = talkstr.Replace("\![quicksection,0]","");
 	talkstr = talkstr.Replace("\![quicksection,1]","");
+	talkstr = talkstr.Replace("\x","");
 	
 	
 	//Scoop out anything between the style start/end tags, because it's a ton of sakurascript tags that we don't need to run for the final result
