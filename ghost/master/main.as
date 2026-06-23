@@ -45,13 +45,22 @@ function OnBoot
 function OnClose
 {
 	if (LastTalk != "") TodaysLetter.Add(CleanLetterTags(LastTalk));
-	LastTalk = CloseTalk() + "\x"; //TODO this gets weird if you interrupt the signoff...
-	return OnLetterDisplay();
+	LastTalk = CloseTalk() + "\x[noclear]"; //TODO this gets weird if you interrupt the signoff...
+	return OnLetterDisplay() + EnvelopeDisplay();
 }
 
 function OnFinish
 {
 	return "\s[2]\_w[1000]" + OnClose();
+}
+
+function EnvelopeDisplay
+{
+	if (CurrentBalloon == "Chicken Scratch")
+	{
+		local rand = Random.GetIndex(0,4);
+		return "\w[1000]\c\b[1000{rand}0] \_w[2000]";
+	}
 }
 
 function OnTalkControl
