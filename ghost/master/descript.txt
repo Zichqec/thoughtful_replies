@@ -7,3 +7,5 @@ craftmanw,Blue & Galla & vita & Zichqec
 craftmanurl,https://github.com/Zichqec/thoughtful_replies
 
 shiori,aosora.dll
+
+balloon,Chicken Scratch
