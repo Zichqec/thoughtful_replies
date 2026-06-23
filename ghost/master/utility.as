@@ -76,7 +76,6 @@ function style(type, word, wait, strokewait, newwait)
 	for (local i = 0; i < len; i++)
 	{
 		output += erase;
-		if (i == 0) output += " "; //Temp bandaid patch for what seems to be an SSP bug...
 		if (i == len - 1) output += "\![style-end]";
 		output += "\f[{type},1]";
 		output += word.Substring(0,i + 1);
