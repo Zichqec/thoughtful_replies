@@ -45,8 +45,8 @@ function OnBoot
 function OnClose
 {
 	if (LastTalk != "") TodaysLetter.Add(CleanLetterTags(LastTalk));
-	LastTalk = CloseTalk() + "\x[noclear]"; //TODO this gets weird if you interrupt the signoff...
-	return OnLetterDisplay() + EnvelopeDisplay();
+	LastTalk = CloseTalk(); //TODO this gets weird if you interrupt the signoff... | what I need is a way to keep this in LastTalk while also behaving like it isn't. Maybe an argument...??? mmm...
+	return OnLetterDisplay() + "\x[noclear]" + EnvelopeDisplay();
 }
 
 function OnFinish
