@@ -46,7 +46,7 @@ function OnTranslate
 		talkstr = talkstr.Replace("; ",".\w8 ");
 		talkstr = talkstr.Replace("! ",".\w8\w8 ");
 		talkstr = talkstr.Replace("? ",".\w8\w8 ");
-		talkstr = talkstr.Replace("\![ap-n] ","\w8\w8 ");
+		talkstr = talkstr.Replace("\![ap-n]","\w8\w8");
 	}
 	
 	return talkstr;
