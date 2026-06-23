@@ -1,3 +1,17 @@
+//Returns a random chicken name, EXCLUDING ABIGAIL
+function chicken
+{
+	return Random.Select(Save.Data.Chickens);
+}
+
+//Returns a random chicken name, INCLUDING ABIGAIL
+function allchicken
+{
+	local chickens = Save.Data.Chickens;
+	chickens.Add("Abigail");
+	return Random.Select(chickens);
+}
+
 // FAVORITE CHICKEN = ABIGAIL, DO NOT ADD THAT NAME TO THIS LIST
 function chickenname
 {

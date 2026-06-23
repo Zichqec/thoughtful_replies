@@ -60,6 +60,24 @@ function OnMainMenu(cause)
 	m += linebreak;
 	m += "\![*]\__q[blank]Close menu\__q";
 	
+	if (DebugMode)
+	{
+		m += linebreak;
+		m += "\f[name,courier new]\f[height,14]Current chickens:\n";
+		foreach (chicken in Save.Data.Chickens)
+		{
+			m += "\![*]{chicken}\n[50]";
+		}
+		
+		m += linebreak;
+		m += "Reserved chicken names:\n";
+		foreach (chicken in Save.Data.ReservedChickens)
+		{
+			m += "\![*]{chicken}\n[50]";
+		}
+		
+	}
+	
 	m += "\![unlock,balloonrepaint]";
 	return m;
 }

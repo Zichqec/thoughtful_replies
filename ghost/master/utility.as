@@ -109,35 +109,31 @@ When the array has too many elements delete the oldest until it has the desired 
 When adding new chickens to the rotation, check to make sure they aren't in the current chicken list, and that they're not in the recently deleted chickens list
 */
 
-function RotateChickens
+function RotateChickens, Rotisserie
 {
-	local alivecount = 10;
+	local alivecount = 5;
 	local reservecount = 20;
 	
-	while (ReservedChickens.length > reservecount) ReservedChickens.Remove(0);
+	//Remove excess chickens from reserved name list
+	while (Save.Data.ReservedChickens.length > reservecount) Save.Data.ReservedChickens.Remove(0);
 	
-	while (Chickens.length >= alivecount)
+	//Remove excess living chickens OR remove one chicken if it's at the cap
+	while (Save.Data.Chickens.length >= alivecount)
 	{
-		local rand = Random.GetIndex(0,Chickens.length);
-		if (ReservedChickens.length > reservecount)
-		{
-			ReservedChickens.Remove(0);
-			ReservedChickens.Add(Chickens[rand]);
-		}
-		Chickens.Remove(rand);
+		//If the reserve is full, remove the oldest
+		if (Save.Data.ReservedChickens.length > reservecount) Save.Data.ReservedChickens.Remove(0);
+		
+		Save.Data.ReservedChickens.Add(Save.Data.Chickens[0]);
+		Save.Data.Chickens.Remove(0);
 	}
 	
-	while (Chickens.length < alivecount)
+	//Fill list with chickens if it is not full
+	while (Save.Data.Chickens.length < alivecount)
 	{
 		local name = chickenname();
-		while (InArray(name,Chickens)) name = chickenname();
-		Chickens.Add(name);
+		while (InArray(name,Save.Data.Chickens) || InArray(name,Save.Data.ReservedChickens)) name = chickenname();
+		Save.Data.Chickens.Add(name);
 	}
-}
-
-function chicken
-{
-	return Random.Select(Chickens);
 }
 
 //I'm still surprised you don't seem to be able to search linear arrays...? Am I silly

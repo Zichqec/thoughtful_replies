@@ -5,8 +5,8 @@ function OnAosoraDefaultSaveData
 	Save.Data.ChickenScratchStyle = "cursive"; //cursive, print, type
 	DebugMode = false;
 	
-	Chickens = [];
-	ReservedChickens = [];
+	Save.Data.Chickens = [];
+	Save.Data.ReservedChickens = [];
 }
 
 function OnAosoraLoad
