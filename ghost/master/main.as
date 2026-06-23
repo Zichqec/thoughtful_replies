@@ -1,7 +1,7 @@
 function OnAosoraDefaultSaveData
 {
 	Save.Data.TalkInterval = 300;
-	Save.Data.BalloonLines = 10; //TODO adjust this based on our default balloon
+	Save.Data.BalloonLines = 8;
 	Save.Data.ChickenScratchStyle = "cursive"; //cursive, print, type
 }
 
