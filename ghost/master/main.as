@@ -2,17 +2,37 @@ function OnAosoraDefaultSaveData
 {
 	Save.Data.TalkInterval = 300;
 	Save.Data.BalloonLines = 10; //TODO adjust this based on our default balloon
+	Save.Data.ChickenScratchStyle = "cursive"; //cursive, print, type
 }
 
 function OnAosoraLoad
 {
 	TalkTimer.RandomTalk = OnTalkControl;
 	TalkTimer.RandomTalkIntervalSeconds = Save.Data.TalkInterval;
+	TalkBuilder.Default.Head = "\0\b[0]";
 	TodaysLetter = [];
 	ChainTalkQueue = [];
 	LastTalk = "";
 	TimeSinceLastTalk = Time.GetNowUnixEpoch();
 	SetSurfaceRestoreRand();
+	CurrentBalloon = "";
+	CurrentBalloonPattern = Random.GetIndex(0,11); //0-10
+}
+
+function OnTranslate
+{
+	talkstr = (Shiori.Reference[0]).ToString();
+	
+	if (CurrentBalloon == "Chicken Scratch")
+	{
+		local balloonnum = CurrentBalloonPattern;
+		if (Save.Data.ChickenScratchStyle == "print") balloonnum += 1000;
+		else if (Save.Data.ChickenScratchStyle == "type") balloonnum += 2000;
+		
+		talkstr = talkstr.Replace("\0\b[0]","\0\b[{balloonnum}0]");
+	}
+	
+	return talkstr;
 }
 
 function OnBoot
@@ -58,7 +78,9 @@ function OnLetterDisplay
 		display += TodaysLetter[i];
 	}
 	if (TodaysLetter.length > 0) display += ParagraphBreak();
-	if (TodaysLetter.length > 0) display += "\n[{Save.Data.BalloonLines}00] \n[-{Save.Data.BalloonLines}00]\n[50]"; //TODO that \n[50] on the end there may need to be removed or adjusted... it works for the SSP default balloon, but...
+	if (TodaysLetter.length > 0) display += "\n[{Save.Data.BalloonLines}00] \n[-{Save.Data.BalloonLines}00]"; //TODO that \n[50] on the end there may need to be removed or adjusted... it works for the SSP default balloon, but...
+	if (CurrentBalloon == "Chicken Scratch" && Save.Data.ChickenScratchStyle == "cursive") display += ""; //This feels weird but also I am worried that there may be more conditions later and so don't want to make it a ! ??? idk i'm very tired right now, i'll probably realize there's a way better way to do this later
+	else display += "\n[50]";
 	display += "\![quicksection,0]";
 	display += LastTalk;
 	return display;
@@ -122,4 +144,9 @@ function OnSurfaceRestore, OnWindowStateRestore
 function SetSurfaceRestoreRand
 {
 	SurfaceRestoreRand = Random.GetIndex(30,180);
+}
+
+function OnNotifyBalloonInfo
+{
+	CurrentBalloon = Shiori.Reference[0];
 }

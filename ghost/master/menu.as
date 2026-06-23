@@ -1,5 +1,7 @@
 function OnMainMenu(cause)
 {
+	local linebreak = "\n\n";
+	if (CurrentBalloon == "Chicken Scratch" && Save.Data.ChickenScratchStyle == "cursive") linebreak = "\n\n[50]";
 	local m = "";
 	
 	if (cause == "init") m += "\C\![lock,balloonrepaint]\c";
@@ -14,7 +16,7 @@ function OnMainMenu(cause)
 	if (LastTalk == "") m += "\![*]\f[color,disable]Review\f[color,default]";
 	else m += "\![*]\__q[OnReviewAll]Review\__q";
 	
-	m += "\n\n";
+	m += linebreak;
 	
 	local talkrates = [
 		{time: 0, label: "Off"},
@@ -25,15 +27,34 @@ function OnMainMenu(cause)
 		{time: 900, label: "15m"},
 	];
 	
-	m += "Talk rate: ";
+	m += "Talk rate:\n";
 	foreach (talkrate in talkrates)
 	{
 		if (talkrate.time == Save.Data.TalkInterval) m += "\f[underline,1]\_a[OnChangeTalkRate,{talkrate.time}]{talkrate.label}\_a\f[underline,default]";
 		else  m += "\__q[OnChangeTalkRate,{talkrate.time}]{talkrate.label}\__q";
-		m += "  ";
+		m += " ";
+	}
+	m += "\c[char,1]";
+	
+	local fonts = [
+		{style: "cursive", label: "Cursive"},
+		{style: "print", label: "Print"},
+		{style: "type", label: "Type"},
+	];
+	
+	if (CurrentBalloon == "Chicken Scratch")
+	{
+		m += linebreak;
+		m += "Writing style:\n";
+		foreach (font in fonts)
+		{
+			if (font.style == Save.Data.ChickenScratchStyle) m += "\f[underline,1]\_a[OnChangeBalloonStyle,{font.style}]{font.label}\_a\f[underline,default]";
+			else  m += "\__q[OnChangeBalloonStyle,{font.style}]{font.label}\__q";
+			m += "  ";
+		}
 	}
 	
-	m += "\n\n";
+	m += linebreak;
 	m += "\![*]\__q[blank]Close menu\__q";
 	
 	m += "\![unlock,balloonrepaint]";
@@ -52,4 +73,10 @@ function OnChangeTalkRate
 	TalkTimer.RandomTalkIntervalSeconds = time;
 	TalkTimer.RandomTalkElapsedSeconds = 0;
 	return OnMainMenu;
+}
+
+function OnChangeBalloonStyle
+{
+	Save.Data.ChickenScratchStyle = Shiori.Reference[0];
+	return "\C\![lock,balloonrepaint]\c\0\b[0]{OnBalloonLinesCommand}\![raise,OnMainMenu]";
 }
