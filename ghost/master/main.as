@@ -16,7 +16,7 @@ function OnAosoraLoad
 	TimeSinceLastTalk = Time.GetNowUnixEpoch();
 	SetSurfaceRestoreRand();
 	CurrentBalloon = "";
-	CurrentBalloonPattern = Random.GetIndex(0,11); //0-10
+	CurrentBalloonPattern = Random.GetIndex(0,11) * 10; //0-10
 	RemainingTalks = 10; //Can randomize this a bit (though chains kinda take care of that), may also need to adjust based on how much we write in total
 }
 
@@ -30,7 +30,7 @@ function OnTranslate
 		if (Save.Data.ChickenScratchStyle == "print") balloonnum += 1000;
 		else if (Save.Data.ChickenScratchStyle == "type") balloonnum += 2000;
 		
-		talkstr = talkstr.Replace("\0\b[0]","\0\b[{balloonnum}0]");
+		talkstr = talkstr.Replace("\0\b[0]","\0\b[{balloonnum}]");
 	}
 	
 	return talkstr;
