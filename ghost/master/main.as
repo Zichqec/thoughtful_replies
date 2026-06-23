@@ -101,7 +101,7 @@ function OnLetterDisplay
 		display += TodaysLetter[i];
 	}
 	if (TodaysLetter.length > 0) display += ParagraphBreak();
-	if (TodaysLetter.length > 0) display += "\n[{Save.Data.BalloonLines}00] \n[-{Save.Data.BalloonLines}00]"; //TODO that \n[50] on the end there may need to be removed or adjusted... it works for the SSP default balloon, but...
+	if (TodaysLetter.length > 0) display += "\n[{Save.Data.BalloonLines}00] \n[-{Save.Data.BalloonLines}00]";
 	if (CurrentBalloon == "Chicken Scratch" && Save.Data.ChickenScratchStyle == "cursive") display += ""; //This feels weird but also I am worried that there may be more conditions later and so don't want to make it a ! ??? idk i'm very tired right now, i'll probably realize there's a way better way to do this later
 	else display += "\n[50]";
 	display += "\![quicksection,0]";
