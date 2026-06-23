@@ -38,6 +38,17 @@ function OnTranslate
 		talkstr = talkstr.Replace("\0\b[0]","\0\b[{balloonnum}]");
 	}
 	
+	if (!talkstr.Contains("\![no-autopause]"))
+	{
+		talkstr = talkstr.Replace(", ",",\w4 ");
+		talkstr = talkstr.Replace(". ",".\w8 ");
+		talkstr = talkstr.Replace(": ",".\w8 ");
+		talkstr = talkstr.Replace("; ",".\w8 ");
+		talkstr = talkstr.Replace("! ",".\w8 ");
+		talkstr = talkstr.Replace("? ",".\w8 ");
+		talkstr = talkstr.Replace("\![ap-n] ","\w8\w8 ");
+	}
+	
 	return talkstr;
 }
 
