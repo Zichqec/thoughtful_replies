@@ -3,6 +3,10 @@ function OnAosoraDefaultSaveData
 	Save.Data.TalkInterval = 300;
 	Save.Data.BalloonLines = 8;
 	Save.Data.ChickenScratchStyle = "cursive"; //cursive, print, type
+	DebugMode = false;
+	
+	Chickens = [];
+	ReservedChickens = [];
 }
 
 function OnAosoraLoad
@@ -18,6 +22,7 @@ function OnAosoraLoad
 	CurrentBalloon = "";
 	CurrentBalloonPattern = Random.GetIndex(0,11) * 10; //0-10
 	RemainingTalks = 10; //Can randomize this a bit (though chains kinda take care of that), may also need to adjust based on how much we write in total
+	RotateChickens();
 }
 
 function OnTranslate

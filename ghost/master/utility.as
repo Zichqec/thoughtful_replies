@@ -90,3 +90,71 @@ function style(type, word, wait, strokewait, newwait)
 	
 	return output;
 }
+
+/*
+Chicken rotation:
+
+Save an array of chicken names (associative so we can do Contains...? hum, maybe just make a helper function
+
+Every so often (how often? every boot, or a random chance each boot?) delete a chicken from the array (random chicken, or the oldest one?)
+
+When the array is not full to the desired amount, add new chickens until it reaches the desired amount (how much?)
+
+Save recently deleted chickens to a separate array
+
+Deleted chickens array should be first-in first-out
+
+When the array has too many elements delete the oldest until it has the desired amount (how many?)
+
+When adding new chickens to the rotation, check to make sure they aren't in the current chicken list, and that they're not in the recently deleted chickens list
+*/
+
+function RotateChickens
+{
+	local alivecount = 10;
+	local reservecount = 20;
+	
+	while (ReservedChickens.length > reservecount) ReservedChickens.Remove(0);
+	
+	while (Chickens.length >= alivecount)
+	{
+		local rand = Random.GetIndex(0,Chickens.length);
+		if (ReservedChickens.length > reservecount)
+		{
+			ReservedChickens.Remove(0);
+			ReservedChickens.Add(Chickens[rand]);
+		}
+		Chickens.Remove(rand);
+	}
+	
+	while (Chickens.length < alivecount)
+	{
+		local name = chickenname();
+		while (InArray(name,Chickens)) name = chickenname();
+		Chickens.Add(name);
+	}
+}
+
+function chicken
+{
+	return Random.Select(Chickens);
+}
+
+//I'm still surprised you don't seem to be able to search linear arrays...? Am I silly
+function InArray(key, array)
+{
+	for (local i = 0; i < array.length; i++)
+	{
+		if (array[i] == key)
+		{
+			return true;
+		}
+	}
+	return false;
+}
+
+function enable_debug
+{
+	if (Shiori.Reference[0] == 1) DebugMode = true;
+	else DebugMode = false;
+}
