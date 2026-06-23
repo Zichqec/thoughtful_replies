@@ -17,6 +17,7 @@ function OnAosoraLoad
 	SetSurfaceRestoreRand();
 	CurrentBalloon = "";
 	CurrentBalloonPattern = Random.GetIndex(0,11); //0-10
+	RemainingTalks = 10; //Can randomize this a bit (though chains kinda take care of that), may also need to adjust based on how much we write in total
 }
 
 function OnTranslate
@@ -43,23 +44,36 @@ function OnBoot
 
 function OnClose
 {
-	LastTalk = CloseTalk() + "\x";
+	if (LastTalk != "") TodaysLetter.Add(CleanLetterTags(LastTalk));
+	LastTalk = CloseTalk() + "\x"; //TODO this gets weird if you interrupt the signoff...
 	return OnLetterDisplay();
+}
+
+function OnFinish
+{
+	return "\s[2]\_w[1000]" + OnClose();
 }
 
 function OnTalkControl
 {
-	if (LastTalk != "") TodaysLetter.Add(CleanLetterTags(LastTalk));
-	
-	//I had to reinvent chains because the normal RandomTalkQueue doesn't route through any of my control functions when called by TalkTimer... I'll report it later but for now this should work
-	if (ChainTalkQueue.length > 0)
+	if (RemainingTalks > 0)
 	{
-		LastTalk = Reflection.Get("{ChainTalkQueue[0]}")();
-		ChainTalkQueue.Remove(0);
+		if (LastTalk != "") TodaysLetter.Add(CleanLetterTags(LastTalk));
+		
+		//I had to reinvent chains because the normal RandomTalkQueue doesn't route through any of my control functions when called by TalkTimer... I'll report it later but for now this should work
+		if (ChainTalkQueue.length > 0)
+		{
+			LastTalk = Reflection.Get("{ChainTalkQueue[0]}")();
+			ChainTalkQueue.Remove(0);
+		}
+		else
+		{
+			RemainingTalks--;
+			LastTalk = Reflection.Get("RandomTalk")();
+		}
+		
+		return OnLetterDisplay();
 	}
-	else LastTalk = Reflection.Get("RandomTalk")();
-	
-	return OnLetterDisplay();
 }
 
 //Catch \a, key press, etc
@@ -137,7 +151,14 @@ function OnSurfaceRestore, OnWindowStateRestore
 	
 	local output = "";
 	output += "\1\s[-1]";
-	output += "\0\s[0]";
+	if (RemainingTalks > 0)
+	{
+		output += "\0\s[0]";
+	}
+	else
+	{
+		output += "\0\s[1]";
+	}
 	return output;
 }
 
