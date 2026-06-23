@@ -4,7 +4,7 @@ function OnMainMenu(cause)
 	if (CurrentBalloon == "Chicken Scratch" && Save.Data.ChickenScratchStyle == "cursive") linebreak = "\n\n[50]";
 	local m = "";
 	
-	if (cause == "init") m += "\C\![lock,balloonrepaint]\c";
+	if (cause != "init") m += "\C\![lock,balloonrepaint]\c";
 	m += "\0\b[0]\![quicksection,true]\![set,autoscroll,disable]";
 	
 	if (RemainingTalks > 0) m += "\![*]\__q[OnAITalk]Next\__q";
