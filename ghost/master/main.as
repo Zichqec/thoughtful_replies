@@ -29,6 +29,26 @@ function OnTranslate
 {
 	talkstr = (Shiori.Reference[0]).ToString();
 	
+	//Process {these} when used in script input - It's not as good as the YAYA version, it can't handle arguments (I tried and couldn't get it to properly process them), but it should at least let you demo basic word groups
+	//Of course, this also isn't as helpful as it is in YAYA, since your dialogues can spread across multiple lines here... but still, it should help a bit
+	if (Shiori.Reference[1] == "" && Shiori.Reference[2] == "")
+	{
+		local temp = "";
+		local slices = talkstr.Split((123).ToAscii());
+		temp += slices[0];
+		for (local i = 0; i < slices.length; i++)
+		{
+			local slice = slices[i];
+			if (slice.Contains("}"))
+			{
+				local interpolate = slice.Split("}")[0];
+				temp += Reflection.Get(interpolate)();
+				temp += slice.Split((125).ToAscii(),1)[1];
+			}
+		}
+		talkstr = temp;
+	}
+	
 	if (CurrentBalloon == "Chicken Scratch")
 	{
 		local balloonnum = CurrentBalloonPattern;
