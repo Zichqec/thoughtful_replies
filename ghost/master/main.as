@@ -58,7 +58,6 @@ function OnTranslate
 		talkstr = temp;
 	}
 	
-	//if (IsScriptFont) talkstr = talkstr.Replace("\n\n","\n\n[50]"); //This doesn't work because it messes up other \n[] tags...
 	
 	if (CurrentBalloon == "Chicken Scratch")
 	{
@@ -70,6 +69,7 @@ function OnTranslate
 	}
 	
 	talkstr = AutoPause(talkstr);
+	if (IsScriptFont()) talkstr = talkstr.Replace("\w8\w8\n\n","\w8\w8\n\n[50]"); //Requires the pauses from autopause, otherwise it interferes with other \n[] tags...
 	
 	return talkstr;
 }
