@@ -158,3 +158,9 @@ function emdash
 	}
 	else return "\f[name,Calibri]—\f[name,default]\w8";
 }
+
+function IsScriptFont
+{
+	if (CurrentBalloon == "Chicken Scratch" && Save.Data.ChickenScratchStyle == "cursive") return true;
+	else return false;
+}
