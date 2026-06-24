@@ -7,3 +7,9 @@ craftmanw,Blue & Zichqec
 craftmanurl,https://www.tumblr.com/bluetheanimator
 
 seriko.use_self_alpha,1
+
+menu.background.bitmap.filename,menu_background.png
+menu.foreground.bitmap.filename,menu_foreground.png
+
+menu.background.alignment,lefttop+repeat-x+repeaty
+menu.foreground.alignment,lefttop+repeat-x+repeaty
