@@ -175,7 +175,7 @@ function LetterDisplay(arg)
 function OnReviewAll
 {
 	local display = "";
-	display += "\![quicksection,1]\![set,autoscroll,disable]\![no-autopause]";
+	display += "\b[{balloonnum}]\![quicksection,1]\![set,autoscroll,disable]\![no-autopause]";
 	for (local i = 0; i < TodaysLetter.length; i++)
 	{
 		if (i > 0) display += ParagraphBreak();
