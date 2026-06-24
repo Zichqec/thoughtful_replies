@@ -148,3 +148,13 @@ function DisplayArray(array)
 	}
 	return output;
 }
+
+function emdash
+{
+	if (CurrentBalloon == "Chicken Scratch")
+	{
+		if (Save.Data.ChickenScratchStyle == "cursive") return " - \w8";
+		else return "—\w8";
+	}
+	else return "\f[name,Calibri]—\f[name,default]\w8";
+}
