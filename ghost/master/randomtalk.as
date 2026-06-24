@@ -39,7 +39,7 @@ talk RandomTalk
 
 talk MerchantVisit1
 {
-	The strange thing was, their wagon was entirely filled with pots! Not simply all manner of kitchenware, no. There was not a single spoon in sight. No knife, no chopping board, no skillets. Not even a single pot lid. It was only pots.
+	The strange thing was, their wagon was entirely filled with pots! Not simply all manner of kitchenware, no. There was not a single spoon in sight. No knife, no chopping board, no skillets. Not even a single pot \f[underline,1]lid\f[underline,default]. It was \f[underline,1]only\f[underline,default] pots.
 }
 
 talk MerchantVisit1
@@ -55,6 +55,11 @@ talk MerchantVisit1
 talk MerchantVisit2
 {
 	I decided not to buy anything this time, but encouraged them to come by again, whenever they're passing through.
+}
+
+talk MerchantVisit2
+{
+	I was much more tempted than I'd like to admit... It is amazing how persuasive good company can be! Not that I need to tell \f[underline,1]you\f[underline,default] that.
 }
 
 talk RandomTalk
@@ -178,4 +183,31 @@ talk RandomTalk
 	I suspect that one of the chickens has made off with my number {hooksize} size crochet hook. {chicken} has been looking rather suspicious. I'm entrusting Abigail with interrogating the chickens to uncover the missing hook.
 
 	Of course, it could just be that I dropped it and it was accidentally swept under a cabinet. We will have to wait and see.
+}
+
+talk RandomTalk
+{
+	%{ ChainTalkQueue = ["StrangeSounds1","StrangeSounds2"]; }
+	I've been hearing strange sounds outside of the house. Sporadic, and always too distant for me to pin down easily. Even the chickens have started to notice! Abigail is the only one that has been more curious than scared, but that doesn't mean they won't get themselves into trouble trying to find the source if left on their own.
+}
+
+talk StrangeSounds1
+{
+	Earlier this evening, I narrowed it down{emdash}to the well, of all places! What a worrying place for strange sounds to be! But a noise in a well cannot be left alone. There's few things worse than an unknown creature inhabiting the water supply. Normally, I would leave such dangerous encounters to you. Alas, needs must, and thus I took up arms!
+	
+	Arms being a lantern tied to a rope, which I bravely lowered into the deep, dark caverns of the well. Shadows jumped at every movement, every bump against stone walls echoing... echoing... When suddenly, there! A branch, floating atop the water! And on that branch, a toad!
+}
+
+talk StrangeSounds2
+{
+	After much stress and turmoil, the source had been found. A mystery solved, and peace returned to the homestead.
+	
+	I think I understand a little better what it must feel like to be you!
+}
+
+talk RandomTalk
+{
+    Recently, I had the opportunity to read a scholar's advice on the care of our beloved fowl. Imagine my surprise when a full page was dedicated to informing the reader that the best knowledged in this field are those that care for them! Who else would be seeking assistance in caring for birds than those that \f[underline,1]care for birds?\f[underline,default]
+    
+    Scholars are such a strange sort! I wonder how many people they needed to speak to in order to come to this conclusion?
 }
