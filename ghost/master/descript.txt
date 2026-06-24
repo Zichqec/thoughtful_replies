@@ -9,3 +9,5 @@ craftmanurl,https://github.com/Zichqec/thoughtful_replies
 shiori,aosora.dll
 
 balloon,Chicken Scratch
+
+sakura.name,Homebody
