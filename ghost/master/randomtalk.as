@@ -86,7 +86,7 @@ talk HerHero1
 
 talk HerHero2
 {
-	I wonder if she her interest in the adventuring life would wane if she understood that sometimes it means going without a warm meal and a comfortable bed at night!
+	I wonder if her interest in the adventuring life would wane if she understood that sometimes it means going without a warm meal and a comfortable bed at night!
 }
 
 talk HerHero3
