@@ -31,6 +31,7 @@ function OnTranslate
 	
 	//Process {these} when used in script input - It's not as good as the YAYA version, it can't handle arguments (I tried and couldn't get it to properly process them), but it should at least let you demo basic word groups
 	//Of course, this also isn't as helpful as it is in YAYA, since your dialogues can spread across multiple lines here... but still, it should help a bit
+	//NOTE: there's a weird bug here... if I reload the ghost I can use this just fine, but then after opening the menu, suddenly it breaks??? I need to track that down if I want to develop this any further
 	if (Shiori.Reference[1] == "" && Shiori.Reference[2] == "")
 	{
 		local temp = "";
@@ -42,7 +43,15 @@ function OnTranslate
 			if (slice.Contains("}"))
 			{
 				local interpolate = slice.Split("}")[0];
-				temp += Reflection.Get(interpolate)();
+				//Avoid a runtime error if a non-function or nonexistent function is passed
+				try
+				{
+					temp += Reflection.Get(interpolate)();
+				}
+				catch
+				{
+					temp += (123).ToAscii() + interpolate + "}";
+				}
 				temp += slice.Split((125).ToAscii(),1)[1];
 			}
 		}
