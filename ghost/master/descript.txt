@@ -11,3 +11,5 @@ shiori,aosora.dll
 balloon,Chicken Scratch
 
 sakura.name,Homebody
+
+icon,icon.ico
