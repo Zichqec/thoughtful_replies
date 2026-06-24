@@ -79,11 +79,16 @@ function AutoPause(talkstr)
 	{
 		talkstr = talkstr.Replace(", ",",\w4 ");
 		talkstr = talkstr.Replace(". ",".\w8\w8 ");
-		talkstr = talkstr.Replace(": ",".\w8\w8 ");
-		talkstr = talkstr.Replace("; ",".\w8 ");
-		talkstr = talkstr.Replace("! ",".\w8\w8 ");
-		talkstr = talkstr.Replace("? ",".\w8\w8 ");
-		talkstr = talkstr.Replace("\![ap-n]","\w8\w8");
+		talkstr = talkstr.Replace(": ",":\w8\w8 ");
+		talkstr = talkstr.Replace("; ",";\w8 ");
+		talkstr = talkstr.Replace("! ","!\w8\w8 ");
+		talkstr = talkstr.Replace("? ","?\w8\w8 ");
+		talkstr = talkstr.Replace(",\n\n",",\w4\n\n");
+		talkstr = talkstr.Replace(".\n\n",".\w8\w8\n\n");
+		talkstr = talkstr.Replace(":\n\n",":\w8\w8\n\n");
+		talkstr = talkstr.Replace(";\n\n",";\w8\n\n");
+		talkstr = talkstr.Replace("!\n\n","!\w8\w8\n\n");
+		talkstr = talkstr.Replace("?\n\n","?\w8\w8\n\n");
 	}
 	return talkstr;
 }
