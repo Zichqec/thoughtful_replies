@@ -123,3 +123,13 @@ function balloonnum
 	}
 	else return 0;
 }
+
+function SetSurfaceRestoreRand
+{
+	SurfaceRestoreRand = Random.GetIndex(30,180);
+}
+
+function OnNotifyBalloonInfo
+{
+	CurrentBalloon = Shiori.Reference[0];
+}
