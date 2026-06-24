@@ -115,8 +115,9 @@ function EnvelopeDisplay
 	if (CurrentBalloon == "Chicken Scratch")
 	{
 		local rand = Random.GetIndex(0,4);
-		return "\w[1000]\c\b[1000{rand}0] \_w[2000]";
+		return "\w[1000]\c\b[1000{rand}0]\_w[1000]\![set,alpha,0,1000] \_w[2000]";
 	}
+	else return "\![set,alpha,0,1000] \_w[1500]";
 }
 
 function OnTalkControl
@@ -229,6 +230,7 @@ function OnSurfaceRestore, OnWindowStateRestore
 	{
 		output += "\0\s[1]";
 	}
+	output += "\![set,alpha,100]";
 	return output;
 }
 
