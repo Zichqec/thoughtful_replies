@@ -1,6 +1,7 @@
 function ParagraphBreak
 {
-	return "\n\n\n";
+	if (IsScriptFont()) return "\n\n\n[half]";
+	else return "\n\n\n";
 }
 
 function BalloonIsOpen
