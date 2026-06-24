@@ -122,5 +122,5 @@ talk RandomTalk
 {
 	I've recently come into posession of a new tea blend which I think you will enjoy. {itisquitesweet}
 	
-	Next time you return home, we can enjoy some while you regale me with your latest tales.
+	Next time you return home, we can enjoy some while you regale me with tales of your latest adventure.
 }
