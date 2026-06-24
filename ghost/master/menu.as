@@ -5,7 +5,7 @@ function OnMainMenu(cause)
 	local m = "";
 	
 	if (cause != "init") m += "\C\![lock,balloonrepaint]\c";
-	m += "\0\b[0]\![quicksection,true]\![set,autoscroll,disable]";
+	m += "\0\b[0]\![quicksection,true]\![set,autoscroll,disable]\![no-autopause]";
 	
 	if (RemainingTalks > 0) m += "\![*]\__q[OnAITalk]Next\__q";
 	else m += "\![*]\f[color,disable]Next\f[color,default]";
