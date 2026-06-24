@@ -69,7 +69,12 @@ function OnTranslate
 	}
 	
 	talkstr = AutoPause(talkstr);
-	if (IsScriptFont()) talkstr = talkstr.Replace("\w8\w8\n\n","\w8\w8\n\n[50]"); //Requires the pauses from autopause, otherwise it interferes with other \n[] tags...
+	if (IsScriptFont())
+	{
+		//Requires the pauses from autopause, otherwise it interferes with other \n[] tags...
+		talkstr = talkstr.Replace("\w8\w8\n\n","\w8\w8\n\n[50]");
+		talkstr = talkstr.Replace("\w4\n\n","\w4\n\n[50]");
+	}
 	
 	return talkstr;
 }
