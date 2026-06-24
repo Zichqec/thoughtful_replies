@@ -141,6 +141,7 @@ function intotown
 		"to the capital",
 		"to the city",
 		"home",
+		"to the next village over",
 	]);
 }
 
@@ -398,6 +399,34 @@ function crochetproject
 		"twisted headband",
 		"pair of cozy leg warmers",
 		"pair of socks that have a fish pattern on the ankle",
-		"set of matching mug cozies"
+		"set of matching mug cozies",
+	]);
+}
+
+function puttingadaggerthroughit
+{
+	return Random.Select([
+		"putting a dagger through it",
+		"letting an ogre tear the sleeves off",
+		"getting into a scrap at the inn",
+		"getting into a fight with a bramble bush",
+		"letting squirrels get the jump on you",
+		"letting your sleeves catch in the door",
+		"getting into a fight while still wearing your sleep clothes",
+		"going spelunking in such tight caves",
+		"getting it so close to the pointy bits of your friend's armor",
+		"wading through a river filled with carnivorous fish",
+		"falling out of a tree and hitting every branch on the way down",
+		"using your sleeves to play with the adorable-looking-but-full-of-claws {babydragon}",
+	]);
+}
+
+function babydragon
+{
+	return Random.Select([
+		"dragon hatchling",
+		"kitten",
+		"baby hawk",
+		"baby gryphon",
 	]);
 }

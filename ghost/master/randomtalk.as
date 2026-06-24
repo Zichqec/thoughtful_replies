@@ -127,5 +127,7 @@ talk RandomTalk
 
 talk RandomTalk
 {
+	I've finished mending that shirt you brought to me. I'll send it out to you next time I write; I've got something else I'm planning to send at the same time, but I need a little more time to finish preparations.
 	
+	You can thank me for it by not {puttingadaggerthroughit} next time!
 }
