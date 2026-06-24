@@ -5,7 +5,7 @@ talk RandomTalk
 
 talk RandomTalk 
 {
-	I saw there was a request posted on the board in the town's square. Someone wants an adventurer to find a lost {lostitem}, last seen {location}.
+	I saw there was a request posted on the board at the village square. Someone wants an adventurer to find a lost {lostitem}, last seen {location}.
 
 	Are you looking for it? Please be careful.
 }
@@ -123,4 +123,9 @@ talk RandomTalk
 	I've recently come into posession of a new tea blend which I think you will enjoy. {itisquitesweet}
 	
 	Next time you return home, we can enjoy some while you regale me with tales of your latest adventure.
+}
+
+talk RandomTalk
+{
+	
 }
