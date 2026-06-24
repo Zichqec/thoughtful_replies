@@ -31,7 +31,7 @@ function OnMainMenu(cause)
 	];
 	
 	m += "Talk rate:\n";
-	foreach (talkrate in talkrates)
+	foreach (local talkrate in talkrates)
 	{
 		if (talkrate.time == Save.Data.TalkInterval) m += "\f[underline,1]\_a[OnChangeTalkRate,{talkrate.time}]{talkrate.label}\_a\f[underline,default]";
 		else  m += "\__q[OnChangeTalkRate,{talkrate.time}]{talkrate.label}\__q";
@@ -49,7 +49,7 @@ function OnMainMenu(cause)
 	{
 		m += linebreak;
 		m += "Writing style:\n";
-		foreach (font in fonts)
+		foreach (local font in fonts)
 		{
 			if (font.style == Save.Data.ChickenScratchStyle) m += "\f[underline,1]\_a[OnChangeBalloonStyle,{font.style}]{font.label}\_a\f[underline,default]";
 			else  m += "\__q[OnChangeBalloonStyle,{font.style}]{font.label}\__q";
@@ -64,16 +64,16 @@ function OnMainMenu(cause)
 	{
 		m += linebreak;
 		m += "\f[name,courier new]\f[height,14]Current chickens:\n";
-		foreach (chicken in Save.Data.Chickens)
+		foreach (local c in Save.Data.Chickens)
 		{
-			m += "\![*]{chicken}\n[50]";
+			m += "\![*]{c}\n[50]";
 		}
 		
 		m += linebreak;
 		m += "Reserved chicken names:\n";
-		foreach (chicken in Save.Data.ReservedChickens)
+		foreach (local c in Save.Data.ReservedChickens)
 		{
-			m += "\![*]{chicken}\n[50]";
+			m += "\![*]{c}\n[50]";
 		}
 		
 	}

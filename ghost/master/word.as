@@ -8,10 +8,10 @@ function chicken
 function allchicken
 {
 	//NOTE TO SELF: i previously had this like chickens = Save.Data.Chickens, and THAT DOES NOT WORK because it operates on the save data object, rather than making a copy... this i have trouble wrapping my head around
-	local chickens = [];
-	chickens.AddRange(Save.Data.Chickens);
-	chickens.Add("Abigail");
-	return Random.Select(chickens);
+	local chickenlist = [];
+	chickenlist.AddRange(Save.Data.Chickens);
+	chickenlist.Add("Abigail");
+	return Random.Select(chickenlist);
 }
 
 //Returns a random unused chicken name
