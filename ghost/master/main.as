@@ -25,6 +25,11 @@ function OnAosoraLoad
 	RotateChickens();
 }
 
+function homeurl
+{
+	return "https://raw.githubusercontent.com/Zichqec/thoughtful_replies/refs/heads/main/";
+}
+
 function OnTranslate
 {
 	local talkstr = (Shiori.Reference[0]).ToString();
