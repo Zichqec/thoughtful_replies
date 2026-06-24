@@ -127,6 +127,9 @@ function Homebody
 		"The Homebody",
 		"Master of the Chicken Coop",
 		"Queen of Crochet",
+		"Your Favorite Sister",
+		"The Chicken Queen",
+		"Abigail's {Protector}",
 	]);
 }
 
@@ -141,6 +144,65 @@ function intotown
 	]);
 }
 
+function Protector
+{
+	return Random.Select([
+		"Protector",
+		"Humble Servant",
+		"Keeper",
+	]);
+}
+
+function raidingadragonsden
+{
+	return Random.Select([
+		"raiding a dragon's den",
+		"stowing away onboard a pirate ship",
+		"discovering forgotten ruins",
+		"discovering the secret passage into a castle",
+	]);
+}
+
+function youaresafeandsound
+{
+	return Random.Select([
+		"you are safe and sound",
+		"you are still in one piece",
+		"you received only minor scrapes",
+		"\c[char,1]{emdash}apart from {stubbingyourtoe}{emdash}you are alright",
+		"you've made a new friend",
+		"your cleverness has served you well",
+		"fortune has smiled upon you",
+		"the potion I sent you served you well",
+		"your skill with a blade is sharp",
+		"you had enough lockpicks on hand",
+		"your claws are quick",
+		"you've found a loyal ally",
+	]);
+}
+
+function stubbingyourtoe
+{
+	return Random.Select([
+		"stubbing your toe",
+		"shutting your tail in the door",
+		"falling out of your bed when you woke up",
+		"losing a bit of fur",
+		"ripping your favorite shirt",
+	]);
+}
+
+function itisquitesweet
+{
+	return Random.Select([
+		"It is quite sweet, so much so that sugar would be ill-advised!",
+		"It's a bit earthy, but overall mellow. It takes a few sips for the flavor to build.",
+		"It has a strong, bright flavor. It's quite a memorable one!",
+		"At least, I hope you will, as I now have quite a lot of it in my cupboard!",
+		"It comes from another region, and is quite different from what we're used to.",
+	]);
+}
+
 function Sincerely
 {
 	return Random.Select([
@@ -149,6 +211,7 @@ function Sincerely
 		"Yours",
 		"Until next time",
 		"Will pester you another day",
+		"Wishing you warmth and luck",
 	]);
 }
 

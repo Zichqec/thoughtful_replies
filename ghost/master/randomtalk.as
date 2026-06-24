@@ -56,3 +56,71 @@ talk MerchantVisit2
 {
 	I decided not to buy anything this time, but encouraged them to come by again, whenever they're passing through.
 }
+
+talk RandomTalk
+{
+	%{ ChainTalkQueue = ["EveningStroll1","EveningStroll2"]; }
+	Yesterday on my evening stroll, I found myself thinking of you, as I so often do.
+}
+
+talk EveningStroll1
+{
+	Surrounded by the rustling of leaves, the smells of the forest, and walking with no particular destination in mind... it almost makes me understand what compels you to roam so far.
+}
+
+talk EveningStroll2
+{
+	The chill breeze is not much to my tastes, though{emdash}brr! I hope each time I think of you, you are warm and dry at an inn somewhere, enjoying a hearty meal.
+}
+
+talk RandomTalk
+{
+	%{ ChainTalkQueue = ["HerHero1","HerHero2","HerHero3","HerHero4"]; }
+	One of the neighbor's children asked me when you will be coming home next. I suspect she is waiting for another gift from you!
+}
+
+talk HerHero1
+{
+	It seems that you have become her hero. She often spends her free time "playing adventure", running energetically around the village and "saving" others from the odd beetle or stray ant.
+}
+
+talk HerHero2
+{
+	I wonder if she her interest in the adventuring life would wane if she understood that sometimes it means going without a warm meal and a comfortable bed at night!
+}
+
+talk HerHero3
+{
+	Then again, I suppose that never stopped you. It must truly be thrilling if you are willing to give up the comforts the rest of us hold dear.
+}
+
+talk HerHero4
+{
+	Time will tell if she changes her mind, or if adventure holds the same thrill for her as it does for you.
+}
+
+talk RandomTalk
+{
+	%{
+		local chicken1 = chicken();
+		local chicken2 = chicken();
+		while (chicken1 == chicken2) chicken2 = chicken();
+	}
+	{chicken1} and {chicken2} have been having a squabble lately, or so it would seem. I am not certain what's gotten into them, but I may have to intervene at some point.
+	
+	Abigail, naturally, is above such things.
+}
+
+talk RandomTalk
+{
+	Unfortunately, my last crochet project met an unfortunate end. I had to attend to a matter outside for just a moment{emdash}or so I thought{emdash}so I put it down without stowing it away. When I eventually returned, I found that my yarn had been pulled onto the floor and hopelessly tangled!
+	
+	I am not certain who the culprit is, but all signs currently point to {chicken}...
+}
+
+talk RandomTalk
+{
+	I've recently come into posession of a new tea blend which I think you will enjoy. {itisquitesweet}
+	
+	Next time you return home, we can enjoy some while you regale me with your latest tales.
+}
