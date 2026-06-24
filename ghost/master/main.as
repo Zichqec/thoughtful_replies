@@ -27,7 +27,7 @@ function OnAosoraLoad
 
 function OnTranslate
 {
-	talkstr = (Shiori.Reference[0]).ToString();
+	local talkstr = (Shiori.Reference[0]).ToString();
 	
 	//Process {these} when used in script input - It's not as good as the YAYA version, it can't handle arguments (I tried and couldn't get it to properly process them), but it should at least let you demo basic word groups
 	//Of course, this also isn't as helpful as it is in YAYA, since your dialogues can spread across multiple lines here... but still, it should help a bit
