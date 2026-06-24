@@ -38,7 +38,8 @@ function OnTranslate
 		talkstr = talkstr.Replace("\0\b[0]","\0\b[{balloonnum}]");
 	}
 	
-	if (!talkstr.Contains("\![no-autopause]"))
+	//The second check is to exclude the Aosora error balloon from autopause
+	if (!(talkstr.Contains("\![no-autopause]") || talkstr.Contains("■Aosora")))
 	{
 		talkstr = talkstr.Replace(", ",",\w4 ");
 		talkstr = talkstr.Replace(". ",".\w8\w8 ");
