@@ -58,7 +58,7 @@ talk RandomTalk
 
 talk RandomTalk
 {
-	%{ ChainTalkQueue = ["KitchenMice1","KitchenMice2" }
+	%{ ChainTalkQueue = ["KitchenMice1","KitchenMice2"]; }
 	I suspect the chickens and I are not the only ones enjoying the house right now. Not to say there's someone else here, but rather, there's something else here. A stealthy, squeaky, food nibbling something.
 }
 
@@ -74,7 +74,7 @@ talk KitchenMice2
 
 talk RandomTalk
 {
-	%{ ChainTalkQueue = ["MerchantVisit1","MerchantVisit2" }
+	%{ ChainTalkQueue = ["MerchantVisit1","MerchantVisit2"]; }
 	A merchant passed through early this afternoon. They were on their way {intotown}.
 }
 
