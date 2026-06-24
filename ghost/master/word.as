@@ -299,7 +299,7 @@ function sunnydetail
 	return Random.Select([
 		"The birds have done nothing but lay about all day! I'm surprised any even bothered to forage as melted to the ground as they have been.",
 		"It made the morning chores much more pleasant to suffer through.",
-		"Wonderful weather for hanging up the laundry. I almost wish there was more of it to manage!"
+		"Wonderful weather for hanging up the laundry. I almost wish there was more of it to manage!",
 	]);
 }
 
@@ -322,7 +322,7 @@ function lostitem
 	return Random.Select([
 		"{weapon}",
 		"{accessory}",
-		"{otheritem}"
+		"{otheritem}",
 	]);
 }
 
@@ -338,7 +338,7 @@ function weapon
 		"thunder wand",
 		"blizzard wand",
 		"double-sided spear",
-		"three-pronged trident"
+		"three-pronged trident",
 	]);
 }
 
@@ -352,7 +352,7 @@ function accessory
 		"jeweled necklace",
 		"ambiguously cursed amulet passed down through many generations",
 		"ear cuff in the shape of a dragon",
-		"set of ten matching rings"
+		"set of ten matching rings",
 	]);
 }
 
@@ -364,7 +364,7 @@ function otheritem
 		"dusty tome",
 		"dice set made of bone",
 		"notebook containing spells in shorthand",
-		"mug carved from oak"
+		"mug carved from oak",
 	]);
 }
 
@@ -376,11 +376,12 @@ function location
 		"at the shores of the deepest lake",
 		"in the middle of the bridge spanning the widest river",
 		"in the midst of a desert sandstorm",
-		"at the bottom of a rock quarry"
+		"at the bottom of a rock quarry",
 	]);
 }
 
-function crochetproject {
+function crochetproject
+{
 		return Random.Select([
 		"granny square blanket",
 		"produce bag for the market",
