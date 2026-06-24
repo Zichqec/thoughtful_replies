@@ -120,6 +120,17 @@ function Homebody
 	]);
 }
 
+function intotown
+{
+	return Random.Select([
+		"into town",
+		"out of town",
+		"to the capital",
+		"to the city",
+		"home",
+	]);
+}
+
 function Sincerely
 {
 	return Random.Select([
