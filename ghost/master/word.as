@@ -14,6 +14,14 @@ function allchicken
 	return Random.Select(chickens);
 }
 
+//Returns a random unused chicken name
+function nonchicken
+{
+	local name = chickenname();
+	while (InArray(name,Save.Data.Chickens) || InArray(name,Save.Data.ReservedChickens)) name = chickenname();
+	return name;
+}
+
 // FAVORITE CHICKEN = ABIGAIL, DO NOT ADD THAT NAME TO THIS LIST
 function chickenname
 {
