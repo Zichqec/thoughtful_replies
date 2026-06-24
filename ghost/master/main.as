@@ -239,8 +239,36 @@ function OnSurfaceRestore, OnWindowStateRestore
 	return output;
 }
 
+function FormatLinks(links)
 {
+	local output = "";
+	for (local i = 0; i < links.length; i++)
+	{
+		output += links[i].label;
+		output += (1).ToAscii();
+		output += links[i].url;
+		output += (2).ToAscii();
+	}
+	return output;
 }
 
+function sakura@recommendsites
 {
+	return FormatLinks([
+		{label: "Blue", url: "https://www.tumblr.com/bluetheanimator"},
+		{label: "Galla", url: "https://gallathegalla.github.io/gtg-ghosts/"},
+		{label: "Vita", url: "https://thatoddhaystack.neocities.org/ukagaka/"},
+		{label: "Zichqec", url: "https://ukagaka.zichqec.com/"},
+	]);
+}
+
+function sakura@portalsites
+{
+	return FormatLinks([
+		{label: "Leave a Review", url: "TODO"},
+		{label: "Aosora SHIORI", url: "https://github.com/kanadelab/aosora-shiori"},
+		{label: "Ghost Jam 2026", url: "https://ukagakadreamteam.com/events/ghost_jam_2026/rules.html"},
+		{label: "Ukagaka Dream Team Wiki", url: "https://ukagakadreamteam.com/wiki/"},
+		{label: "Ukagaka Dream Team Forum", url: "https://forum.ukagakadreamteam.com/"},
+	]);
 }
