@@ -59,14 +59,7 @@ function OnTranslate
 	}
 	
 	
-	if (CurrentBalloon == "Chicken Scratch")
-	{
-		local balloonnum = CurrentBalloonPattern;
-		if (Save.Data.ChickenScratchStyle == "print") balloonnum += 1000;
-		else if (Save.Data.ChickenScratchStyle == "type") balloonnum += 2000;
-		
-		talkstr = talkstr.Replace("\0\b[0]","\0\b[{balloonnum}]");
-	}
+	talkstr = talkstr.Replace("\0\b[0]","\0\b[{balloonnum}]");
 	
 	talkstr = AutoPause(talkstr);
 	if (IsScriptFont())
@@ -164,7 +157,7 @@ function LetterDisplay(arg)
 	instantdisplay.AddRange(arg);
 	
 	local display = "";
-	display += "\![quicksection,1]\![no-autopause]";
+	display += "\b[{balloonnum}]\![quicksection,1]\![no-autopause]";
 	for (local i = 0; i < instantdisplay.length; i++)
 	{
 		if (i > 0) display += ParagraphBreak();

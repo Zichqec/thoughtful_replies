@@ -110,3 +110,16 @@ function IsScriptFont
 	if (CurrentBalloon == "Chicken Scratch" && Save.Data.ChickenScratchStyle == "cursive") return true;
 	else return false;
 }
+
+function balloonnum
+{
+	if (CurrentBalloon == "Chicken Scratch")
+	{
+		local num = CurrentBalloonPattern;
+		if (Save.Data.ChickenScratchStyle == "print") num += 1000;
+		else if (Save.Data.ChickenScratchStyle == "type") num += 2000;
+		
+		return num;
+	}
+	else return 0;
+}
