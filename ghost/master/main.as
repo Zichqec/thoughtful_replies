@@ -38,6 +38,13 @@ function OnTranslate
 		talkstr = talkstr.Replace("\0\b[0]","\0\b[{balloonnum}]");
 	}
 	
+	talkstr = AutoPause(talkstr);
+	
+	return talkstr;
+}
+
+function AutoPause(talkstr)
+{
 	//The second check is to exclude the Aosora error balloon from autopause
 	if (!(talkstr.Contains("\![no-autopause]") || talkstr.Contains("■Aosora")))
 	{
@@ -49,7 +56,6 @@ function OnTranslate
 		talkstr = talkstr.Replace("? ",".\w8\w8 ");
 		talkstr = talkstr.Replace("\![ap-n]","\w8\w8");
 	}
-	
 	return talkstr;
 }
 
@@ -115,12 +121,8 @@ function LetterDisplay(arg)
 	arg.Remove(arg.length - 1);
 	instantdisplay.AddRange(arg);
 	
-	Debug.WriteLine("arg: {DisplayArray(arg)}");
-	Debug.WriteLine("instantdisplay: {DisplayArray(instantdisplay)}");
-	Debug.WriteLine("regulardisplay: {regulardisplay}");
-	
 	local display = "";
-	display += "\![quicksection,1]";
+	display += "\![quicksection,1]\![no-autopause]";
 	for (local i = 0; i < instantdisplay.length; i++)
 	{
 		if (i > 0) display += ParagraphBreak();
@@ -131,14 +133,14 @@ function LetterDisplay(arg)
 	if (CurrentBalloon == "Chicken Scratch" && Save.Data.ChickenScratchStyle == "cursive") display += ""; //This feels weird but also I am worried that there may be more conditions later and so don't want to make it a ! ??? idk i'm very tired right now, i'll probably realize there's a way better way to do this later
 	else display += "\n[50]";
 	display += "\![quicksection,0]";
-	display += regulardisplay;
+	display += AutoPause(regulardisplay);
 	return display;
 }
 
 function OnReviewAll
 {
 	local display = "";
-	display += "\![quicksection,1]\![set,autoscroll,disable]";
+	display += "\![quicksection,1]\![set,autoscroll,disable]\![no-autopause]";
 	for (local i = 0; i < TodaysLetter.length; i++)
 	{
 		if (i > 0) display += ParagraphBreak();
