@@ -315,6 +315,7 @@ function well
 		"in wealth and happiness",
 		"with claws sharpened",
 		"with fur and fangs clean",
+		"in good spirits",
 	]);
 }
 
@@ -381,7 +382,7 @@ function location
 	]);
 }
 
-function crochetproject
+function crochetproject 
 {
 		return Random.Select([
 		"granny square blanket",
@@ -428,5 +429,23 @@ function babydragon
 		"kitten",
 		"baby hawk",
 		"baby gryphon",
+	]);
+}
+
+function hooksize
+{
+	return Random.Select([
+		"1",
+		"1.5",
+		"2",
+		"3",
+		"3.5",
+		"4",
+		"4.5",
+		"5",
+		"5.5",
+		"6",
+		"6.5",
+		"7",
 	]);
 }

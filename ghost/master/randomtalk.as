@@ -120,7 +120,7 @@ talk RandomTalk
 
 talk RandomTalk
 {
-	I've recently come into posession of a new tea blend which I think you will enjoy. {itisquitesweet}
+	I've recently come into possession of a new tea blend which I think you will enjoy. {itisquitesweet}
 	
 	Next time you return home, we can enjoy some while you regale me with tales of your latest adventure.
 }
@@ -130,4 +130,52 @@ talk RandomTalk
 	I've finished mending that shirt you brought to me. I'll send it out to you next time I write; I've got something else I'm planning to send at the same time, but I need a little more time to finish preparations.
 	
 	You can thank me for it by not {puttingadaggerthroughit} next time!
+
+talk RandomTalk 
+{
+	%{ ChainTalkQueue = ["WrongPatterns1","WrongPatterns2","WrongPatterns3"]; }
+	I traded some of my crochet patterns with another fiber artist at the market, but it turns out that I was given knitting patterns instead of crochet ones... I'm not sure what to do with them.
+}
+
+talk WrongPatterns1 
+{
+	Have you met anyone who knits on your journeys? I can save the patterns for you to take with you the next time you return.
+}
+
+talk WrongPatterns2 
+{
+	Or maybe this is a sign for me to learn knitting myself. I have been considering it for some time. I think it would be an interesting change from crocheting.
+	
+	Not that I necessarily need another hobby.
+}
+
+talk WrongPatterns3
+{
+	I wouldn't have to buy more materials, just new needles. I have plenty of yarn, and now some patterns for knitting.
+
+	I'm convincing myself more and more as I write, hm...
+}
+
+talk RandomTalk
+{
+	A vendor brought curry spice to the market this past weekend, so I stocked up. I'm looking forward to making you some curry rice on your next visit home.
+}
+
+talk RandomTalk
+{
+	I traded some eggs for alpaca yarn recently. It's so soft, and it came with a tag with a small profile of the alpaca it came from. Should I start doing that for my eggs, perhaps? Not that everyone in town doesn't already know about Abigail, as much as I talk about her.
+}
+
+talk RandomTalk
+{
+	The thing that's most frustrating about crocheting sometimes is having to keep count of your stitches in a row. Counting should be easy. Somehow, impossibly, I always end up with one stitch too many or one stitch too few when finishing a row.
+
+	I'll let you in on a secret{emdash}sometimes I simply work in a cheeky increase or decrease instead of redoing the entire row. No one wil notice a small change in a large project. Of course, saying that, I suspect you will inspect all the garments I have given you closely for such a mistake.
+}
+
+talk RandomTalk
+{
+	I suspect that one of the chickens has made off with my number {hooksize} size crochet hook. {chicken} has been looking rather suspicious. I'm entrusting Abigail with interrogating the chickens to uncover the missing hook.
+
+	Of course, it could just be that I dropped it and it was accidentally swept under a cabinet. We will have to wait and see.
 }
