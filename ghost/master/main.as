@@ -167,7 +167,7 @@ function LetterDisplay(arg)
 	}
 	if (instantdisplay.length > 0) display += ParagraphBreak();
 	if (instantdisplay.length > 0) display += "\n[{Save.Data.BalloonLines}00] \n[-{Save.Data.BalloonLines}00]";
-	if (IsScriptFont) display += ""; //This feels weird but also I am worried that there may be more conditions later and so don't want to make it a ! ??? idk i'm very tired right now, i'll probably realize there's a way better way to do this later
+	if (IsScriptFont()) display += ""; //This feels weird but also I am worried that there may be more conditions later and so don't want to make it a ! ??? idk i'm very tired right now, i'll probably realize there's a way better way to do this later
 	else display += "\n[50]";
 	display += "\![quicksection,0]";
 	display += AutoPause(regulardisplay);

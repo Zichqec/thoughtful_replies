@@ -1,7 +1,7 @@
 function OnMainMenu(cause)
 {
 	local linebreak = "\n\n";
-	if (IsScriptFont) linebreak = "\n\n[50]";
+	if (IsScriptFont()) linebreak = "\n\n[50]";
 	local m = "";
 	
 	if (cause != "init") m += "\C\![lock,balloonrepaint]\c";
