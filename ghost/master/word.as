@@ -418,11 +418,11 @@ function puttingadaggerthroughit
 		"getting it so close to the pointy bits of your friend's armor",
 		"wading through a river filled with carnivorous fish",
 		"falling out of a tree and hitting every branch on the way down",
-		"using your sleeves to play with the adorable-looking-but-full-of-claws {babydragon}",
+		"using your sleeves to play with the adorable-looking-but-full-of-claws {dragonhatchling}",
 	]);
 }
 
-function babydragon
+function dragonhatchling
 {
 	return Random.Select([
 		"dragon hatchling",
@@ -447,5 +447,14 @@ function hooksize
 		"6",
 		"6.5",
 		"7",
+	]);
+}
+
+function jumpedthefence
+{
+	return Random.Select([
+		"jumped over its fence",
+		"smashed through a section of its fence",
+		"figured out how to unlock the gate",
 	]);
 }

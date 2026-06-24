@@ -135,6 +135,7 @@ talk RandomTalk
 	I've finished mending that shirt you brought to me. I'll send it out to you next time I write; I've got something else I'm planning to send at the same time, but I need a little more time to finish preparations.
 	
 	You can thank me for it by not {puttingadaggerthroughit} next time!
+}
 
 talk RandomTalk 
 {
@@ -210,4 +211,28 @@ talk RandomTalk
     Recently, I had the opportunity to read a scholar's advice on the care of our beloved fowl. Imagine my surprise when a full page was dedicated to informing the reader that the best knowledged in this field are those that care for them! Who else would be seeking assistance in caring for birds than those that \f[underline,1]care for birds?\f[underline,default]
     
     Scholars are such a strange sort! I wonder how many people they needed to speak to in order to come to this conclusion?
+}
+
+talk RandomTalk
+{
+	%{ ChainTalkQueue = ["CowIncident1","CowIncident2"]; }
+	My goodness, I almost forgot, I wanted to tell you about the cow incident.
+	
+	There was a commotion in the village square, and when I went to investigate, what should I see but everyone gathered around an unfamiliar cow!
+	
+	Nobody knew where the cow had come from. All of the cows in the village were accounted for, and everyone said that it was not theirs. How strange!
+}
+
+talk CowIncident1
+{
+	Everyone was gathered around trying to decide what to do about this sudden and unexpected cow. It would certainly need food and shelter if it was to stay with us. Where had it even come from?
+}
+
+talk CowIncident2
+{
+	Alas, or perhaps fortuitously, it was not to remain with us for long. A very weary-looking farmer, from another village to the south of town, came trudging in and laid claim to it.
+	
+	Apparently, the cow {jumpedthefence}, and then wandered off before anyone noticed.
+	
+	I was eager to hear more details of the daring escape, but the man looked so exhausted from tracking it all this way that I simply could not bring myself to ask!
 }
