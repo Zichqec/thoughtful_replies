@@ -136,3 +136,15 @@ function enable_debug
 	if (Shiori.Reference[0] == 1) DebugMode = true;
 	else DebugMode = false;
 }
+
+//because i'm dying........ i need to be able to display arrays as strings
+function DisplayArray(array)
+{
+	local output = "";
+	for (local i = 0; i < array.length; i++)
+	{
+		if (i > 0) output += ",";
+		output += array[i];
+	}
+	return output;
+}

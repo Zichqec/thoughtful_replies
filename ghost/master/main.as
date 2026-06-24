@@ -56,14 +56,13 @@ function OnTranslate
 function OnBoot
 {
 	LastTalk = BootTalk();
-	return  OnLetterDisplay() + OnBalloonLinesCommand();
+	return  LetterDisplay([LastTalk]) + OnBalloonLinesCommand();
 }
 
 function OnClose
 {
-	if (LastTalk != "") TodaysLetter.Add(CleanLetterTags(LastTalk));
-	LastTalk = CloseTalk(); //TODO this gets weird if you interrupt the signoff... | what I need is a way to keep this in LastTalk while also behaving like it isn't. Maybe an argument...??? mmm...
-	return OnLetterDisplay() + "\x[noclear]" + EnvelopeDisplay();
+	local closetalk = CloseTalk();
+	return LetterDisplay([LastTalk,closetalk]) + "\x[noclear]" + EnvelopeDisplay();
 }
 
 function OnFinish
@@ -98,7 +97,7 @@ function OnTalkControl
 			LastTalk = Reflection.Get("RandomTalk")();
 		}
 		
-		return OnLetterDisplay();
+		return LetterDisplay([LastTalk]);
 	}
 }
 
@@ -108,21 +107,31 @@ function OnAITalk
 	return TalkTimer.CallRandomTalk();
 }
 
-function OnLetterDisplay
+function LetterDisplay(arg)
 {
+	//Because when closing, we don't want to change LastTalk (in case the user cancels) but we also need to include both LastTalk and the closing dialogue in the letter... we have to do this
+	local instantdisplay = TodaysLetter;
+	local regulardisplay = arg[arg.length - 1];
+	arg.Remove(arg.length - 1);
+	instantdisplay.AddRange(arg);
+	
+	Debug.WriteLine("arg: {DisplayArray(arg)}");
+	Debug.WriteLine("instantdisplay: {DisplayArray(instantdisplay)}");
+	Debug.WriteLine("regulardisplay: {regulardisplay}");
+	
 	local display = "";
 	display += "\![quicksection,1]";
-	for (local i = 0; i < TodaysLetter.length; i++)
+	for (local i = 0; i < instantdisplay.length; i++)
 	{
 		if (i > 0) display += ParagraphBreak();
-		display += TodaysLetter[i];
+		display += instantdisplay[i];
 	}
-	if (TodaysLetter.length > 0) display += ParagraphBreak();
-	if (TodaysLetter.length > 0) display += "\n[{Save.Data.BalloonLines}00] \n[-{Save.Data.BalloonLines}00]";
+	if (instantdisplay.length > 0) display += ParagraphBreak();
+	if (instantdisplay.length > 0) display += "\n[{Save.Data.BalloonLines}00] \n[-{Save.Data.BalloonLines}00]";
 	if (CurrentBalloon == "Chicken Scratch" && Save.Data.ChickenScratchStyle == "cursive") display += ""; //This feels weird but also I am worried that there may be more conditions later and so don't want to make it a ! ??? idk i'm very tired right now, i'll probably realize there's a way better way to do this later
 	else display += "\n[50]";
 	display += "\![quicksection,0]";
-	display += LastTalk;
+	display += regulardisplay;
 	return display;
 }
 
@@ -167,7 +176,6 @@ function OnSecondChange
 	
 	local since = Time.GetNowUnixEpoch() - TimeSinceLastTalk;
 	
-	Debug.WriteLine("since: {since} | SurfaceRestoreRand: {SurfaceRestoreRand}");
 	if (since >= SurfaceRestoreRand) return OnSurfaceRestore;
 }
 

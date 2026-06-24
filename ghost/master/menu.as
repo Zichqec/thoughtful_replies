@@ -84,7 +84,7 @@ function OnMainMenu(cause)
 
 function OnLastTalk
 {
-	return OnLetterDisplay;
+	return LetterDisplay([LastTalk]);
 }
 
 function OnChangeTalkRate
