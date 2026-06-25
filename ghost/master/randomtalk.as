@@ -245,3 +245,12 @@ talk RandomTalk
 
 	\s[3]I spent several hours searching our library for a book or even a simple pamphlet on elven fiber arts, but it seems we are woefully lacking in that subject. \s[30]\_w[3000]\s[0]Perhaps the merchant will visit again, and I can ask for a detailed explanation of elf terms for crocheting.
 }
+
+talk RandomTalk
+{
+	\s[2]The chickens were concerning me when I checked the nesting boxes this morning. \s[7]Not a single egg, anywhere I looked!
+	
+	\s[23]Granted, it certainly is not strange for one or two of them to refrain from laying for a few days. \s[3]But all of them? \s[22]Surely some illness among the flock! \s[7]Surely some vile egg-thief in the hen house!
+	
+	\s[37]\_w[1000]\s[7]\_w[1000]\s[37]\_w[1000]\s[7]\_w[1000]Then I turn my head and I see her: \s[0]{chicken}, fat and happy in one of the nests. \s[20]So fat and happy that I wonder, and I judge, and she pecks but relents, and... \s[1]Yes. \s[21]You guessed it! She took \f[underline,1]all\f[underline,default] of the eggs for herself. \s[1]She really is something, isn't she?
+}
