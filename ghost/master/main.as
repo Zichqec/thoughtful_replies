@@ -107,7 +107,7 @@ function OnBoot
 function OnClose
 {
 	local closetalk = CloseTalk();
-	return LetterDisplay([LastTalk,closetalk]) + "\x[noclear]" + EnvelopeDisplay() + "\-";
+	return LetterDisplay([LastTalk,closetalk]) + "\x[noclear]\t" + EnvelopeDisplay() + "\-";
 }
 
 function OnFinish
