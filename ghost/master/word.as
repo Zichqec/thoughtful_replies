@@ -196,11 +196,11 @@ function stubbingyourtoe
 function itisquitesweet
 {
 	return Random.Select([
-		"It is quite sweet, so much so that sugar would be ill-advised!",
-		"It's a bit earthy, but overall mellow. It takes a few sips for the flavor to build.",
-		"It has a strong, bright flavor. It's quite a memorable one!",
-		"At least, I hope you will, as I now have quite a lot of it in my cupboard!",
-		"It comes from another region, and is quite different from what we're used to.",
+		"\s[21]It is quite sweet, so much so that sugar would be ill-advised!",
+		"\s[0]It's a bit earthy, but overall mellow. It takes a few sips for the flavor to build.",
+		"\s[2]It has a strong, bright flavor. \s[21]It's quite a memorable one!",
+		"\s[7]At least, I hope you will, as I now have quite a lot of it in my cupboard!",
+		"\s[1]It comes from another region, and is quite different from what we're used to.",
 	]);
 }
 
