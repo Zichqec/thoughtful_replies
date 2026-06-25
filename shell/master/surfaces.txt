@@ -145,7 +145,7 @@ surface0-3,100-103
 {
 	animation0.interval,always
 	animation0.pattern0,overlay,1000,0,0,0
-	animation0.pattern1,overlay,1001,2500-5000,0,0
+	animation0.pattern1,overlay,1001,3500-7000,0,0
 	animation0.pattern2,overlay,1002,150,0,0
 	animation0.pattern3,overlay,1001,150,0,0
 	animation0.pattern4,overlay,1000,150,0,0
@@ -155,7 +155,7 @@ surface20-23,120-123
 {
 	animation0.interval,always
 	animation0.pattern1,overlay,1001,0,0,0
-	animation0.pattern2,overlay,1002,2500-5000,0,0
+	animation0.pattern2,overlay,1002,3500-7000,0,0
 	animation0.pattern3,overlay,1001,150,0,0
 }
 
@@ -203,7 +203,7 @@ surface8,108
 	// animation0.pattern15,overlay,1004,300,0,0
 }
 
-surface9
+surface109
 {
 	element0,overlay,forward_arm_up.png,0,0
 	element1,overlay,sleep_face.png,0,0
@@ -263,7 +263,7 @@ surface30,31,130,131
 {
 	animation0.interval,always
 	animation0.pattern0,overlay,2000,0,0,0
-	animation0.pattern1,overlay,2001,2500-5000,0,0
+	animation0.pattern1,overlay,2001,3500-7000,0,0
 	animation0.pattern2,overlay,2002,150,0,0
 	animation0.pattern3,overlay,2001,150,0,0
 	animation0.pattern4,overlay,2000,150,0,0

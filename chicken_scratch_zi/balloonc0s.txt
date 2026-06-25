@@ -1,0 +1,4 @@
+//This is set to a normal readable font for developer comfort...
+communicatebox.font.name,Courier New
+communicatebox.y,86
+communicatebox.height,22

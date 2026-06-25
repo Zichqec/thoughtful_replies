@@ -2,3 +2,4 @@ charset,UTF-8
 type,ghost
 name,Thoughtful Replies
 directory,thoughtful_replies_bgvz
+balloon.directory,chicken_scratch_zi

@@ -1,0 +1,3 @@
+communicatebox.font.name,Courier New
+communicatebox.y,86
+communicatebox.height,22
