@@ -280,7 +280,7 @@ function sakura@recommendsites
 function sakura@portalsites
 {
 	return FormatLinks([
-		{label: "Leave a Review", url: "TODO"},
+		{label: "Leave a Review", url: "https://docs.google.com/forms/d/e/1FAIpQLSfI-8UDBEw92DpVBtDVN4XMlQQCGztSjNIL0q7GQw4Vieh3ZA/viewform"},
 		{label: "Aosora SHIORI", url: "https://github.com/kanadelab/aosora-shiori"},
 		{label: "Ghost Jam 2026", url: "https://ukagakadreamteam.com/events/ghost_jam_2026/rules.html"},
 		{label: "Ukagaka Dream Team Wiki", url: "https://ukagakadreamteam.com/wiki/"},
