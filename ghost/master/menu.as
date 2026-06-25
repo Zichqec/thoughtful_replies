@@ -7,7 +7,7 @@ function OnMainMenu(cause)
 	if (cause != "init") m += "\C\![lock,balloonrepaint]\c";
 	m += "\0\b[0]\![quicksection,true]\![set,autoscroll,disable]\![no-autopause]";
 	
-	if (RemainingTalks > 0) m += "\![*]\__q[OnAITalk]Next\__q";
+	if (!LetterFinished()) m += "\![*]\__q[OnAITalk]Next\__q";
 	else m += "\![*]\f[color,disable]Next\f[color,default]";
 	//Shouldn't happen under normal circumstances, but may happen in edge cases
 	m += "  ";
@@ -19,7 +19,7 @@ function OnMainMenu(cause)
 	
 	m += linebreak;
 	
-	if (RemainingTalks <= 0) m += "\![*]\__q[OnFinish]Finish and send\__q" + linebreak;
+	if (LetterFinished()) m += "\![*]\__q[OnFinish]Finish and send\__q" + linebreak;
 	
 	local talkrates = [
 		{time: 0, label: "Off"},

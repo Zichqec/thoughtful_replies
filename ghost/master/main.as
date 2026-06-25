@@ -127,7 +127,7 @@ function EnvelopeDisplay
 
 function OnTalkControl
 {
-	if (RemainingTalks > 0)
+	if (!LetterFinished())
 	{
 		if (LastTalk != "") TodaysLetter.Add(CleanLetterTags(LastTalk));
 		
@@ -227,7 +227,7 @@ function OnSurfaceRestore, OnWindowStateRestore
 	
 	local output = "";
 	output += "\1\s[-1]";
-	if (RemainingTalks > 0)
+	if (!LetterFinished())
 	{
 		output += "\0\s[0]";
 	}

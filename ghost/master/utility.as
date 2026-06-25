@@ -133,3 +133,9 @@ function OnNotifyBalloonInfo
 {
 	CurrentBalloon = Shiori.Reference[0];
 }
+
+function LetterFinished
+{
+	if (RemainingTalks <= 0 && ChainTalkQueue.length <= 0) return true;
+	else return false;
+}
