@@ -1,0 +1,4 @@
+.gitignore,nonar,noupdate
+.gitattributes,nonar,noupdate
+chicken_scratch_zi/,noupdate
+ghost/master/savedata.asv,nonar,noupdate
