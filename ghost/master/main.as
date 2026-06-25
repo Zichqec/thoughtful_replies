@@ -101,7 +101,7 @@ function AutoPause(talkstr)
 function OnBoot
 {
 	LastTalk = BootTalk();
-	return  "\0\s[0]" + LetterDisplay([LastTalk]) + OnBalloonLinesCommand();
+	return  "\0" + LetterDisplay([LastTalk]) + OnBalloonLinesCommand();
 }
 
 function OnClose
