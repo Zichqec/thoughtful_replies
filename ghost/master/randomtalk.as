@@ -120,7 +120,7 @@ talk RandomTalk
 
 talk RandomTalk
 {
-	\s[3]Unfortunately, my last crochet project met an unfortunate end. \s[20]I had to attend to a matter outside for just a moment{emdash}\s[22]or so I thought{emdash}\s[2]so I put it down without stowing it away. \s[7]When I eventually returned, I found that my yarn had been pulled onto the floor and hopelessly tangled!
+	\s[3]Unfortunately, my last crochet project met a tragic end. \s[20]I had to attend to a matter outside for just a moment{emdash}\s[22]or so I thought{emdash}\s[2]so I put it down without stowing it away. \s[7]When I eventually returned, I found that my yarn had been pulled onto the floor and hopelessly tangled!
 	
 	\s[30]\_w[3000]\s[3]I am not certain who the culprit is, \s[23]but all signs currently point to {chicken}...
 }
