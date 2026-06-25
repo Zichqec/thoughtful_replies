@@ -246,7 +246,7 @@ function OnSurfaceRestore, OnWindowStateRestore
 	else
 	{
 		output += "\0";
-		if (Shiori.Reference[0] == 108) output += "\s[9]";
+		if (Shiori.Reference[0] == 108) output += "\s[109]";
 		else output += "\s[108]";
 	}
 	output += "\![set,alpha,100]";

@@ -203,7 +203,7 @@ surface8,108
 	// animation0.pattern15,overlay,1004,300,0,0
 }
 
-surface9
+surface109
 {
 	element0,overlay,forward_arm_up.png,0,0
 	element1,overlay,sleep_face.png,0,0

@@ -32,7 +32,6 @@ group,Hb
 	
 	7,Startle
 	8,Falling asleep
-	9,Asleep
 	
 	20,Neutral/half
 	21,Smile/half
@@ -51,6 +50,7 @@ group,Hb
 	
 	107,Startle arm
 	108,Falling asleep arm
+	109,Asleep
 	
 	120,Neutral arm/half
 	121,Smile arm/half
