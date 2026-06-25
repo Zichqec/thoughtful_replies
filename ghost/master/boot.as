@@ -14,7 +14,7 @@ talk BootTalk
 	
 	\s[20]Truly, your courage is most admirable. I am glad to hear that {youaresafeandsound}, and that your experience has enriched your life in more ways than one.
 	
-	\s[30]\w[3500]\s[22]\w8\w8I am afraid that what I write back will seem dull in comparison, but nevertheless I shall elaborate on the events of the day.
+	\s[30]\_w[3500]\s[22]\w8\w8I am afraid that what I write back will seem dull in comparison, but nevertheless I shall elaborate on the events of the day.
 }
 
 talk BootTalk
@@ -32,7 +32,7 @@ talk BootTalk
 
 talk CloseTalk
 {
-	\s[8]\w[8000]\s[7]\w8\w8\s[37]\w8\w8\s[7]\w8\w8My, it's later than I thought. \s[2]I had best send myself off to bed.
+	\s[8]\_w[8000]\s[7]\w8\w8\s[37]\w8\w8\s[7]\w8\w8My, it's later than I thought. \s[2]I had best send myself off to bed.
 	
 	{Sincerely},
 	{Homebody}
@@ -40,7 +40,7 @@ talk CloseTalk
 
 talk CloseTalk
 {
-	\s[31]\w[3500]\s[22]Ah... It appears that I am nearly out of ink. This is where I leave it for now, then.
+	\s[31]\_w[3500]\s[22]Ah... It appears that I am nearly out of ink. This is where I leave it for now, then.
 	
 	\s[2]I will obtain more ink at the market tomorrow, and write you another letter soon.
 	
