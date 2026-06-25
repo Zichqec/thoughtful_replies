@@ -236,3 +236,10 @@ talk CowIncident2
 	
 	I was eager to hear more details of the daring escape, but the man looked so exhausted from tracking it all this way that I simply could not bring myself to ask!
 }
+
+talk RandomTalk {
+
+	An elf merchant passed through our village and I excitedly purchased some crochet patterns from him. The problem is, I didn't realize that elves use entirely different names for the stitches than what I am used to, and the pattern is nigh unreadable to me. 
+
+	I spent several hours searching our library for a book or even a simple pamphlet on elven fiber arts, but it seems we are woefully lacking in that subject. Perhaps the merchant will visit again, and I can ask for a detailed explanation of elf terms for crocheting.
+}
