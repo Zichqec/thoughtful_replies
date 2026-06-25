@@ -156,7 +156,8 @@ function OnAITalk
 function LetterDisplay(arg)
 {
 	//Because when closing, we don't want to change LastTalk (in case the user cancels) but we also need to include both LastTalk and the closing dialogue in the letter... we have to do this
-	local instantdisplay = TodaysLetter;
+	local instantdisplay = [];
+	instantdisplay.AddRange(TodaysLetter);
 	local regulardisplay = arg[arg.length - 1];
 	arg.Remove(arg.length - 1);
 	instantdisplay.AddRange(arg);
