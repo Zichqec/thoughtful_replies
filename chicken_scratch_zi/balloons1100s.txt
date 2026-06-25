@@ -1,0 +1,2 @@
+font.name,ankecallig-fg.ttf
+font.height,35

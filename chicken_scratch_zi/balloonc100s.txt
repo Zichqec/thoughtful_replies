@@ -1,0 +1,3 @@
+communicatebox.font.name,tudy1311.otf
+communicatebox.y,78
+communicatebox.height,46

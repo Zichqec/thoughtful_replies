@@ -1,0 +1,101 @@
+charset,UTF-8
+type,balloon
+use_self_alpha,1
+use_input_alpha,1
+overlay_outside_balloon,1
+
+
+//——— Basic information ———
+name,Chicken Scratch
+craftman,Zichqec
+craftmanw,Zichqec
+craftmanurl,https://ukagaka.zichqec.com/
+homeurl,https://raw.githubusercontent.com/Zichqec/chicken_scratch/refs/heads/main/
+
+
+//——— Display area ———
+origin.x,0
+origin.y,0
+
+validrect.left,60
+validrect.top,40
+validrect.right,-120
+validrect.bottom,-40
+
+wordwrappoint.x,-150
+
+
+//——— Font ———
+font.name,tudy1311.otf
+font.height,45
+
+font.color.r,037
+font.color.g,052
+font.color.b,102
+
+anchor.font.color.r,029
+anchor.font.color.g,068
+anchor.font.color.b,196
+
+cursor.font.color.r,029
+cursor.font.color.g,068
+cursor.font.color.b,196
+
+cursor.style,underline
+
+disable.font.color.r,135
+disable.font.color.g,144
+disable.font.color.b,178
+
+
+//——— Arrows ———
+arrow0.x,464
+arrow0.y,17
+
+arrow1.x,450
+arrow1.y,332
+
+
+//——— Online marker ———
+onlinemarker.x,55
+onlinemarker.y,432
+
+onlinemarker.interval,70
+
+
+//——— SSTP ———
+sstpmarker.x,55
+sstpmarker.y,461
+
+sstpmessage.font.name,Calibri
+sstpmessage.font.height,13
+
+sstpmessage.x,74
+sstpmessage.xr,-116
+sstpmessage.y,-39
+
+sstpmessage.font.color.r,117
+sstpmessage.font.color.g,134
+sstpmessage.font.color.b,148
+
+
+//——— Number ———
+number.font.name,Calibri
+number.font.height,13
+
+number.xr,-116
+number.y,24
+
+number.font.color.r,117
+number.font.color.g,134
+number.font.color.b,148
+
+
+//——— Input box ———
+communicatebox.font.name,ankecallig-fg.ttf
+
+communicatebox.x,16
+communicatebox.y,80
+
+communicatebox.width,390
+communicatebox.height,40
