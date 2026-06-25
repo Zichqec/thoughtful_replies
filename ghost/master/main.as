@@ -112,7 +112,7 @@ function OnClose
 
 function OnFinish
 {
-	return "\s[0]\_w[1000]" + OnClose();
+	return "\b[{balloonnum}]\_w[1000]" + OnClose();
 }
 
 function EnvelopeDisplay
