@@ -13,3 +13,5 @@ menu.foreground.bitmap.filename,menu_foreground.png
 
 menu.background.alignment,lefttop+repeat-x+repeaty
 menu.foreground.alignment,lefttop+repeat-x+repeaty
+
+sakura.defaultleft,0
