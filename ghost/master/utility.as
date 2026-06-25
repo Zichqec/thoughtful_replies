@@ -30,6 +30,7 @@ function CleanLetterTags(talkstr)
 	talkstr = talkstr.Replace("\w8","");
 	talkstr = talkstr.Replace("\w4","");
 	talkstr = talkstr.Replace("\_w[","\![dummy-"); //This is lazy of me, but I haven't messed with regex in Aosora yet...
+	talkstr = talkstr.Replace("\s[","\![dummy-"); //This is lazy of me, but I haven't messed with regex in Aosora yet...
 	talkstr = talkstr.Replace("\![quicksection,0]","");
 	talkstr = talkstr.Replace("\![quicksection,1]","");
 	talkstr = talkstr.Replace("\x","");
