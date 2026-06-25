@@ -261,9 +261,9 @@ function cloudy
 function cloudydetail
 {
 	return Random.Select([
-		"The shade is nice for getting the harder work done, and makes the occasional burst of sunlight a suitable excuse for a break.",
-		"I had thought it would only be a misty morning, but to my surprise, a haze lingered on the horizon for most of the day. A good day for {stew}.",
-		"It made the morning chores much more pleasant to suffer through.",
+		"\s[21]The shade is nice for getting the harder work done, and makes the occasional burst of sunlight a suitable excuse for a break.",
+		"\s[1]I had thought it would only be a misty morning, but to my surprise, a haze lingered on the horizon for most of the day. \s[21]A good day for {stew}.",
+		"\s[1]It made the morning chores much more pleasant to suffer through.",
 	]);
 }
 
@@ -280,9 +280,9 @@ function rainy
 function rainydetail
 {
 	return Random.Select([
-		"At this point, I may very well need to choose a set of boots to sacrifice to the mud. There will be no hope to clean them!",
-		"The chickens will have a feast from all of the worms that have come to say 'hello'.",
-		"Thankfully the roof has been holding, but I fear there are some places that will need patching soon.",
+		"\s[2]At this point, I may very well need to choose a set of boots to sacrifice to the mud. \s[7]There will be no hope to clean them!",
+		'\s[21]The chickens will have a feast from all of the worms that have come to say "hello".',
+		"\s[3]Thankfully the roof has been holding, but I fear there are some places that will need patching soon.",
 	]);
 }
 
@@ -298,9 +298,9 @@ function sunny
 function sunnydetail
 {
 	return Random.Select([
-		"The birds have done nothing but lay about all day! I'm surprised any even bothered to forage as melted to the ground as they have been.",
-		"It seems I was not the only one that had wanted to sleep in. The clouds did not show themselves once!",
-		"Not that it has been entirely unpleasant. It's wonderful weather for hanging up the laundry. I almost wish there was more of it to manage!",
+		"\s[3]The birds have done nothing but lay about all day! I'm surprised any even bothered to forage as melted to the ground as they have been.",
+		"\s[2]It seems I was not the only one that had wanted to sleep in. \s[23]The clouds did not show themselves once!",
+		"\s[20]Not that it has been entirely unpleasant. It's wonderful weather for hanging up the laundry. \s[1]I almost wish there was more of it to manage!",
 	]);
 }
 
