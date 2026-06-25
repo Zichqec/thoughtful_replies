@@ -261,9 +261,9 @@ function cloudy
 function cloudydetail
 {
 	return Random.Select([
-		"Not that it has been entirely unpleasant. The shade is nice for getting the harder work done, and makes the occasional burst of sunlight a suitable excuse for a break.",
+		"The shade is nice for getting the harder work done, and makes the occasional burst of sunlight a suitable excuse for a break.",
 		"I had thought it would only be a misty morning, but to my surprise, a haze lingered on the horizon for most of the day. A good day for {stew}.",
-		"It seems I was not the only one that had wanted to sleep in. The sun did not show itself once!",
+		"It made the morning chores much more pleasant to suffer through.",
 	]);
 }
 
@@ -299,8 +299,8 @@ function sunnydetail
 {
 	return Random.Select([
 		"The birds have done nothing but lay about all day! I'm surprised any even bothered to forage as melted to the ground as they have been.",
-		"It made the morning chores much more pleasant to suffer through.",
-		"Wonderful weather for hanging up the laundry. I almost wish there was more of it to manage!",
+		"It seems I was not the only one that had wanted to sleep in. The clouds did not show themselves once!",
+		"Not that it has been entirely unpleasant. It's wonderful weather for hanging up the laundry. I almost wish there was more of it to manage!",
 	]);
 }
 
