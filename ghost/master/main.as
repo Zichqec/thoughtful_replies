@@ -112,7 +112,7 @@ function OnClose
 
 function OnFinish
 {
-	return "\s[2]\_w[1000]" + OnClose();
+	return "\s[0]\_w[1000]" + OnClose();
 }
 
 function EnvelopeDisplay
@@ -229,11 +229,25 @@ function OnSurfaceRestore, OnWindowStateRestore
 	output += "\1\s[-1]";
 	if (!LetterFinished())
 	{
-		output += "\0\s[0]";
+		local surface = Random.Select([
+			"100",
+			"101",
+			"102",
+			"103",
+			"120",
+			"121",
+			"122",
+			"123",
+			"130",
+			"131",
+		]);
+		output += "\0\s[{surface}]";
 	}
 	else
 	{
-		output += "\0\s[1]";
+		output += "\0";
+		if (Shiori.Reference[0] == 108) output += "\s[9]";
+		else output += "\s[108]";
 	}
 	output += "\![set,alpha,100]";
 	return output;

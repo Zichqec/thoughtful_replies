@@ -1,0 +1,64 @@
+charset,UTF-8
+version,1
+option,DisableNoDefineSurfaces
+
+group,__disabled
+{
+	10,__parts
+	1000,__parts
+	1001,__parts
+	1002,__parts
+	1003,__parts
+	1004,__parts
+	1005,__parts
+	1100,__parts
+	1101,__parts
+	1102,__parts
+	1109,__parts
+	1200,__parts
+	2000,__parts
+	2001,__parts
+	2002,__parts
+}
+
+group,Hb
+{
+	scope,0
+	
+	0,Neutral
+	1,Smile
+	2,Frown
+	3,Scowl
+	
+	7,Startle
+	8,Falling asleep
+	9,Asleep
+	
+	20,Neutral/half
+	21,Smile/half
+	22,Frown/half
+	23,Scowl/half
+	
+	30,Side frown
+	31,Side smile
+	
+	37,Side startle
+	
+	100,Neutral arm
+	101,Smile arm
+	102,Frown arm
+	103,Scowl arm
+	
+	107,Startle arm
+	108,Falling asleep arm
+	
+	120,Neutral arm/half
+	121,Smile arm/half
+	122,Frown arm/half
+	123,Scowl arm/half
+	
+	130,Side arm frown
+	131,Side arm smile
+	
+	137,Side arm startle
+}
