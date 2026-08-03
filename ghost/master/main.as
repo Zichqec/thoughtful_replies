@@ -287,3 +287,32 @@ function sakura@portalsites
 		{label: "Ukagaka Dream Team Forum", url: "https://forum.ukagakadreamteam.com/"},
 	]);
 }
+
+function getaistateex
+{
+	local output = "";
+	local graph = AI_Graphs()[Shiori.Reference[0]];
+	if (graph.length > 0)
+	{
+		items = graph;
+		for (local i = 0; i < items.length; i++)
+		{
+			if (i > 0) output += ",";
+			output += Reflection.Get("{items[i]}").length;
+		}
+		output += "{(1).ToAscii}";
+		for (local i = 0; i < items.length; i++)
+		{
+			if (i > 0) output += ",";
+			output += "{items[i]}";
+		}
+	}
+	return output;
+}
+
+function AI_Graphs
+{
+	return [
+		["RandomTalk","BootTalk","CloseTalk"],
+	];
+}
