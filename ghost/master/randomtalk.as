@@ -134,7 +134,7 @@ talk RandomTalk
 
 talk RandomTalk
 {
-	\s[0]I've finished mending that shirt you brought to me. \s[1]I'll send it out to you next time I write; I've got something else I'm planning to send at the same time, but I need a little more time to finish preparations.
+	\s[0]I've finished mending that shirt you brought to me. \s[1]I'll send it out to you next time I write; I've got something else I'm planning to send at the same time, but I need a little longer to finish preparations.
 	
 	\s[21]You can thank me for it by not {puttingadaggerthroughit} next time!
 }
