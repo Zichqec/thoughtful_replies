@@ -458,3 +458,24 @@ function jumpedthefence
 		"figured out how to unlock the gate",
 	]);
 }
+
+function brooch
+{
+	return Random.Select([
+		"brooch",
+		"amulet",
+		"scarf",
+	]);
+}
+
+function beenkickedundermysewingtable
+{
+	return Random.Select([
+		"been kicked under my sewing table",
+		"found its way out into the chicken coop",
+		"been hiding behind one of my potted plants for who knows how long",
+		"gotten buried at the bottom of my yarn basket",
+		"been buried under a pile of old letters",
+		"been tucked away at the very back of the bookshelf",
+	]);
+}
