@@ -23,6 +23,7 @@ function OnAosoraLoad
 	CurrentBalloonPattern = Random.GetIndex(0,11) * 10; //0-10
 	RemainingTalks = 10; //Can randomize this a bit (though chains kinda take care of that), may also need to adjust based on how much we write in total
 	RotateChickens();
+	RespondedToSpectre = false;
 }
 
 function homeurl
