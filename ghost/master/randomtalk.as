@@ -259,12 +259,12 @@ talk RandomTalk
 {
 	\s[0]I found a dusty old {brooch} that had {beenkickedundermysewingtable}. I wonder how it got there?
 	
-	\s[2]I don't recognize it, might it be one of yours? \s[1]Next time you return, you'll have to take a look and see. I'll make sure it's cleaned up by then!
+	\s[2]I don't recognize it, might it be one of yours? \s[1]Next time you return, you'll have to take a look and see. \s[131]\_w[3000]\s[21]I'll make sure it's cleaned up by then!
 }
 
 talk RandomTalk
 {
-	\s[0]something something merchant, something something market has spices, something something purchased
+	\s[0](TODO)
 	
 	\s[1]My cooking certainly has had more of a kick to it since! \s[21]You should visit soon, or I may very well consume it all myself in a matter of fortnights.
 }
