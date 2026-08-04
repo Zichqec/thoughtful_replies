@@ -465,6 +465,17 @@ function brooch
 		"brooch",
 		"amulet",
 		"scarf",
+		"hat",
+		"compact mirror",
+		"makeup brush",
+		"wooden toy",
+		"set of opera glasses",
+		Random.Select([
+			"fountain pen",
+			"dip pen",
+			"pot of ink",
+		]),
+		"sandwich",
 	]);
 }
 
