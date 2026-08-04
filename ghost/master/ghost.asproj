@@ -1,5 +1,6 @@
 main.as
 boot.as
+commu.as
 randomtalk.as
 menu.as
 utility.as
