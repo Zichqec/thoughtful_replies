@@ -5,17 +5,17 @@ function OnSpectrePlugin@ConfirmCalibration
 
 function OnSpectrePlugin@Surface
 {
-	if (Shiori.Reference[0] == "normal") return "\s[0]";
-	else if (Shiori.Reference[0] == "embarrassed") return "\s[22]";
-	else if (Shiori.Reference[0] == "surprised") return "\s[7]";
-	else if (Shiori.Reference[0] == "discouraged") return "\s[2]";
-	else if (Shiori.Reference[0] == "smile") return "\s[1]";
-	else if (Shiori.Reference[0] == "relieved") return "\s[21]";
-	else if (Shiori.Reference[0] == "angry") return "\s[23]";
-	//else if (Shiori.Reference[0] == "sweat") return "\s[0]";
-	else if (Shiori.Reference[0] == "indignant") return "\s[23]";
-	else if (Shiori.Reference[0] == "thinking") return "\s[130]";
-	else if (Shiori.Reference[0] == "unamused") return "\s[30]"; //Hmm...
+	if (Shiori.Reference[0] == "normal") return "\0\b[0]\s[0]";
+	else if (Shiori.Reference[0] == "embarrassed") return "\0\b[0]\s[22]";
+	else if (Shiori.Reference[0] == "surprised") return "\0\b[0]\s[7]";
+	else if (Shiori.Reference[0] == "discouraged") return "\0\b[0]\s[2]";
+	else if (Shiori.Reference[0] == "smile") return "\0\b[0]\s[1]";
+	else if (Shiori.Reference[0] == "relieved") return "\0\b[0]\s[21]";
+	else if (Shiori.Reference[0] == "angry") return "\0\b[0]\s[23]";
+	//else if (Shiori.Reference[0] == "sweat") return "\0\b[0]\s[0]";
+	else if (Shiori.Reference[0] == "indignant") return "\0\b[0]\s[23]";
+	else if (Shiori.Reference[0] == "thinking") return "\0\b[0]\s[130]";
+	else if (Shiori.Reference[0] == "unamused") return "\0\b[0]\s[30]"; //Hmm...
 }
 
 function OnSpectrePlugin@Possession
