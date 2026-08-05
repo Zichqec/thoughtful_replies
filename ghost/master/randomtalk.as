@@ -255,6 +255,7 @@ talk RandomTalk
 	\s[37]\_w[1000]\s[7]\_w[1000]Then I turn my head and I see her: \s[0]{chicken}, fat and happy in one of the nests. \s[20]So fat and happy that I wonder, and I judge, and she pecks but relents, and... \s[1]Yes. \s[21]You guessed it! She took \f[underline,1]all\f[underline,default] of the eggs for herself. \s[1]She really is something, isn't she?
 }
 
+//Found
 talk RandomTalk
 {
 	\s[0]I found a dusty old {brooch} that had {beenkickedundermysewingtable}. I wonder how it got there?
@@ -262,9 +263,36 @@ talk RandomTalk
 	\s[2]I don't recognize it, might it be one of yours? \s[1]Next time you return, you'll have to take a look and see. \s[131]\_w[3000]\s[21]I'll make sure it's cleaned up by then!
 }
 
+//Kick
 talk RandomTalk
 {
-	\s[0](TODO)
+	\s[0]I heard from a friend that an exquisite new spice had become available at the market. Apparently, a merchant came through recently without much fanfare, and traded quite a large supply in exchange for blankets and various other goods.
 	
-	\s[1]My cooking certainly has had more of a kick to it since! \s[21]You should visit soon, or I may very well consume it all myself in a matter of fortnights.
+	\s[20]Being curious, I decided to purchase a small bottle for myself. \s[1]My cooking certainly has had more of a kick to it since! It has a strong (but not unpleasant!) earthy flavor, with a tingly heat that builds slowly.
+	
+	\s[21]You should visit soon, or I may very well consume it all myself in a matter of fortnights.
+}
+
+//Tile → Till → Garden stuff
+talk RandomTalk
+{
+	%{ ChainTalkQueue = ["EvilTomatoes1","EvilTomatoes2","EvilTomatoes3"]; }
+	\s[0]I have been pondering lately over what I should do with the unused corner of the garden. \s[2]It has been unplanted for some time now, and I really ought to make use of the soil.
+	
+	\s[122]\_w[2500]\s[130]\_w[4000]\s[22]\![set,balloonwait,4]Perhaps \![set,balloonwait,2]I should plant zucchini, or squash, or\_w[4000]\s[1]\_w[1000] tomatoes. \![set,balloonwait,1]\s[21]Ha, imagine, tomatoes again after all these years!
+}
+
+talk EvilTomatoes1
+{
+	\s[1]Do you think you will be able to bear the sight of the dreaded red vegetable when you come to visit? \s[21]You are not obliged to partake in its consumption, of course.
+}
+
+talk EvilTomatoes2
+{
+	\s[2]They are simply quite versatile, and the fruits are plentiful when they begin to ripen! \_w[2500]\s[21]I am certain an adventurer of your prowess will be able to manage.
+}
+
+talk EvilTomatoes3
+{
+	\s[1]If you wish to protest despite this, you may. \s[21]I would be most persuaded by a visit wherein you bring seeds for another vegetable you would deem acceptable instead.
 }
