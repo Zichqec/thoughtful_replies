@@ -294,5 +294,5 @@ talk EvilTomatoes2
 
 talk EvilTomatoes3
 {
-	\s[1]If you wish to protest despite this, you may. \s[21]I would be most persuaded by a visit wherein you bring seeds for another vegetable you would deem acceptable instead.
+	\s[1]If you wish to protest despite this, you may. \s[21]I would be most easily persuaded by a visit wherein you bring seeds for another vegetable you would deem acceptable instead.
 }
