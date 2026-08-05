@@ -24,6 +24,7 @@ function OnAosoraLoad
 	RemainingTalks = 10; //Can randomize this a bit (though chains kinda take care of that), may also need to adjust based on how much we write in total
 	RotateChickens();
 	RespondedToSpectre = false;
+	LastSurface = 0;
 }
 
 function homeurl
@@ -228,7 +229,7 @@ function OnSurfaceRestore, OnWindowStateRestore
 	TimeSinceLastTalk = Time.GetNowUnixEpoch();
 	
 	local output = "";
-	output += "\1\s[-1]";
+	output += "\1\s[-1]\0";
 	if (!LetterFinished())
 	{
 		local surface = Random.Select([
@@ -243,16 +244,20 @@ function OnSurfaceRestore, OnWindowStateRestore
 			"130",
 			"131",
 		]);
-		output += "\0\s[{surface}]";
+		output += "\s[{surface}]";
 	}
 	else
 	{
-		output += "\0";
-		if (Shiori.Reference[0] == 108) output += "\s[109]";
+		if (LastSurface == 108 || LastSurface == 109) output += "\s[109]";
 		else output += "\s[108]";
 	}
 	output += "\![set,alpha,100]";
 	return output;
+}
+
+function OnSurfaceChange
+{
+	LastSurface = Shiori.Reference[0];
 }
 
 function FormatLinks(links)
