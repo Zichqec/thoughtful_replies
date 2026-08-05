@@ -14,7 +14,7 @@ surface20
 {
 	element0,overlay,forward_arm_down.png,0,0
 	element1,overlay,forward_neutral.png,0,0
-	element2,overlay,forward_eye_half.png,0,0
+	//element2,overlay,forward_eye_half.png,0,0
 }
 
 surface1
@@ -28,7 +28,7 @@ surface21
 {
 	element0,overlay,forward_arm_down.png,0,0
 	element1,overlay,forward_smile.png,0,0
-	element2,overlay,forward_eye_half.png,0,0
+	//element2,overlay,forward_eye_half.png,0,0
 }
 
 surface2
@@ -42,7 +42,7 @@ surface22
 {
 	element0,overlay,forward_arm_down.png,0,0
 	element1,overlay,forward_frown.png,0,0
-	element2,overlay,forward_eye_half.png,0,0
+	//element2,overlay,forward_eye_half.png,0,0
 }
 
 surface3
@@ -56,7 +56,7 @@ surface23
 {
 	element0,overlay,forward_arm_down.png,0,0
 	element1,overlay,forward_scowl.png,0,0
-	element2,overlay,forward_eye_half.png,0,0
+	//element2,overlay,forward_eye_half.png,0,0
 }
 
 surface100
@@ -71,7 +71,7 @@ surface120
 {
 	element0,overlay,forward_arm_up.png,0,0
 	element1,overlay,forward_neutral.png,0,0
-	element2,overlay,forward_eye_half.png,0,0
+	//element2,overlay,forward_eye_half.png,0,0
 	element3,overlay,quill_9.png,0,0
 }
 
@@ -87,7 +87,7 @@ surface121
 {
 	element0,overlay,forward_arm_up.png,0,0
 	element1,overlay,forward_smile.png,0,0
-	element2,overlay,forward_eye_half.png,0,0
+	//element2,overlay,forward_eye_half.png,0,0
 	element3,overlay,quill_9.png,0,0
 }
 
@@ -103,7 +103,7 @@ surface122
 {
 	element0,overlay,forward_arm_up.png,0,0
 	element1,overlay,forward_frown.png,0,0
-	element2,overlay,forward_eye_half.png,0,0
+	//element2,overlay,forward_eye_half.png,0,0
 	element3,overlay,quill_9.png,0,0
 }
 
@@ -119,7 +119,7 @@ surface123
 {
 	element0,overlay,forward_arm_up.png,0,0
 	element1,overlay,forward_scowl.png,0,0
-	element2,overlay,forward_eye_half.png,0,0
+	//element2,overlay,forward_eye_half.png,0,0
 	element3,overlay,quill_9.png,0,0
 }
 
