@@ -1,3 +1,4 @@
+//———————————————————— Boot ————————————————————
 talk BootTalk
 {
 	%{ local weather = weathergreeting(); }
@@ -30,6 +31,8 @@ talk BootTalk
 	\s[1]I hope you have not been too terribly concerned by the delay. Rest assured that my next letter will be on its way to you shortly!
 }
 
+
+//———————————————————— Close ————————————————————
 talk CloseTalk
 {
 	\s[8]\_w[8000]\s[7]\w8\w8\s[37]\w8\w8\s[7]\w8\w8My, it's later than I thought. \s[2]I had best send myself off to bed.

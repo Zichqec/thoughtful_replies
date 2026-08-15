@@ -406,5 +406,5 @@ talk RandomTalk
 {
 	\s[0]I've sworn to myself that this previous winter is the last one in which I'll let my toes feel like they've frozen off. \s[2]Between projects I've been making socks, socks, and more socks.
 	
-	\s[3]This year is the year that I always have a pair handy, no matter what I am doing or where I am at!
+	\s[3]This year is the year that I will always have a pair handy, no matter what I am doing or where I am at!
 }

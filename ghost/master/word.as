@@ -553,7 +553,7 @@ function anewlywedcouple
 {
 	return Random.Select([
 		"a newlywed couple",
-		"one of the village elders who is turning {Random.Select([75,80,90])} this month", //TODO do we want elven milestones in here too lol
+		"one of the village elders who is turning {Random.Select([75,80,90,750,800,900])} this month",
 		"a couple that are expecting a baby soon",
 	]);
 }
