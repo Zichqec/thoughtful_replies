@@ -490,3 +490,79 @@ function beenkickedundermysewingtable
 		"been tucked away at the very back of the bookshelf",
 	]);
 }
+
+//Singular crochet projects that can be referred to with "it"
+function scarf
+{
+	return Random.Select([
+		"scarf",
+		"hat",
+		"mitten",
+		"baby blanket",
+		"leg warmer",
+	]);
+}
+
+//referent being "it" or "them" appropriately for the dialogue, as in "I worked so hard to get the stains out of {referent}"
+function dress
+{
+	return Random.Select([
+		{item: "dress", referent: "it"},
+		{item: "cowl", referent: "it"},
+		{item: "shawl", referent: "it"},
+		{item: "blanket", referent: "it"},
+		{item: "skirt", referent: "it"},
+		{item: "bloomers", referent: "them"},
+		{item: "pants", referent: "them"},
+		{item: "shirt", referent: "it"},
+	]);
+}
+
+function thebrokenvasepieces
+{
+	return Random.Select([
+		"the broken pieces of what used to be a vase",
+		"a dozen skeins of yarn that had rolled out of my yarn bag as it toppled over",
+		"my collection of rare crochet patterns",
+	]);
+}
+
+function redyarn
+{
+	return Random.Select([
+		"red yarn",
+		"blue yarn",
+		"blue yarn (the extra soft one you like)",
+		"textured yarn (the blue and green one)",
+		"yellow and white yarn",
+	]);
+}
+
+function pinkwithpolkadots
+{
+	return Random.Select([
+		"pink with white polka dots",
+		"blue and yellow",
+		"a lovely shade of red that matches her comb",
+		"green",
+		"a lovely silver color",
+	]);
+}
+
+function anewlywedcouple
+{
+	return Random.Select([
+		"a newlywed couple",
+		"one of the village elders who is turning {Random.Select([75,80,90])} this month", //TODO do we want elven milestones in here too lol
+		"a couple that are expecting a baby soon",
+	]);
+}
+
+function ablanket
+{
+	return Random.Select([
+		"a blanket",
+		"a pair of cozy hats",
+		"a matching set of socks",
+	]);
+}

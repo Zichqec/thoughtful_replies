@@ -296,3 +296,115 @@ talk EvilTomatoes3
 {
 	\s[1]If you wish to protest despite this, you may. \s[21]I would be most easily persuaded by a visit wherein you bring seeds for another vegetable you would deem acceptable instead.
 }
+
+//Turn
+talk RandomTalk
+{
+	%{ ChainTalkQueue = ["TroubleChicken1","TroubleChicken2"]; }
+	\s[0]Lately, I've had to keep a closer eye on {chicken}. \s[2]I don't know what's gotten into her, but the moment my back is turned, she gets herself into all kinds of trouble!
+}
+
+talk TroubleChicken1
+{
+	\s[2]Just yesterday, I stepped outside to talk with one of the neighbor's kids that had come over to trade for fresh eggs. \s[0]We had a pleasant chat! \s[2]But when I went back inside...
+	
+	\s[30]\_w[3000]\s[22]Ah, my poor {scarf}! I had just put the finishing touches on it not three hours prior, and now I saw it dragged across the floor, dirty and frayed where she plucked at the yarn.
+	
+	\s[102]\_w[4000]\s[0]Should you visit me sometime within the next month, you will find me in mourning. \s[2]To lose a project which you have poured much time and energy into is no small blow for a crafter.
+}
+
+talk TroubleChicken1
+{
+	%{ pick = dress(); }
+	\s[0]The other day, I was hanging the washing up to dry, and I got distracted by a courier coming by to deliver a letter.
+	
+	\s[2]We only spoke for a minute or two at most, but by the time I got back to the laundry, the {pick.item} I'd just hung up had been pulled down into a mud puddle!
+	
+	\s[20]A clear set of muddy chicken tracks trailed across {pick.referent}, as if to spite me. \s[22]I'd worked so hard to get the stains out of {pick.referent}, too...
+}
+
+//Scrap
+talk TroubleChicken1
+{
+	\s[0]As you know, I prefer to take my time eating meals, savoring every morsel. \s[2]But now? I must either eat my dinner swiftly, or keep a vigilant eye on it, lest she pluck the scraps right off my plate!
+	
+	\s[22]If I do not adjust my habits, I might very well starve in my own home.
+}
+
+//Step
+talk TroubleChicken1
+{
+	\s[0]The other day as I made my way outside to tend to the garden, I didn't make it even three steps beyond the doorframe before I heard the telltale sounds of something being knocked to the floor.
+	
+	\_w[500]\s[130]\_w[2500]\s[122]\_w[1500]\s[22]\_w[500]I turned around and there she was, standing amidst {thebrokenvasepieces}. She looked so proud of herself as she searched through the carnage for seeds.
+}
+
+talk TroubleChicken2
+{
+	\s[131]\_w[2500]\s[1]Still... How can I possibly stay mad at her? Chickens will be chickens, and she's certainly teaching me to be more alert for troublemakers.
+	
+	\s[21]I'm sure that if you come by, she'll teach you as well. For free, no less! Isn't she so generous?
+}
+
+//Cloud
+talk RandomTalk
+{
+	\s[0]A certain traveling merchant at the market lately has me on edge. \s[2]Each time I pass by their station, I feel an uneasy haze come over me.
+	
+	\_w[500]\s[22]I wonder, are they using some sort of magic to cloud the judgement of prospective buyers? \s[2]For what reason would they need to do such a thing?
+	
+	\_w[1000]\s[130]\_w[3000]\s[3]I don't like it. It smells of shifty business practices. \s[23]I may not have proof of anything yet, but I will certainly be on the lookout...
+}
+
+//Miss
+//TODO I think there is another dialogue (by vita?) which references a crochet group of some kind, but I don't remember the specific wording. Find that and slot it in
+talk RandomTalk
+{
+	\s[130]\_w[2500]\s[2]An old friend of mine said she will be moving to the city soon. \s[0]Apparently, her family has found good job prospects out there, and doesn't want to pass up the opportunity.
+	
+	\s[0]I don't think she herself wants to go. \_w[1000]\s[102]\_w[2500]\s[130]\_w[2500]\s[2]\_w[500]However, she wants to stay close to her family, which is understandable.
+	
+	\s[22]\_w[500]I will miss her terribly. I'm sure we'll exchange letters, of course, but crochet club meetings will not be quite the same without her!
+}
+
+//Time
+talk RandomTalk
+{
+	\s[0]If you find the time, would you consider stopping by a fabric shop during your travels? \s[2]I am nearly out of my favorite {redyarn}, and I am hoping to find a suitable replacement to lessen the blow.
+	
+	\s[1]It need not be a match for what I have now, only something that is enjoyable to use. \s[21]Or delightful to simply have in my yarn basket! Yarn hoarding is one of the many great pleasures of being a crafter.
+}
+
+//Slice
+talk RandomTalk
+{
+	\s[0]I've been practicing the recipe for your favorite rhubarb pie. I would not want my skills to rust merely because you are not here to enjoy it.
+	
+	\s[100]\_w[1500]\s[131]\_w[2000]\s[1]\_w[500]Alas, much as I wish to send you a slice, I fear the courier would succumb to the temptation to eat it mid-transit... \s[21]You will have to visit if you would like a taste!
+}
+
+//Bow
+talk RandomTalk
+{
+	\s[1]I got another cute bow for Abigail to wear. This one is {pinkwithpolkadots}.
+	
+	\_w[500]\s[31]\_w[3000]\s[21]\_w[500]Of course, it wasn't more than half an hour before she'd shed it, and soon after I found it amongst her nest with all the others.
+	
+	\s[121]\_w[2000]\s[1]\_w[500]She's just darling, isn't she?\_w[1000]\s[101]
+}
+
+//Pour
+talk RandomTalk
+{
+	\s[1]Lately, I have been pouring my efforts into a gift for {anewlywedcouple}. I did some investigation to learn what colors would be favorable, and picked out my nicest yarns for the project. \s[21]Hopefully {ablanket} will be well received!
+	
+	\s[131]\_w[1500]\s[31]\_w[1000]\s[1]There has been a great deal of excitement around the village as celebrations are being prepared. \s[21]Times like these make me very happy to be a crafter.
+}
+
+//Frozen
+talk RandomTalk
+{
+	\s[0]I've sworn to myself that this previous winter is the last one in which I'll let my toes feel like they've frozen off. \s[2]Between projects I've been making socks, socks, and more socks.
+	
+	\s[3]This year is the year that I always have a pair handy, no matter what I am doing or where I am at!
+}
