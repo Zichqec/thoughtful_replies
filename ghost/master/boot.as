@@ -31,6 +31,28 @@ talk BootTalk
 	\s[1]I hope you have not been too terribly concerned by the delay. Rest assured that my next letter will be on its way to you shortly!
 }
 
+//Free
+talk BootTalk
+{
+	\s[2]{Greetings} {Wanderer},
+	
+	My, I've hardly had a moment to spare as of late! The whole village seems to be bustling with activity, and I find myself pulled nonstop between this and that. It's been quite the change of pace trying to keep on top of things.
+	
+	\s[22]I apologize if this letter runs short, the dearth of free time has left me wanting for sleep!
+}
+
+//Trade
+talk BootTalk
+{
+	\s[0]{Greetings} {Wanderer},
+	
+	You've become quite the persuasive trader. \s[1]I have decided to accept your offering, and I believe you will like what I am sending in return...
+	
+	\s[21]{Capitalize(ablanket)} in exchange for your {enchanteddagger} seems fair, does it not?
+	
+	\_w[1000]\s[131]\_w[2500]\s[21]\_w[500]If you are dissatisfied with this deal, you may dispute it in person within 60 days. \s[1]I look forward eagerly to your next visit.
+}
+
 
 //———————————————————— Close ————————————————————
 talk CloseTalk
@@ -57,4 +79,17 @@ talk CloseTalk
 	
 	{Sincerely},
 	{Homebody}
+}
+
+//Line
+talk CloseTalk
+{
+	\s[130]\_w[1500]\s[137]\_w[1000]\s[2]Oh my, I've just seen something get tangled up on the washing line!
+	
+	\s[22]I must go and investigate to see if there is trouble. I will write more another day.
+	
+	{Sincerely},
+	{Homebody}
+	
+	\_w[1500]\s[2]P.S. Keep your tail away from any loose ropes or wires!
 }

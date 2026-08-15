@@ -566,3 +566,12 @@ function ablanket
 		"a matching set of socks",
 	]);
 }
+
+function enchanteddagger
+{
+	return Random.Select([
+		"enchanted dagger",
+		"dragon fang",
+		"polished ruby",
+	]);
+}
