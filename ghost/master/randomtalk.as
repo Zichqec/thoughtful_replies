@@ -398,7 +398,7 @@ talk RandomTalk
 {
 	\s[1]Lately, I have been pouring my efforts into a gift for {anewlywedcouple}. I did some investigation to learn what colors would be favorable, and picked out my nicest yarns for the project. \s[21]Hopefully {ablanket} will be well received!
 	
-	\s[131]\_w[1500]\s[31]\_w[1000]\s[1]There has been a great deal of excitement around the village as celebrations are being prepared. \s[21]Times like these make me very happy to be a crafter.
+	\s[131]\_w[2500]\s[1]\_w[500]There has been a great deal of excitement around the village as celebrations are being prepared. \s[21]Times like these make me very happy to be a crafter.
 }
 
 //Frozen
