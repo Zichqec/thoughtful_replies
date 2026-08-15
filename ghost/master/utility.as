@@ -140,3 +140,13 @@ function LetterFinished
 	if (RemainingTalks <= 0 && ChainTalkQueue.length <= 0) return true;
 	else return false;
 }
+
+function Capitalize(input)
+{
+	local word = "{input}";
+	
+	local first = word.Substring(0,1);
+	local rest = word.Substring(1);
+	
+	return first.ToUpper() + rest;
+}
