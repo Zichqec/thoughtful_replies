@@ -616,7 +616,7 @@ function postscript
 	return "P.S. " + Random.Select([
 		"\s[2]Have you located your missing {amulet} yet?",
 		"\s[1]I passed along your regards{emdash}they said to wish you luck in return!", //TODO is it a bit too generic? do we want to come up with a simple family name group?
-		"Are those socks still holding up? I have a few more pairs ready for you, but I can send some with my next letter if needed.",
+		"Are those socks still holding up? I have a few more pairs waiting for you, but I can send some with my next letter if needed.",
 	]);
 }
 

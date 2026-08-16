@@ -91,6 +91,7 @@ function AutoPause(talkstr)
 		talkstr = talkstr.Replace("! ","!\w8\w8 ");
 		talkstr = talkstr.Replace("? ","?\w8\w8 ");
 		
+		//TODO when these don't cap off a sentence it can be weird, see the one about spices adding a kick
 		talkstr = talkstr.Replace(") ",")\w8\w8 ");
 		talkstr = talkstr.Replace('" ','"\w8\w8 ');
 		

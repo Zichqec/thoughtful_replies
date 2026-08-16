@@ -108,7 +108,7 @@ talk CloseTalk
 //Number
 talk CloseTalk
 {
-	\s[2]Ah, this letter is growing quite long in length. \_w[500]\s[130]\_w[2500]\s[21]I wonder if you are still reading it, or if you have fallen asleep part way through?
+	\s[2]Ah, this letter is growing quite lengthy. \_w[500]\s[130]\_w[2500]\s[21]I wonder if you are still reading it, or if you have fallen asleep part way through?
 	
 	\_w[1000]\s[0]I have a number of happenings still on my mind, but I shall spare you for now. \s[1]Expect another long letter in short order!
 	
