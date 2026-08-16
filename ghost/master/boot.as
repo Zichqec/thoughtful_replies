@@ -93,3 +93,36 @@ talk CloseTalk
 	
 	\_w[1500]\s[2]P.S. Keep your tail away from any loose ropes or wires!
 }
+
+//Sign
+talk CloseTalk
+{
+	\s[130]\_w[1500]\s[20]A cloud has just rolled in to cover up the moon. \s[22]Perhaps that is a sign that I should return to my bed.
+	
+	\s[1]I will be sure to write you again shortly. Please look forward to it!
+	
+	{Sincerely},
+	{Homebody}
+}
+
+//Number
+talk CloseTalk
+{
+	\s[2]Ah, this letter is growing quite long in length. \_w[500]\s[130]\_w[2500]\s[21]I wonder if you are still reading it, or if you have fallen asleep part way through?
+	
+	\_w[1000]\s[0]I have a number of happenings still on my mind, but I shall spare you for now. \s[1]Expect another long letter in short order!
+	
+	{Sincerely},
+	{Homebody}
+}
+
+//Point
+talk CloseTalk
+{
+	\s[0]Well, this seems like a good stopping point for now. \s[21]I still have some thoughts on my mind, but I'll save those for the next letter. It should give you something to look forward to.
+	
+	\s[1]{Sincerely},
+	{Homebody}
+	
+	\_w[2000]\s[0]{postscript}
+}

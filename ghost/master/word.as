@@ -575,3 +575,58 @@ function enchanteddagger
 		"polished ruby",
 	]);
 }
+
+//These all have to end with a . because I wanted the parenthetical...
+function theywanttostartabusiness
+{
+	return Random.Select([
+		"they want to get good enough to begin selling pieces in town as supplemental income.",
+		"they're looking for a relaxing hobby to fill their day now that their children have moved out.",
+		"they're feeling a little bored in life and want to pursue something completely new to them.",
+		"it's something their grandparents and great-grandparents did, and they want to reconnect with their roots.",
+		"it's quite satisfying.",
+		"another friend got them into it and they're so enthralled it's all they've done for the last several weeks.",
+		"they have decided that it is more enjoyable and cost effective to create handmade gifts for their family members, rather than fussing over what trinkets to buy. \s[21](A sentiment I wholeheartedly agree with!)",
+		"they've been feeling restless while their brother is away traveling the trade routes, and wanted something to do with their hands.",
+		"they've always had an appreciation for the craft, but believed they could never create pieces as beautiful as what they've seen at the market. \s[21](If I had to guess, they probably plucked up the courage to try thanks to reassurance from their husband!)",
+		"they tried it out as part of an amateur art contest, and now they've fallen deeply in love with the craft.",
+	]);
+}
+
+function agoldnugget
+{
+	return Random.Select([
+		"a gold nugget",
+		"a silver locket",
+		"a gold amethyst ring",
+	]);
+}
+
+function protection
+{
+	return Random.Select([
+		"protection",
+		"fortune",
+		"luck",
+	]);
+}
+
+function postscript
+{
+	return "P.S. " + Random.Select([
+		"\s[2]Have you located your missing {amulet} yet?",
+		"\s[1]I passed along your regards{emdash}they said to wish you luck in return!", //TODO is it a bit too generic? do we want to come up with a simple family name group?
+		"Are those socks still holding up? I have a few more pairs ready for you, but I can send some with my next letter if needed.",
+	]);
+}
+
+function amulet
+{
+	return Random.Select([
+		"amulet",
+		"necklace",
+		"brooch",
+		"scarf",
+		"ring",
+	]);
+}

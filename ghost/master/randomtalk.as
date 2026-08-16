@@ -54,6 +54,28 @@ talk MerchantVisit1
 	\s[21]As it turns out, their family grows and preserves fruit, and they sell a portion of the harvest. They had a variety of dried fruits and jarred jams! \s[31]\_w[2000]\s[1]I wonder if they keep bees as well? Surely they must! \s[7]It's hard to imagine they would have enough honey otherwise!
 }
 
+//Rock
+talk MerchantVisit1
+{
+	%{
+		//For whatever reason, using Clear doesn't work here, nor does simply overwriting the array with a new one... no idea what's different about Remove in this instance
+		ChainTalkQueue.Remove(0);
+		ChainTalkQueue.Add("MerchantVisit2@Rocks");
+	}
+	\s[2]I was quite surprised to see that their bag was filled with nothing but rocks! What a strange thing to sell, \w4\s[22]much less to haul around on your back!
+	
+	\_w[1500]\s[0]Despite my initial hesitation, we talked for a while and eventually I understood... \s[20]These were not any ordinary rocks, these were carefully polished stones with strong magic imbuements.
+	
+	\s[0]From the sound of it, the rocks themselves carry such value that selling even a few of them makes the entire arduous journey worth the effort. \s[2]That seems a frightening thing to carry around{emdash}what if they were to be attacked by bandits?\_w[2500]\s[130]
+}
+
+talk MerchantVisit2@Rocks
+{
+	\s[2]I considered whether to buy a rock with a {protection} imbuement to give to you, but ultimately decided against it.
+	
+	\s[22]I worry that such a high value item would attract unwanted attention, or that it would weigh you down at times when you cannot afford it.
+}
+
 talk MerchantVisit2
 {
 	\s[20]I decided not to buy anything this time, but encouraged them to come by again, whenever they're passing through.
@@ -199,6 +221,16 @@ talk StrangeSounds1
 	\s[0]Earlier this evening, I narrowed it down{emdash}\s[2]to the well, of all places! What a worrying place for strange sounds to be! But a noise in a well cannot be left alone. There's few things worse than an unknown creature inhabiting the water supply. \_w[1500]\s[100]\_w[2000]\s[1]Normally, I would leave such dangerous encounters to you. Alas, needs must, and thus I took up arms!
 	
 	Arms being a lantern tied to a rope, which I bravely lowered into the deep, dark caverns of the well. Shadows jumped at every movement, every bump against stone walls echoing... echoing... When suddenly, there! A branch, floating atop the water! And on that branch, a toad!
+}
+
+//Loop
+talk StrangeSounds1
+{
+	\s[2]Yesterday, I decided it was time to track down the source once and for all. I put on my walking boots, chose a hefty walking stick, and headed out into the unknown. \s[0]The unknown being the perimiter of my own land, naturally.
+	
+	Slowly I walked, keeping my footfalls light as I listened for anything out of the ordinary. \s[20]I walked... and I walked... and I walked... \s[2]Eventually, I realized I had made a complete loop around the property without seeming to get any closer to the sound!
+	
+	\s[22]That's when I finally spotted her. \s[21]The neighbor's daughter, holding a duck call, trying her very best to imitate her beloved waterfowl.
 }
 
 talk StrangeSounds2
@@ -407,4 +439,24 @@ talk RandomTalk
 	\s[0]I've sworn to myself that this previous winter is the last one in which I'll let my toes feel like they've frozen off. \s[2]Between projects I've been making socks, socks, and more socks.
 	
 	\s[3]This year is the year that I will always have a pair handy, no matter what I am doing or where I am at!
+}
+
+//Clay
+talk RandomTalk
+{
+	\s[0]A friend of mine has recently begun learning pottery. Apparently {theywanttostartabusiness}
+	
+	\s[1]Listening to them talk at length about the process, it all sounds rather fascinating! It almost makes me want to try my hand at it. \s[2]But...
+	
+	\_w[1500]\s[1]Ha, what a spectacular mess that would be! Clay all through my fur, claw marks in every piece I touch... \s[21]No, I think I will stick to my fiber arts. They are much more forgiving for a fur-covered creature such as I!
+}
+
+//Nugget
+talk RandomTalk
+{
+	\s[0]I was cleaning out an old chest earlier when I came across {agoldnugget} you gave to me years ago. \s[1]I thought to myself, "My, how long it has been since my dearest sibling left home!"
+	
+	\s[21]All this time later, I still remember that as one of the first treasures you brought back and gave to me. You were so proud of it! \_w[2500]\s[131]\_w[2500]\s[130]\_w[3500]\s[22]\_w[500]\![set,balloonwait,2]And I was so proud of \f[underline,1]you\f[underline,false].\![set,balloonwait,1]
+	
+	\_w[1500]\s[122]\_w[5500]\s[2]\_w[500]Perhaps I will begin collecting materials to make a display of the trinkets you've brought me over the years. \_w[1000]\s[21]Though I would need to make such a display quite large, to accomodate future additions!
 }
