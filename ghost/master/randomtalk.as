@@ -460,3 +460,23 @@ talk RandomTalk
 	
 	\_w[1500]\s[122]\_w[5500]\s[2]\_w[500]Perhaps I will begin collecting materials to make a display of the trinkets you've brought me over the years. \_w[1000]\s[21]Though I would need to make such a display quite large, to accomodate future additions!
 }
+
+//Ring
+talk RandomTalk
+{
+	\s[0]When I was making my way to the market yesterday I found {aring} lying on the ground. Someone must have dropped it and not noticed.
+	
+	\s[20]It seemed like a precious item, so I took it to the village's lost and found straight away. \s[2]And wouldn't you know it, while I was there, I found one of my missing crochet hooks that I'd given up on a month ago!
+	
+	\s[22]How did it get all the way out there...? \_w[1000]\s[131]\_w[2500]\s[1]I suppose I'll never know, but I am grateful that someone turned it in.
+}
+
+//Last
+talk RandomTalk
+{
+	\s[1]I'm impressed with how long that skein of multicolored yarn you gave to me has lasted. \s[0]Rest assured I have been making good use of it! It simply seems to go on and on.
+	
+	\_w[1500]\s[131]\_w[2500]\s[2]\_w[500]You have not pulled some kind of trick on me, have you? \s[23]Some enchantment or other magics to fool your dear sister?
+	
+	\_w[2000]\s[0]\_w[500]Hm, perhaps an investigation is in order... \s[21]Should I find evidence of trickery, penalties will be applied accordingly!
+}

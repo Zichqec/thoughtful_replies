@@ -630,3 +630,14 @@ function amulet
 		"ring",
 	]);
 }
+
+//Small, droppable, precious personal effects
+function aring
+{
+	return Random.Select([
+		"a ring",
+		"a necklace",
+		"a \f[underline,1]very\f[underline,default] sparkly charm",
+		"an earring",
+	]);
+}

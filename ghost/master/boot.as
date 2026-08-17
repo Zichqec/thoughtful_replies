@@ -126,3 +126,14 @@ talk CloseTalk
 	
 	\_w[2000]\s[0]{postscript}
 }
+
+//Walk
+talk CloseTalk
+{
+	\s[131]\_w[1500]\s[0]Well, I think that's enough from me for now. My legs are telling me to get up and take a short walk around, then get myself back to bed.
+	
+	\s[1]Should you find a second piece of paper in this envelope, it means I remembered something else I wanted to say during my walk!
+	
+	\s[21]Hopefully in bed soon,
+	{Homebody}
+}
