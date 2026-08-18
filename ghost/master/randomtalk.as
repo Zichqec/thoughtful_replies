@@ -480,3 +480,67 @@ talk RandomTalk
 	
 	\_w[2000]\s[0]\_w[500]Hm, perhaps an investigation is in order... \s[21]Should I find evidence of trickery, penalties will be applied accordingly!
 }
+
+//Name
+talk RandomTalk
+{
+	%{
+		local name1 = nonchicken();
+		local name2 = nonchicken();
+		while (name1 == name2) { name2 = nonchicken(); }
+	}
+	\s[0]I have spent the last two days in a long debate with myself over the name of a new addition to the flock. Currently, my two favorite candidates are {name1} and {name2}. Have you any opinion on the matter?
+	
+	\_w[1000]\s[131]\_w[2000]\s[1]\_w[500]Of course, by the time this letter reaches you and you compose a reply, it is likely I will have already decided... \s[21]Tiny chicks are too adorable to remain nameless for long!
+}
+
+//Stump
+talk RandomTalk
+{
+	\s[1]Abigail has been spending a great deal of time perched on her favorite stump again.
+	
+	\s[21]It is a shame she always grows bored of it by the time you come to visit. Perhaps I should hire an artist to create a sketch for your benefit?
+}
+
+//Wax
+//TODO this could be expanded with a word group to cover more than just wax, if desired?
+talk RandomTalk
+{
+	\s[0]Ah, I nearly forgot, I wished to apologize for making somewhat of a mess of my last letter. \s[2]I got my paw a little too close to the melted wax, some of it caught in my fur, and, well... \s[22]I'm sure you saw the result!
+	
+	\s[1]Abigail gave me a stern lecture and told me to be more careful next time. \s[21]If this letter is not perfectly clean when you receive it, I will owe you {threejarsofjam}!
+}
+
+//Trip
+talk RandomTalk
+{
+	%{ ChainTalkQueue = ["TripIntoTown"]; }
+	\s[0]I have been thinking about taking a trip into town to purchase a few supplies that are harder to get ahold of in the village.
+	
+	\_w[1000]\s[2]What an extraordinary hassle! I would need to arrange for someone to watch over the chickens and tend to the garden while I am away. \s[22]And to be without my usual crafts and amenities to unwind... it is always an unpleasant thing, even if only temporary.
+}
+
+talk TripIntoTown
+{
+	\s[0]That being said... \_w[500]\s[1]I do happen to know an adventurer who is strong and brave, and is accustomed to tackling great challenges.
+	
+	\_w[1000]I am not in any particular rush to obtain my desired items. \s[21]I wonder if we might be able to strike a deal?
+}
+
+//String
+talk RandomTalk
+{
+	\s[2]Earlier today I found a long string in the chicken coop. \s[2]I don't recognize it, and it isn't the right size or color to match any of my belongings. Where could they have possibly gotten it?
+	
+	\_w[1000]\s[130]\_w[2500]\s[22]\_w[500]Perhaps it clung to my clothes on the way home from {themarket}? \s[2]I will have to be more careful to check my clothing in the future, to ensure I am not bringing home stowaways. They could be hazardous!
+}
+
+//Pawn
+talk RandomTalk
+{
+	\s[0]A rather shifty merchant has come through the village a few times recently. \s[20]They are remarkably persistent, and approach me at every chance they get.
+	
+	\s[22]I have no use for the junk they are attempting to pawn off on me. \s[2]In fact, I am certain even they recognize that their wares are of little value. I wonder what they are trying to accomplish?
+	
+	\_w[500]\s[23]Please be on your guard the next time you come by.
+}

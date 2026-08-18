@@ -641,3 +641,21 @@ function aring
 		"an earring",
 	]);
 }
+
+function threejarsofjam
+{
+	return Random.Select([
+		"three jars of your favorite jam",
+		"a fresh-baked rhubarb pie",
+		"a new pair of mittens",
+	]);
+}
+
+function themarket
+{
+	return Random.Select([
+		"the market",
+		"meeting with my fiber arts group",
+		"delivering eggs to the neighbor",
+	]);
+}
