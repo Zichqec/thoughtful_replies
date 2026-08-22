@@ -53,6 +53,30 @@ talk BootTalk
 	\_w[1000]\s[131]\_w[2500]\s[21]\_w[500]If you are dissatisfied with this deal, you may dispute it in person within 60 days. \s[1]I look forward eagerly to your next visit.
 }
 
+//Dark
+talk BootTalk
+{
+	\s[0]{Greetings} {Wanderer},
+	
+	\s[2]I was not certain I would have anything to write you tonight, \w4\s[1]but as is so often the case, the cover of dark has helped my thoughts to solidify.
+	
+	Prepare for a letter the likes of which you have never seen before! \s[21](Whether that is a good thing or not remains to be seen.)
+}
+
+//Wash
+talk BootTalk
+{
+	\s[0]{Greetings} {Wanderer},
+	
+	Sincerest apologies for the time between this letter and the previous! \s[2]There was, unfortunately, somewhat of a mishap.
+	
+	\s[0]I wrote you quite the heartfelt message and sealed it in an envelope, all ready for the courier. \s[2]Alas, before he could arrive, I placed your letter in the pocket of my gown... \s[22]And through a series of events, that gown ended up in the laundry pile that day.
+	
+	\_w[1000]\s[130]\_w[2500]\s[2]\_w[500]I was distraught when I eventually realized the garment I was washing also contained your letter, now soaked and unreadable. \s[3]How frustrating! \s[23]How terribly unlike me.
+	
+	\_w[1500]\s[20]Alas, there is naught to do but rewrite the parts I can remember. \s[0]I hope this will suffice, and I will endeavor to handle my words more carefully in the future.
+}
+
 
 //———————————————————— Close ————————————————————
 talk CloseTalk

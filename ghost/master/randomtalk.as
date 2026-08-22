@@ -76,6 +76,26 @@ talk MerchantVisit2@Rocks
 	\s[22]I worry that such a high value item would attract unwanted attention, or that it would weigh you down at times when you cannot afford it.
 }
 
+//Power
+talk MerchantVisit1
+{
+	%{
+		//As above
+		ChainTalkQueue.Remove(0);
+		ChainTalkQueue.Add("MerchantVisit2@PowerStaff");
+	}
+	\s[0]They attempted to haggle with me for some sort of magical staff that they claimed would give me "great magical powers".
+	
+	\s[2]Me? Power? \s[22]What nonsense! \s[0]I simply turned and walked away.
+}
+
+talk MerchantVisit2@PowerStaff
+{
+	\s[2]I suppose I might have considered acquiring such a thing for you, but... \s[23]Truth be told, it smelled of snake oil at best.
+	
+	\s[0]You must be no stranger to these sorts of "deals", traveling about as you do. \s[1]I am glad you are a shrewd buyer and must have no trouble turning such things down.
+}
+
 talk MerchantVisit2
 {
 	\s[20]I decided not to buy anything this time, but encouraged them to come by again, whenever they're passing through.
@@ -543,4 +563,49 @@ talk RandomTalk
 	\s[22]I have no use for the junk they are attempting to pawn off on me. \s[2]In fact, I am certain even they recognize that their wares are of little value. I wonder what they are trying to accomplish?
 	
 	\_w[500]\s[23]Please be on your guard the next time you come by.
+}
+
+//Log
+talk RandomTalk
+{
+	\s[0]One of the log benches in the village square has been overtaken by ants lately. I wonder what has attracted them?
+	
+	\_w[1000]\s[2]I am making certain not to sit anywhere near it until I am certain they have left. \s[22]The last thing I need is ants in my fur!
+}
+
+talk RandomTalk
+{
+	%{ ChainTalkQueue = ["GardenMisfortunes1","GardenMisfortunes2","GardenMisfortunes3"]; }
+	\s[0]I had a series of misfortunes today while I was tending to the garden. In retrospect, they were really quite harmless, \w4\s[2]but at the time it was stressful!
+}
+
+//Coil
+talk GardenMisfortunes1
+{
+	\s[2]I was harvesting some carrots, and as I reached to pull on some stems, my hand brushed by the coiled-up body of a snake!
+	
+	\_w[1500]\s[22]I am not terribly proud of the noise I made as I lept back. \s[20]However, it seems my sudden shriek startled the snake as well, and it slithered away.
+	
+	\_w[1000]\s[130]\_w[2500]\s[2]\_w[500]My pulse was racing, and the direction it was going would take it out of the garden anyway, so I decided not to pursue it.
+}
+
+//Smooth
+talk GardenMisfortunes2
+{
+	\s[2]Once I had finally smoothed my fur back down, I turned back to my work. \s[22]But just then... I must have stepped too close to a wasp, because it started buzzing angrily near me. I had to run back to the porch and grab a broom to defend myself.
+	
+	\s[23]Thankfully my fur is quite thick, so I managed to escape without any stings.
+}
+
+talk GardenMisfortunes3
+{
+	\s[2]After all of that, I was quite tired and decided that some rest and recuperation was in order. \s[0]I settled down with some tea and a crochet project, and in the end I felt much better for it!
+}
+
+//Layer
+talk RandomTalk
+{
+	\s[1]I have been very proud of {chicken} lately. She is quite the layer!
+	
+	\_w[1500]\s[131]\_w[2000]\s[0]\_w[500]That, or she is claiming eggs other than her own. \s[21]I will look into it. It never hurts to be a little skeptical with the flock.
 }
