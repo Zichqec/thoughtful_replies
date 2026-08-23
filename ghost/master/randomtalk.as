@@ -328,7 +328,7 @@ talk RandomTalk
 
 talk EvilTomatoes1
 {
-	\s[1]Do you think you will be able to bear the sight of the dreaded red vegetable when you come to visit? \s[21]You are not obliged to partake in its consumption, of course.
+	\s[1]Do you think you would be able to bear the sight of the dreaded red vegetable when you come to visit? \s[21]You are not obliged to partake in its consumption, of course.
 }
 
 talk EvilTomatoes2
@@ -562,13 +562,13 @@ talk RandomTalk
 {
 	\s[0]One of the log benches in the village square has been overtaken by ants lately. I wonder what has attracted them?
 	
-	\_w[1000]\s[2]I am making certain not to sit anywhere near it until I am certain they have left. \s[22]The last thing I need is ants in my fur!
+	\_w[1000]\s[2]I am making sure not to sit anywhere near it until I am certain they have left. \s[22]The last thing I need is ants in my fur!
 }
 
 talk RandomTalk
 {
 	%{ ChainTalkQueue = ["GardenMisfortunes1","GardenMisfortunes2","GardenMisfortunes3"]; }
-	\s[0]I had a series of misfortunes today while I was tending to the garden. In retrospect, they were really quite harmless, \w4\s[2]but at the time it was stressful!
+	\s[0]I had a series of misfortunes today while I was tending to the garden. In retrospect, it was nothing terribly major, \w4\s[2]but at the time it was stressful!
 }
 
 //Coil
