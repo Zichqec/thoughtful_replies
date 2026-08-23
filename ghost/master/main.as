@@ -144,8 +144,9 @@ function OnTalkControl
 		//I had to reinvent chains because the normal RandomTalkQueue doesn't route through any of my control functions when called by TalkTimer... I'll report it later but for now this should work
 		if (ChainTalkQueue.length > 0)
 		{
-			LastTalk = Reflection.Get("{ChainTalkQueue[0]}")();
-			ChainTalkQueue.Remove(0);
+			local dialogue = ChainTalkQueue[0];
+			ChainTalkQueue.Remove(0); //This is removed before running Reflection.Get because otherwise if we adjust chains on the talk side, weird stuff happens
+			LastTalk = Reflection.Get("{dialogue}")();
 		}
 		else
 		{

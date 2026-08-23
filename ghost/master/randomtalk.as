@@ -57,11 +57,7 @@ talk MerchantVisit1
 //Rock
 talk MerchantVisit1
 {
-	%{
-		//For whatever reason, using Clear doesn't work here, nor does simply overwriting the array with a new one... no idea what's different about Remove in this instance
-		ChainTalkQueue.Remove(0);
-		ChainTalkQueue.Add("MerchantVisit2@Rocks");
-	}
+	%{ ChainTalkQueue = ["MerchantVisit2@Rocks"]; }
 	\s[2]I was quite surprised to see that their bag was filled with nothing but rocks! What a strange thing to sell, \w4\s[22]much less to haul around on your back!
 	
 	\_w[1500]\s[0]Despite my initial hesitation, we talked for a while and eventually I understood... \s[20]These were not any ordinary rocks, these were carefully polished stones with strong magic imbuements.
@@ -79,11 +75,7 @@ talk MerchantVisit2@Rocks
 //Power
 talk MerchantVisit1
 {
-	%{
-		//As above
-		ChainTalkQueue.Remove(0);
-		ChainTalkQueue.Add("MerchantVisit2@PowerStaff");
-	}
+	%{ ChainTalkQueue = ["MerchantVisit2@PowerStaff"]; }
 	\s[0]They attempted to haggle with me for some sort of magical staff that they claimed would give me "great magical powers".
 	
 	\s[2]Me? Power? \s[22]What nonsense! \s[0]I simply turned and walked away.
