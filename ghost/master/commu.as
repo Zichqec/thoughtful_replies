@@ -3,6 +3,7 @@ function OnSpectrePlugin@ConfirmCalibration
 	return "\![raiseplugin,Spectre,OnCustomCalibrationConfirm,--option=exclude,sweat]";
 }
 
+//TODO fix the balloon tags here, they don't work in some instances and need to be moved to OnTranslate probably
 function OnSpectrePlugin@Surface
 {
 	if (Shiori.Reference[0] == "normal") return "\0\b[0]\s[0]";
