@@ -77,6 +77,16 @@ talk BootTalk
 	\_w[1500]\s[20]Alas, there is naught to do but rewrite the parts I can remember. \s[0]I hope this will suffice, and I will endeavor to handle my words more carefully in the future.
 }
 
+//Fall
+talk BootTalk
+{
+	\s[0]{Greetings} {Wanderer},
+	
+	I had intended to write you last night, \w4\s[2]but so tired was I from the events of the day that I feared I might fall over on the way to my desk!
+	
+	\_w[1000]\s[1]I am certain a well-traveled soul such as yourself can understand the feeling, and will forgive me for ensuring that I had rested adequately before attempting to convey the latest happenings.
+}
+
 
 //———————————————————— Close ————————————————————
 talk CloseTalk
@@ -159,5 +169,34 @@ talk CloseTalk
 	\s[1]Should you find a second piece of paper in this envelope, it means I remembered something else I wanted to say during my walk!
 	
 	\s[21]Hopefully in bed soon,
+	{Homebody}
+}
+
+//Scare
+talk CloseTalk
+{
+	\s[2]\_w[1500]\s[37]\_w[1500]\s[3]\_w[500]Alas, I must end my letter here. \s[23]There was a noise outside just now, and I sense there may be a fox or other predator nearby in need of a good scare.
+	
+	\_w[500]\s[0]Please be safe and well,
+	{Homebody}
+}
+
+//Heavy
+talk CloseTalk
+{
+	\s[120]\_w[2000]\s[0]\_w[500]Ah... my eyelids grow heavy once more. \s[2]Perhaps I will end this letter here before I end up spilling ink across the page and render it unreadable.
+	
+	\s[20]{Sincerely},
+	{Homebody}
+}
+
+//Wave
+talk CloseTalk
+{
+	\s[20]\_w[2000]\s[0]\_w[500]I feel a wave of sleepiness setting in. \s[20]I'd best get myself back to bed before it passes.
+	
+	\s[2]I have more on my mind that I did not yet cover, \w4\s[22]so expect a longer letter next time!
+	
+	{Sincerely},
 	{Homebody}
 }
