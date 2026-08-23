@@ -109,6 +109,26 @@ talk EveningStroll1
 	\s[1]Surrounded by the rustling of leaves, the smells of the forest, and walking with no particular destination in mind... \s[2]it almost makes me understand what compels you to roam so far.
 }
 
+//Flow
+talk EveningStroll1
+{
+	\s[0]I decided to follow the flow of the river and see if there was anything new since I last went that way.
+	
+	\s[1]I must admit it was a little exciting to round each bend, wondering what lay ahead. \_w[1000]\s[21]Nothing very much, as it turns out! The riverbanks are quite peaceful and safe within walking distance of the village; the most interesting thing I found was a newt.
+	
+	\_w[1000]\s[131]\_w[2000]\s[130]\_w[2000]\s[2]\_w[500]Still, if that is the feeling you chase every day, then I think I can appreciate the appeal that wandering holds for you.
+}
+
+//Hill
+talk EveningStroll1
+{
+	\s[0]I took the time to climb up the hill, right to the very top. \s[1]The view as I looked over the village was breathtaking. I arrived in time to watch the sunset, and stayed long enough to see the soft glow of lanterns and candles light up the houses.
+	
+	\s[21]Of course, the view of the village is very familiar to me, even if I don't often hike all the way up to see it. \_w[1000]\s[22]But it did make me wonder what sorts of views you see every day. \s[2]After all, you climb tall mountains, and visit large cities!
+	
+	\_w[1000]\s[130]\_w[3500]\s[0]\_w[500]Looking out over a beautiful viewpoint after putting in great effort to get there... it must be immensely rewarding. I think I understand what draws you to it.
+}
+
 talk EveningStroll2
 {
 	\s[3]The chill breeze is not much to my tastes, though{emdash}\s[7]brr! \s[22]I hope each time I think of you, you are warm and dry at an inn somewhere, enjoying a hearty meal.
@@ -383,6 +403,24 @@ talk TroubleChicken1
 	\_w[500]\s[130]\_w[2500]\s[122]\_w[1500]\s[22]\_w[500]I turned around and there she was, standing amidst {thebrokenvasepieces}. She looked so proud of herself as she searched through the carnage for seeds.
 }
 
+//Crash
+talk TroubleChicken1
+{
+	\s[0]Yesterday while I was cooking dinner, I heard a crashing sound from the living room. I rushed out and what did I find?
+	
+	\s[2]The pretty vase I'd bought at the market that day, smashed to pieces. \s[22]And a certain hen strutting proudly nearby, stepping on the stems of the flowers that the vase had been holding, as if to choke the remaining life out of them.
+}
+
+//Table
+talk TroubleChicken1
+{
+	\s[0]Just yesterday, she managed to track mud \f[underline,1]everywhere\f[underline,default] throughout the house. On the rug, through the kitchen, across the table...
+	
+	\s[2]I wouldn't have known which of the chickens it was, except that she was perched proudly atop my favorite chair when I found her, mud from her feet soaking into the cushions.
+	
+	\_w[1000]\s[22]She made quite the mess for one chicken!
+}
+
 talk TroubleChicken2
 {
 	\s[131]\_w[2500]\s[1]Still... How can I possibly stay mad at her? Chickens will be chickens, and she's certainly teaching me to be more alert for troublemakers.
@@ -587,6 +625,25 @@ talk GardenMisfortunes2
 	\s[2]Once I had finally smoothed my fur back down, I turned back to my work. \s[22]But just then... I must have stepped too close to a wasp, because it started buzzing angrily near me. I had to run back to the porch and grab a broom to defend myself.
 	
 	\s[23]Thankfully my fur is quite thick, so I managed to escape without any stings.
+}
+
+//Rip
+talk GardenMisfortunes2
+{
+	%{
+		//Insert another section of chain in the middle
+		ChainTalkQueue.Insert(0,"GardenMisfortunes2@RippedDress");
+	}
+	\s[0]I thought it would be a good idea to take a walk around the house to let my nerves settle a bit, so I retreated to the porch to fetch one of my walking sticks.
+	
+	\_w[500]\s[2]As I turned to leave with implement in hand, I felt a tug and heard a horrible sound. \s[22]The sound of my dress ripping where it had caught on that railing I yet haven't fixed!
+}
+
+talk GardenMisfortunes2@RippedDress
+{
+	\s[130]\_w[2500]\s[2]\_w[500]With how jumpy I was feeling at the time, it felt like a devastating blow. That dress is one of my favorites! \s[22]Now it is another garment to mend...
+	
+	\_w[2000]I switched to another dress and made myself take the walk around the house anyway. \s[20]A bit of exercise would be good to clear my head, even if doing so felt miserable in the moment.
 }
 
 talk GardenMisfortunes3
