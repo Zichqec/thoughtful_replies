@@ -658,3 +658,171 @@ talk RandomTalk
 	
 	\_w[1500]\s[131]\_w[2000]\s[0]\_w[500]That, or she is claiming eggs other than her own. \s[21]I will look into it. It never hurts to be a little skeptical with the flock.
 }
+
+//Render
+talk RandomTalk
+{
+	\s[0]Last time the courier came around, I very nearly missed my chance to send your letter. \s[2]I turned the envelope over to him, and when I reached for my coin purse, I was startled to find it was missing!
+	
+	\s[22]It later turned out I had left it behind while visiting a friend earlier in the day, but in the moment I was flustered and had no idea where it could be.
+	
+	\_w[1000]\s[130]\_w[2500]\s[2]\_w[500]Thankfully, he was quite kind about it, and accepted a few {slicesofcherrypie} in exchange for services rendered.
+}
+
+//Fire
+talk RandomTalk
+{
+	\s[0]As often happens around this time of year, I've been invited to various friends' houses to enjoy food over a campfire. \s[1]It is a good way to spend time with others, and I appreciate the invitations very much so.
+	
+	\s[2]My only regret is that I cannot bring a crochet project with me on such occasions. \s[22]Flying embers and highly flammable yarn are all too happy to mix!
+}
+
+//Cave
+talk RandomTalk
+{
+	\s[2]I have once again caved to my overwhelming desire to acquire more yarn. \s[0]The new skein is a color I already have, but it has a different texture. \s[22]The difference is important, I swear!
+	
+	\_w[2000]\s[130]\_w[2500]\s[0]\_w[500]Sometimes, I find myself wondering if perhaps there is dragon blood within our ancestry.
+}
+
+//Forge
+talk RandomTalk
+{
+	%{ ChainTalkQueue = ["BlacksmithsSon1","BlacksmithsSon2"]; }
+	\s[0]We had a visitor from town today: the blacksmith's son. \s[2]Apparently, some of their supply shipments have been waylaid by bandits to the north. How frightening!
+}
+
+talk BlacksmithsSon1
+{
+	\s[2]They are starting to run low on iron, and offered to buy iron-containing items from us at a generous price. Everything from garden hoes to cooking pots to fire pokers.
+	
+	\s[22]The offer was tempting, but upon checking my belongings, I found that the iron items I have are all ones that I need and make use of on at least a semi-regular basis. \s[0]There would be no sense in me selling them for scrap and then having to repurchase them later.
+}
+
+talk BlacksmithsSon2
+{
+	\s[0]Some of the others managed to find a few items to exchange, and got a good price for them. \s[1]A mutually beneficial deal, as now the blacksmith's forge need not rest, and she can continue to serve her customers despite this challenge.
+	
+	\_w[1000]\s[2]I hope the town guard will deal with the bandit problem swiftly, though!
+}
+
+//List
+//TODO is it "season turns" or "seasons turn" or am i making this up entirely
+talk RandomTalk
+{
+	\s[0]I've taken on so many crochet projects lately that I've had to start a list to keep track of them all. I'm hoping to work my way through it before the seasons turn, so I can get back to a more relaxed routine.
+	
+	\_w[1000]\s[2]Unfortunately, despite my best efforts, progress towards completion of the list is... slow. \s[22]Somehow, each time I cross an item off the list, another 3 have already been added! I wonder if I will ever make it to the end at this rate?
+	
+	\_w[500]\s[130]\_w[2500]\s[1]\_w[500]Not that I mind having something to do with my hands at all times of day. \s[2]It's just that some of these are gifts for birthdays, anniversaries, and other such events, so they would ideally be completed by a certain time!
+}
+
+//Fair
+talk RandomTalk
+{
+	\s[0]There has been talk recently of a fair being organized in town. Many folks in the village are hoping to attend, or to send goods with friends to showcase and sell on their behalf.
+	
+	\s[1]I myself am hoping to put together some special projects for the occasion. \s[21]Perhaps, should you be in the area at the time, I may even attend myself. \_w[1500]Of course, if you cannot make it I will be happy to remain at home and help to keep watch over our neighbors' homes for a few days.
+	
+	\_w[1000]\s[131]\_w[2500]\s[1]\_w[500]Either way, I am certain to come into possession of various fair delicacies soon. \s[21]I am looking forward to it rather hungrily!
+}
+
+//Scale
+talk RandomTalk
+{
+	\s[0]By the way, if you happen to have the opportunity to gather dragon scales, would you consider bringing some to me? I had an idea for a project involving them.
+	
+	\_w[1000]\s[2]Please \f[underline,1]don't put yourself in danger!\f[underline,default] \_w[500]\s[22]I only thought since you occasionally bring me the odd dragon fang or claw already, you might also be able to gather scales \f[underline,1]safely\f[underline,default] while you're at it.
+	
+	\_w[1500]\s[130]\_w[3000]\s[22]\_w[500]Perhaps I should not be asking. \_w[1000]You need not do anything brash to impress me, I am quite impressed already!
+}
+
+//Clear
+talk RandomTalk
+{
+	\s[0]I have been working on clearing out a cabinet full of old odds and ends. \s[2]It was packed so full that the contents were nearly spilling out. It has taken me upwards of two moons slowly chipping away at it to see substantial progress!
+	
+	\s[0]Most of what was in there I have been able to part with, or sell for scrap. Odd bits of things that had broken off and which I have come to accept I am never going to repair, items with a missing piece that I have never found, some bits and bobs that I can't remember where I even picked them up from.
+	
+	\_w[1000]\s[130]\_w[3500]\s[2]\_w[500]\It is quite slow work, and at times it feels heartbreaking to let go of things I've held onto for years. \_w[1000]\s[0]But as I have started to be able to see the back of the cabinet, I've begun to feel better about it.
+	
+	\_w[1500]\s[21]\_w[500]Perhaps I will have finished by the next time you visit, and you can admire my handiwork before I fill it once more.
+}
+
+//Space
+talk RandomTalk
+{
+	\s[0]My yearly effort to recover space around the house has been going well so far. This week I've been focusing on {clearingthefloor}
+	
+	\s[2]It's amazing how quickly things become cluttered if I don't constantly work to keep them tidy!
+}
+
+//Box → Boks → bok bok bok bok bok
+talk RandomTalk
+{
+	\s[0]Yesterday Abigail and I sat down and had a serious conversation about {thehenhouserules}. \s[1]And do you know what she said to me?
+	
+	"Bok bok bok bok bok!"
+	
+	\s[21]{suchwisewords}
+}
+
+//Shade
+talk RandomTalk
+{
+	%{ ChainTalkQueue = ["YarnColorHelp"]; }
+	\s[0]I realized the other day that I have been delaying a crochet project for months, even though I was quite eager to start on it. \s[2]I simply can't decide which color yarn to use; I have two skeins that are the same color but a few shades apart, and I haven't been able to pick between them.
+	
+	\_w[1000]\s[22]Becoming stuck on something so basic has made me feel a little foolish! \s[23]Surely it would be better to complete the project and regret the color choice later than to not make it at all?
+}
+
+talk YarnColorHelp
+{
+	\s[102]\_w[2500]\s[2]\_w[500]\![set,balloonwait,3]Perhaps\![set,balloonwait,1]\w8\w8 you could help me sort my dilemma? \s[0]I could send a small sample of each yarn with this letter, and you decide which you like better and send it back to me the next time you write.
+	
+	\s[1]Yes, that would help me greatly. \s[21]Please do not rush your decision, I have other projects that I am still bringing to completion. Any time that is convenient for you is fine.
+}
+
+//Cast
+talk RandomTalk
+{
+	\s[0]A traveling minstrel visited our village recently. He offered to play music and tell grand tales for a small sum. \s[1]Everyone decided to pitch in a coin, and by the end of his performance we were glad we did. He put on quite the spectacle!
+	
+	\s[21]The little ones gathered around with eyes wide, hanging on every word he said, and cheering as he cast fanciful spells to highlight dramatic moments.
+	
+	\_w[1000]\s[101]\_w[2500]\s[131]\_w[2500]\s[1]\_w[500]I suspect his stories were embellished tales that he has heard from adventurers such as yourself. \_w[1000]\s[21]Even so, his blend of magic and music was very entertaining. I am sure he does well for himself.
+}
+
+//Bundle
+talk RandomTalk
+{
+	\s[0]Every year I tell myself I will crochet a new shawl in time for winter, so that I have another layer to bundle up with.
+	
+	\s[2]Every year I end up pushing the project back for too long, or I end up giving the new shawl away to someone else who needs it more than I.
+	
+	\_w[1000]\s[22]Such is the life of someone who is frustratingly cold, but not intolerably so.
+}
+
+//Light
+talk RandomTalk
+{
+	\s[0]One thing I have always been grateful for when it comes to fiber arts is that my materials and the products I create are all very light. \s[2]I do not envy the booksellers at the market, nor the farmers with their heavy crates of fruits or jams, nor the lumberjack selling firewood!
+	
+	\_w[1000]\s[21]My craft is easy to carry with me anywhere, even if I bring many types of yarn.
+}
+
+//Wrap
+talk RandomTalk
+{
+	\s[1]I have been considering crocheting some handle covers for my baskets. Something with a cute pattern I could wrap around and fix in place.
+	
+	\s[21]It would serve no purpose other than to add a little more color and brightness to my life, but is that not purpose enough?
+}
+
+//Weak
+talk RandomTalk
+{
+	\s[0]That railing on the porch is still in disrepair. \s[2]I have been trying to save up the money to hire one of those energetic youths that's always scurrying around doing odd jobs to fix it, but, well...
+	
+	\s[21]We both know my fortitude is a bit weak when it comes to {yarnfruit}. And so, the railing remains in its current state.
+}

@@ -617,6 +617,7 @@ function postscript
 		"\s[2]Have you located your missing {amulet} yet?",
 		"\s[1]I passed along your regards{emdash}they said to wish you luck in return!", //TODO is it a bit too generic? do we want to come up with a simple family name group?
 		"Are those socks still holding up? I have a few more pairs waiting for you, but I can send some with my next letter if needed.",
+		"\s[1]Sending you a few leaves of catmint. Take your time with them!",
 	]);
 }
 
@@ -657,5 +658,67 @@ function themarket
 		"the market",
 		"meeting with my fiber arts group",
 		"delivering eggs to the neighbor",
+	]);
+}
+
+function slicesofcherrypie
+{
+	return Random.Select([
+		"slices of {pieflavor} pie",
+		"blueberry tarts",
+		"pieces of apple strudel",
+	]);
+}
+
+function pieflavor
+{
+	return Random.Select([
+		"cherry",
+		"apple",
+		"shepherd's",
+		"blueberry",
+	]);
+}
+
+function clearingthefloor
+{
+	return Random.Select([
+		"clearing the floor and ensuring there is ample space for paws to step.",
+		"sorting through my yarn basket and arranging the skeins more neatly so that the ones which have been sitting out on the end table can be put away properly.",
+		"rearranging the shelves in the kitchen and straightening everything up to make the best use of the space.",
+		"repotting some of the plants on the windowsill and moving them outside.",
+		"picking up odds and ends that have become strewn around the house and returning them to the drawer where they belong.",
+		"organizing the pantry.",
+	]);
+}
+
+function thehenhouserules
+{
+	return Random.Select([
+		"the henhouse, and her enforcement of the new rules we recently laid out",
+		"what vegetables I should plant in the garden next year",
+		"what color yarn I should use for my next project",
+	]);
+}
+
+function suchwisewords
+{
+	return Random.Select([
+		"Such wise words, befitting a bird of her age!",
+		"Can you believe that?",
+		"It's true, she did!",
+		"What an enlightening dialogue we had!",
+		"I could do naught but nod and agree. She's quite the persuasive speaker!",
+	]);
+}
+
+function yarnfruit
+{
+	return Random.Select([
+		"yarn",
+		"crochet patterns",
+		"fresh fruits at the market",
+		"catmint",
+		"getting special treats for Abigail",
 	]);
 }
