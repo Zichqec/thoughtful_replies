@@ -748,7 +748,7 @@ function shophandsaresick
 	return Random.Select([
 		"all of the shop hands are sick",
 		"the lock on the door was stuck closed",
-		"some customer had become rowdy and was causing a scene inside",
+		"some customer had become rowdy and was causing a scene",
 		"there was a big spill of some sort that had to be cleaned up",
 	]);
 }
