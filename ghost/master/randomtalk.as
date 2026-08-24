@@ -912,7 +912,7 @@ talk RandomTalk
 {
 	\s[0]I went to the general store today to get more {sugar}, but there was some sort of commotion going on. \s[2]A few dozen people were lined up outside the doors in single-file, with perhaps more inside.
 	
-	\s[22]Perhaps {shophandsaresick}? \s[2]I didn't stay to find out; I can get by for now, so I'll come by another time when they're less busy.
+	\s[22]Perhaps {shophandsaresick}? \s[2]I didn't stay to find out; I can get by for now, so I'll visit another time when they're less busy.
 }
 
 //Warp
