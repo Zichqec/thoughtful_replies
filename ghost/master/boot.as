@@ -70,7 +70,7 @@ talk BootTalk
 	
 	Sincerest apologies for the time between this letter and the previous! \s[2]There was, unfortunately, somewhat of a mishap.
 	
-	\s[0]I wrote you quite the heartfelt message and sealed it in an envelope, all ready for the courier. \s[2]Alas, before he could arrive, I placed your letter in the pocket of my gown... \s[22]And through a series of events, that gown ended up in the laundry pile that day.
+	\s[0]I wrote you quite the heartfelt message and sealed it in an envelope, all ready for the courier. \s[2]Then before he could arrive, I placed your letter in the pocket of my gown... \s[22]And through a series of events, that gown ended up in the laundry pile that day.
 	
 	\_w[1000]\s[130]\_w[2500]\s[2]\_w[500]I was distraught when I eventually realized the garment I was washing also contained your letter, now soaked and unreadable. \s[3]How frustrating! \s[23]How terribly unlike me.
 	
@@ -164,7 +164,7 @@ talk CloseTalk
 //Walk
 talk CloseTalk
 {
-	\s[131]\_w[1500]\s[0]Well, I think that's enough from me for now. My legs are telling me to get up and take a short walk around, then get myself back to bed.
+	\s[131]\_w[1500]\s[0]Well, I think that's enough from me for now. My legs are telling me to get up and take a short walk around, then put myself back to bed.
 	
 	\s[1]Should you find a second piece of paper in this envelope, it means I remembered something else I wanted to say during my walk!
 	

@@ -188,7 +188,7 @@ talk RandomTalk
 
 talk RandomTalk
 {
-	\s[0]I've finished mending that shirt you brought to me. \s[1]I'll send it out to you next time I write; I've got something else I'm planning to send at the same time, but I need a little longer to finish preparations.
+	\s[0]I've finished mending that shirt you brought to me. \s[1]I'll send it out to you when next I write; I've got something else I'm planning to send at the same time, but I need a little longer to finish preparations.
 	
 	\s[21]You can thank me for it by not {puttingadaggerthroughit} next time!
 }
@@ -606,7 +606,7 @@ talk RandomTalk
 talk RandomTalk
 {
 	%{ ChainTalkQueue = ["GardenMisfortunes1","GardenMisfortunes2","GardenMisfortunes3"]; }
-	\s[0]I had a series of misfortunes today while I was tending to the garden. In retrospect, it was nothing terribly major, \w4\s[2]but at the time it was stressful!
+	\s[0]I had a series of misfortunes today while I was tending to the garden. In retrospect, it doesn't feel like anything so major, \w4\s[2]but at the time it was stressful!
 }
 
 //Coil
@@ -622,7 +622,9 @@ talk GardenMisfortunes1
 //Smooth
 talk GardenMisfortunes2
 {
-	\s[2]Once I had finally smoothed my fur back down, I turned back to my work. \s[22]But just then... I must have stepped too close to a wasp, because it started buzzing angrily near me. I had to run back to the porch and grab a broom to defend myself.
+	\s[2]Once I had finally smoothed my fur back down, I turned back to my work. \s[22]But just then...
+	
+	I must have stepped too close to a wasp, because it started buzzing angrily near me. I had to run back to the porch and grab a broom to defend myself.
 	
 	\s[23]Thankfully my fur is quite thick, so I managed to escape without any stings.
 }
