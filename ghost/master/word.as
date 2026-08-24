@@ -722,3 +722,33 @@ function yarnfruit
 		"getting special treats for Abigail",
 	]);
 }
+
+function bokoncommand
+{
+	return Random.Select([
+		'say "bok" on command',
+		"wear the tiny hats I crochet for her",
+		"hold skeins of yarn while I work",
+	]);
+}
+
+function sugar
+{
+	return Random.Select([
+		"sugar",
+		"flour",
+		"baking powder",
+		"yeast",
+		"starch",
+	]);
+}
+
+function shophandsaresick
+{
+	return Random.Select([
+		"all of the shop hands are sick",
+		"the lock on the door was stuck closed",
+		"some customer had become rowdy and was causing a scene inside",
+		"there was a big spill of some sort that had to be cleaned up",
+	]);
+}

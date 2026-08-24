@@ -421,6 +421,24 @@ talk TroubleChicken1
 	\_w[1000]\s[22]She made quite the mess for one chicken!
 }
 
+//Fold
+talk TroubleChicken1
+{
+	\s[0]Just last evening I spent half an hour dutifully folding clothes. Half an hour! \s[2]Then I got up for just a minute to stir the cooking pot, and when I returned...
+	
+	\_w[1000]\s[22]\_w[500]There she was, perched on the coffee table where the clean, freshly folded clothes had been. \s[20]Clothes which were now spilled across the floor, disheveled and gathering up every speck of dirt they could find, as if to spite me.
+}
+
+//Spring
+talk TroubleChicken1
+{
+	\s[2]Something must have startled her as I walked by the henhouse yesterday, because she suddenly sprang out, flapping her wings and hollering like there was no tomorrow.
+	
+	\s[0]Having an unexpected mass of feathers and beak and talons rush past my legs made me stumble and lose my footing, and given the rain we've had recently, the ground was quite soft. \s[2]I was off-balance as my toes sank into a patch of mud, and...
+	
+	\_w[1500]\s[22]Suffice to say that I ended up taking a long bath later, and one of my dresses is in desperate need of washing!
+}
+
 talk TroubleChicken2
 {
 	\s[131]\_w[2500]\s[1]Still... How can I possibly stay mad at her? Chickens will be chickens, and she's certainly teaching me to be more alert for troublemakers.
@@ -827,4 +845,80 @@ talk RandomTalk
 	\s[0]That railing on the porch is still in disrepair. \s[2]I have been trying to save up the money to hire one of those energetic youths that's always scurrying around doing odd jobs to fix it, but, well...
 	
 	\s[21]We both know my fortitude is a bit weak when it comes to {yarnfruit}. And so, the railing remains in its current state.
+}
+
+//Train
+talk RandomTalk
+{
+	\s[1]I've been attempting to train Abigail to {bokoncommand}.
+	
+	\_w[1000]\s[21]Our success rate leaves much to be desired, but I am certain she will get it eventually.
+}
+
+//Bubble
+talk RandomTalk
+{
+	\s[0]Yesterday when I went down to the stream, I saw some of the neighbor kids sitting on the bank, watching the water rush around the rocks and form bubbles. \s[1]It reminded me very much of when you and I were young and did the same.
+	
+	\s[21]I stayed for a few minutes to watch alongside them. Being an adult makes the stream no less worth watching, after all.
+	
+	\_w[2000]\s[131]\_w[4000]\s[21]\_w[500]I suppose, thinking on it now, the signs that you would be the type to roam and seek out nature's wonders were there from an early age.
+}
+
+//Mint
+talk RandomTalk
+{
+	%{ ChainTalkQueue = ["CatmintTea"]; }
+	\s[0]A new member of my fiber arts group brought in tea to share with everyone. \s[2]Unfortunately, it was mint tea. Grown in their own garden, and delightfully aromatic, but... \_w[1000]\s[22]They felt bad when I explained why I could not partake.
+	
+	\_w[1000]\s[0]Conversation turned to the topic of mint vs catmint, and very quickly they decided to grow some catmint specifically for me so that I am not left out in the future. \s[2]I am not yet certain how I feel about that as a solution! \_w[1000]\s[102]
+}
+
+talk CatmintTea
+{
+	\s[1]Regardless, I suppose their heart is in the right place. \s[21]And I am sure you will not turn down a few leaves if I have a surplus and send some your way.
+}
+
+//Beat → Beet
+talk RandomTalk
+{
+	%{ ChainTalkQueue = ["ExcessBeets"]; }
+	\s[0]My diet has been very rich in beets lately. The neighbor has had quite the bumper crop this year, and has more than they can manage to sell at the market.
+	
+	\s[1]They've been offering me beets for free to avoid seeing them go to waste.
+}
+
+talk ExcessBeets
+{
+	\s[0]Every day I have beets with breakfast, lunch, and dinner. Every stew day is beet stew day. \s[1]When I bring food to share with my fiber arts group, half of it is comprised of beets.
+	
+	\s[21]I could not possibly complain. What a wonderful problem to have!
+	
+	\_w[1000]\s[1]\_w[500]It is a good exercise in creative meal preparation, as well. There are a hundred ways to cook and serve beets, if you take the time to learn and experiment.
+}
+
+//Skip
+talk RandomTalk
+{
+	\s[0]Lately I have been reminiscing about the lake when I settle down for my afternoon nap. The weather at this time of year makes me think about when we used to spend lazy afternoons there, skipping stones together.
+	
+	\s[1]You never did manage to reclaim the crown for the highest number of skips from me.
+	
+	\_w[1500]\s[31]\_w[3500]\s[21]\_w[500]No, any records you claim to have set while I was not there to witness them do not count! Should you wish to challenge me, you will have to meet me at the lake and face off fair and square.
+}
+
+//File
+talk RandomTalk
+{
+	\s[0]I went to the general store today to get more {sugar}, but there was some sort of commotion going on. \s[2]A few dozen people were lined up outside the doors in single-file, with perhaps more inside.
+	
+	\s[22]Perhaps {shophandsaresick}? \s[2]I didn't stay to find out; I can get by for now, so I'll come by another time when they're less busy.
+}
+
+//Warp
+talk RandomTalk
+{
+	\s[0]I should get that warped plank on the porch fixed soon. \s[3]I caught my paw on it again the other day, and my toes still ache.
+	
+	\_w[1000]\s[23]\_w[500]Perhaps I will put something brightly colored overtop of it to act as a warning in the meantime...
 }
