@@ -87,6 +87,18 @@ talk BootTalk
 	\_w[1000]\s[1]I am certain a well-traveled soul such as yourself can understand the feeling, and will forgive me for ensuring that I had rested adequately before attempting to convey the latest happenings.
 }
 
+//Wake
+talk BootTalk
+{
+	\s[0]{Greetings} {Wanderer},
+	
+	\s[2]Today was so tiring that I thought I might very well sleep soundly throughout the entire night.
+	
+	\s[0]Yet, it seems I have woken after all. \_w[500]\s[1]I can only conclude that some part of my mind wishes to relay the events of the day to you before it allows me to complete my rest.
+	
+	\_w[1000]\s[21]I've no intention of spending the rest of the night awake, so prepare to be inundated with the mundane!
+}
+
 
 //———————————————————— Close ————————————————————
 talk CloseTalk

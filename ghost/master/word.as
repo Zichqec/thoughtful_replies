@@ -752,3 +752,12 @@ function shophandsaresick
 		"there was a big spill of some sort that had to be cleaned up",
 	]);
 }
+
+function chickenlegwarmers
+{
+	return Random.Select([
+		"chicken leg warmers",
+		"decorative spider webs",
+		"door handle covers",
+	]);
+}

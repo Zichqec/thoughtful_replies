@@ -922,3 +922,26 @@ talk RandomTalk
 	
 	\_w[1000]\s[23]\_w[500]Perhaps I will put something brightly colored overtop of it to act as a warning in the meantime...
 }
+
+//Hit
+talk RandomTalk
+{
+	%{ local sillyproject = chickenlegwarmers(); }
+	\s[1]I've hit upon a brilliant new idea for a crochet project:
+	
+	\_w[1000]{Capitalize(sillyproject)}.
+	
+	\_w[2000]\s[21]I am certain that as you are reading these words, you are filled with awe at the thought of such a thing, and admiration for your sister who is surely about to bring a great revolution to the fiber arts world.
+	
+	\s[1]Once I bring in some prototype pieces for demonstration, my fiber arts group will be enthusiastic about the idea and join the revolution. When you come to visit, {sillyproject} will be all the rage!
+}
+
+//Hamper
+talk RandomTalk
+{
+	\s[0]I stopped by the basket weaver's stall at the market today. \s[1]There were many sturdy pieces on display, including all sorts of hampers, large and small.
+	
+	Many of them caught my eye. \s[0]It would certainly be nice to have a slightly larger clothes hamper than what I have now! \_w[1000]\s[2]I am not ready to give up my current one, though. Not when it still has so much life left in it.
+	
+	\_w[1500]\s[0]Mine does, however, need some repairs. We discussed the matter and agreed upon a fair price. \s[2]Now all I need do is estimate how quickly to save coin for the repair, based on how long I think the hamper will hold out. \s[22]If I get it wrong, the repair will become much more costly!
+}
