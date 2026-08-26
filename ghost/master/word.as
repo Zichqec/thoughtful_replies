@@ -761,3 +761,33 @@ function chickenlegwarmers
 		"door handle covers",
 	]);
 }
+
+function chasedbybandits
+{
+	return Random.Select([
+		"chased by bandits",
+		"pursued by giant spiders",
+		"lost in an underground cavern",
+		"sneaking into an aristocrat's mansion",
+	]);
+}
+
+function almostgotkilledbyadragon
+{
+	return Random.Select([
+		"almost got killed by a dragon",
+		"had no supplies with me whatsoever apart from a broom",
+		"barely dodged a volley of arrows from the city guard",
+	]);
+}
+
+function atinyapron
+{
+	return Random.Select([
+		"a tiny chicken-sized apron",
+		"another tiny hat",
+		"another bow",
+		"a small bag of premium chicken feed",
+		"handmade chicken socks",
+	]);
+}

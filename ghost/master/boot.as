@@ -99,6 +99,18 @@ talk BootTalk
 	\_w[1000]\s[21]I've no intention of spending the rest of the night awake, so prepare to be inundated with the mundane!
 }
 
+//Safe
+talk BootTalk
+{
+	\s[0]{Greetings} {Wanderer},
+	
+	\s[2]I awoke from the strangest dream just now! \s[0]You and I had swapped places, with me out on a grand adventure, and you staying home to tend to the garden and the chickens.
+	
+	\s[2]Being unused to adventuring, I fell into all sorts of trouble very quickly. I was {chasedbybandits} and {almostgotkilledbyadragon}. \s[22]Terrifying!
+	
+	\_w[1000]\s[30]\_w[4000]\s[2]\_w[2000]\![set,balloonwait,1.5]I really and truly am not the adventuring type, I cannot imagine doing anything so nervewracking for real. \_w[1000]\![set,balloonwait,1]\s[22]I hope that as I write this, you are safe and sound!
+}
+
 
 //———————————————————— Close ————————————————————
 talk CloseTalk

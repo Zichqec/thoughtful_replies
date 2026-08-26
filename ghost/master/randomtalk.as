@@ -265,6 +265,16 @@ talk StrangeSounds1
 	\s[22]That's when I finally spotted her. \s[21]The neighbor's daughter, holding a duck call, trying her very best to imitate her beloved waterfowl.
 }
 
+//Wall
+talk StrangeSounds1
+{
+	\s[0]By chance, I spotted a strange silhouette on the stone fence yesterday. \s[2]Some sort of bird?
+	
+	I approached slowly, ensuring my footfalls were silent so I could get a closer look. \s[0]It wasn't a bird I'd ever seen before. Had it gotten lost while migrating from somewhere else?
+	
+	\_w[1500]That's when it happened. \s[2]It tipped its head back and let out the most unusual, haunting call I have ever heard from a feathered being. \s[22]The sound made me practically jump out of my fur!
+}
+
 talk StrangeSounds2
 {
 	\s[1]After much stress and turmoil, the source had been found. A mystery solved, and peace returned to the homestead.
@@ -943,5 +953,11 @@ talk RandomTalk
 	
 	Many of them caught my eye. \s[0]It would certainly be nice to have a slightly larger clothes hamper than what I have now! \_w[1000]\s[2]I am not ready to give up my current one, though. Not when it still has so much life left in it.
 	
-	\_w[1500]\s[0]Mine does, however, need some repairs. We discussed the matter and agreed upon a fair price. \s[2]Now all I need do is estimate how quickly to save coin for the repair, based on how long I think the hamper will hold out. \s[22]If I get it wrong, the repair will become much more costly!
+	\_w[1500]\s[0]Mine does, however, need some repairs. We discussed the matter and agreed upon a fair price. \s[2]Now all I need do is estimate how quickly to save coin for the repair, based on how long I think my hamper will hold out. \s[22]If I get it wrong, the repair will become much more costly!
+}
+
+//Tell
+talk RandomTalk
+{
+	\s[1]Don't tell Abigail, but I'm making special plans for her hatchday. \s[21]She's sure to love {atinyapron}!
 }
