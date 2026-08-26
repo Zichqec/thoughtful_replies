@@ -33,6 +33,7 @@ function OnSpectrePlugin@Possession
 }
 
 //—————————— Spectre responses ——————————
+//TODO more responses
 talk SpectreTalk
 {
 	\s[0]\_w[1500]Oh my, I apologize for my errant scribbling. I seem to have nodded off for a moment and begun writing in my sleep!
