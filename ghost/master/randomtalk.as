@@ -752,7 +752,7 @@ talk RandomTalk
 {
 	\s[0]I've taken on so many crochet projects lately that I've had to start a list to keep track of them all. I'm hoping to work my way through it before the seasons turn, so I can get back to a more relaxed routine.
 	
-	\_w[1000]\s[2]Unfortunately, despite my best efforts, progress towards completion of the list is... slow. \s[22]Somehow, each time I cross an item off the list, another 3 have already been added! I wonder if I will ever make it to the end at this rate?
+	\_w[1000]\s[2]Unfortunately, despite my best efforts, progress towards completion of the list is... slow. \s[22]Somehow, each time I cross an item off, another 3 have already been added! I wonder if I will ever make it to the end at this rate?
 	
 	\_w[500]\s[130]\_w[2500]\s[1]\_w[500]Not that I mind having something to do with my hands at all times of day. \s[2]It's just that some of these are gifts for birthdays, anniversaries, and other such events, so they would ideally be completed by a certain time!
 }
