@@ -129,6 +129,16 @@ talk EveningStroll1
 	\_w[1000]\s[130]\_w[3500]\s[0]\_w[500]Looking out over a beautiful viewpoint after putting in great effort to get there... it must be immensely rewarding. I think I understand what draws you to it.
 }
 
+//Word → World
+talk EveningStroll1
+{
+	\s[0]It's hard for me to imagine what it's like for you, traveling to the far corners of the world. \s[20]But for a moment, I envisioned myself continuing to walk without turning back, for days and days and days... \_w[1000]\s[21]I found myself wondering how much distance I could cover in a day, then a week, then a month.
+	
+	\_w[1000]\s[31]\_w[2000]\s[130]\_w[3000]\s[2]\_w[500]Of course, I'd have to stop and get plenty of rest! \s[22]And I know that I would not have the stamina nor determination to keep journeying onward without turning back to the comforts of home.
+	
+	\s[1]Still, it was a little exciting to think about how far I could get with just my two legs carrying me.
+}
+
 talk EveningStroll2
 {
 	\s[3]The chill breeze is not much to my tastes, though{emdash}\s[7]brr! \s[22]I hope each time I think of you, you are warm and dry at an inn somewhere, enjoying a hearty meal.
@@ -960,4 +970,22 @@ talk RandomTalk
 talk RandomTalk
 {
 	\s[1]Don't tell Abigail, but I'm making special plans for her hatchday. \s[21]She's sure to love {atinyapron}!
+}
+
+//Wing
+talk RandomTalk
+{
+	\s[1]One of the young ones in the village has been chattering nonstop about {growwingsandfly}.
+	
+	\s[21]She reminds me very much of you when you were that age.
+}
+
+//Deal
+talk RandomTalk
+{
+	\s[0]I attempted to sell some of my extra crochet pieces to a traveling merchant recently. \s[20]It did not go well.
+	
+	\_w[1000]\s[23]They offered me hardly a pittance. "Just some yarn", they said! As though the many hours of labor that went into shaping that yarn and making it strong are worth nothing.
+	
+	\s[3]I sent them on their way, and warned the others in my fiber arts group. No one should accept such a raw deal.
 }

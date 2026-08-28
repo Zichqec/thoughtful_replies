@@ -791,3 +791,11 @@ function atinyapron
 		"handmade chicken socks",
 	]);
 }
+
+function growwingsandfly
+{
+	return Random.Select([
+		"how she wants to grow wings and fly like a bird",
+		"how she climbed up to the top of the hill all by herself",
+	]);
+}

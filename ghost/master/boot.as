@@ -112,6 +112,29 @@ talk BootTalk
 	\_w[1000]\s[30]\_w[4000]\s[2]\_w[2000]\![set,balloonwait,1.5]I really and truly am not the adventuring type, I cannot imagine doing anything so nervewracking for real. \_w[1000]\![set,balloonwait,1]\s[22]I hope that as I write this, you are safe and sound!
 }
 
+//Leg
+talk BootTalk
+{
+	%{ RemainingTalks = 7; }
+	\s[0]{Greetings} {Wanderer},
+	
+	I write to you with legs quite sore. \s[2]I must have walked the length of the village 10 times today while completing all of my errands!
+	
+	To and fro, back and forth... \s[22]Usually I plan my route more carefully so that I do not have to retrace my steps, but today, so many of my errands were contingent upon each other that there was no choice. I simply had to walk and get it over with.
+	
+	\s[1]You will have to forgive me if this letter is a little shorter than usual. \s[21]I suspect I'll be nodding off sooner over later.
+}
+
+//Just
+talk BootTalk
+{
+	\s[0]{Greetings} {Wanderer},
+	
+	\s[1]I am delighted to hear that my previous letter arrived just in time! \s[21]My sock senses were tingling, and it is good to know they are still well-attuned.
+	
+	\_w[1000]\s[31]\_w[2500]\s[1]\_w[500]Your next gift is already underway. \_w[1000]\s[21]Worry not, you'll learn what it is when you have need of it!
+}
+
 
 //———————————————————— Close ————————————————————
 talk CloseTalk
@@ -221,6 +244,17 @@ talk CloseTalk
 	\s[20]\_w[2000]\s[0]\_w[500]I feel a wave of sleepiness setting in. \s[20]I'd best get myself back to bed before it passes.
 	
 	\s[2]I have more on my mind that I did not yet cover, \w4\s[22]so expect a longer letter next time!
+	
+	{Sincerely},
+	{Homebody}
+}
+
+//Grand
+talk CloseTalk
+{
+	\s[21]Well, I think it is best that I end things here and head back to bed. I'll be sure to write more soon.
+	
+	\_w[1000]\s[1]I would be most delighted if you can find the time to write back. Reading about your grand adventures is always a treat!
 	
 	{Sincerely},
 	{Homebody}
