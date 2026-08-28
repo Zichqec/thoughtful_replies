@@ -34,6 +34,7 @@ talk BootTalk
 //Free
 talk BootTalk
 {
+	%{ RemainingTalks = 7; }
 	\s[2]{Greetings} {Wanderer},
 	
 	My, I've hardly had a moment to spare as of late! The whole village seems to be bustling with activity, and I find myself pulled nonstop between this and that. It's been quite the change of pace trying to keep on top of things.
