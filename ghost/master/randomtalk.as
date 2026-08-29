@@ -676,7 +676,7 @@ talk GardenMisfortunes2
 	}
 	\s[0]I thought it would be a good idea to take a walk around the house to let my nerves settle a bit, so I retreated to the porch to fetch one of my walking sticks.
 	
-	\_w[500]\s[2]As I turned to leave with implement in hand, I felt a tug and heard a horrible sound. \s[22]The sound of my dress ripping where it had caught on that railing I yet haven't fixed!
+	\_w[500]\s[2]As I turned to leave with implement in hand, I felt a tug and heard a horrible sound. \s[22]The sound of my dress ripping where it had caught on that railing I haven't yet fixed!
 }
 
 talk GardenMisfortunes2@RippedDress
