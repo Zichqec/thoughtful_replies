@@ -989,3 +989,29 @@ talk RandomTalk
 	
 	\s[3]I sent them on their way, and warned the others in my fiber arts group. No one should accept such a raw deal.
 }
+
+//Arch
+talk RandomTalk
+{
+	\s[1]Abigail has once again faced down her archnemesis and lived to tell the tale. \s[21]The broom will think twice about coming near her after this!
+}
+
+//Pool
+talk RandomTalk
+{
+	\s[0]We've been having discussions at my fiber arts group about creating a pool of yarn that anyone in the group may use, especially those new to crafting.
+	
+	\_w[1000]\s[2]After all, it can be intimidating to start out when you have no idea what yarns to pick. What texture and size you prefer, what colors will go together the best, \w4\s[22]not to mention the difference between S and Z yarn.
+	
+	\s[1]By having some shared supplies, we can encourage newcomers to try something new without needing to make a large supply commitment up front, and help them make informed decisions when it's time to buy materials of their own.
+}
+
+//End
+talk RandomTalk
+{
+	\s[2]I have, tragically, come to the end of one of my favorite skeins of yarn. Only a few feet remain.
+	
+	\_w[1000]\s[0]I wonder what I should do with the last little piece? \s[22]Perhaps I will simply crochet it into a tiny square, to be used as a sample for comparing all new yarns against.
+	
+	\_w[1000]\s[21]Maybe if I make enough such tiny squares, I could create a tiny quilt for Abigail.
+}
