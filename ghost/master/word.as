@@ -799,3 +799,25 @@ function growwingsandfly
 		"how she climbed up to the top of the hill all by herself",
 	]);
 }
+
+//Plural crochet projects, small enough to fit in a display case
+function doilies
+{
+	return Random.Select([
+		"doilies",
+		"scarves",
+		"socks",
+	]);
+}
+
+function nearlygotsquashed
+{
+	return Random.Select([
+		"nearly got squashed by a giant's club",
+		"nearly got washed away by a raging river",
+		"almost fell into a dark abyss while hunting for treasure in an old ruin",
+		"were trying to cross over a river using some very shallow crossing stones, slipped, fell in, and nearly went over a waterfall",
+		"nearly got carried off the top of a mountain by a monstrously large eagle",
+		"got stuck in a labyrinth and only found your way out the day after you ran out of food",
+	]);
+}

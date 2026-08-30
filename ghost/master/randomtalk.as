@@ -1014,3 +1014,81 @@ talk RandomTalk
 	
 	\_w[1000]\s[21]Maybe if I make enough such tiny squares, I could create a tiny quilt for Abigail.
 }
+
+//Hunt
+talk RandomTalk
+{
+	\s[0]Do you browse many odds and ends during your travels? I have a sweater that has been lying around nearly finished for months. All I need do is put the buttons on it.
+	
+	\_w[1000]\s[130]\_w[2000]\s[0]\_w[500]I am a firm believer that button choice says a great deal about a piece, so I am on the hunt for the perfect buttons.
+	
+	\s[1]Should you see any that you think are interesting, I would be glad to evaluate them. \s[21]Even if they prove not to be the right fit for this particular sweater, my button collection would certainly not be lesser for new arrivals.
+}
+
+//Matter
+talk RandomTalk
+{
+	%{
+		local chicken1 = chicken();
+		local chicken2 = chicken();
+		while (chicken1 == chicken2) chicken2 = chicken();
+		//%{ TalkTimer.RandomTalkQueue = [HenhouseDrama]; } //Hmmm... come back to this
+	}
+	\s[0]There has been some sort of drama around the henhouse these last few weeks. \s[20]{chicken1} and {chicken2} seem to be conspiring together.
+	
+	\_w[1000]\s[21]Not that I am terribly worried about it. Abigail is sure to keep an eye on them, and bring matters to me should they become too unruly.
+}
+
+//Case
+talk RandomTalk
+{
+	\s[0]I stopped by the jeweler's stall at the market to admire her latest pieces. \s[21]They always look so tantalizing behind the glass of the display cases.
+	
+	\_w[1000]\s[1]Do you think my {doilies} would look nicer in a fancy case? Perhaps I should get one and try it.
+}
+
+//Condition
+talk RandomTalk
+{
+	\s[1]I must say, Abigail has been in peak condition as of late. The way the sun gleams on her feathers is simply stunning. Could any other chicken hope to compete?
+	
+	\_w[1000]\s[21](No.)
+}
+
+//Fish
+talk RandomTalk
+{
+	\s[0]I decided to treat myself to some fresh fish from the fishmonger. After all, I have been quite hard at work lately, and it would do no good to toil endlessly without reward.
+	
+	\_w[1000]\s[1]This has proved to be a good decision; my bones feel rejuvenated and ready for another day's effort. \_w[1000]\s[21]I recommend you do the same if you have the opportunity.
+}
+
+//Steel
+talk RandomTalk
+{
+	\s[0]I happened to be at the village square when some members of the town guard came through. They patrolled around the area, in that performative way they always do, ensuring any would-be troublemakers see the wicked steel swords they sport on their hips.
+	
+	\_w[1000]\s[30]\_w[4500]\s[1]\_w[500]I am glad you felt called to wander rather than join up with them. They often seem as though their lives are lacking enrichment. \_w[1000]\s[21]Perhaps they should pick up crochet.
+}
+
+//Paper
+talk RandomTalk
+{
+	%{
+		local papercomment = "";
+		if (CurrentBalloon == "Chicken Scratch" && CurrentBalloonPattern != 100) papercomment = "(In fact, the paper you are reading from is the last sheet I have with this particular pattern!)";
+	}
+	\s[2]I should make a trip to the stationery shop soon, I have been putting it off for some time now, and as a result, I am running out of paper. {papercomment}
+	
+	\s[22]You see, every time I visit, I walk out with more supplies than I intended to purchase. They have so many pretty patterns and inks, how can I do otherwise...!
+	
+	\_w[1000]\s[30]\_w[3500]\s[31]\_w[2500]\s[1]\_w[500]Perhaps instead of bringing my usual coin purse, I will bring a limited amount of coins in a small pouch, so that I may purchase no more than that amount. \s[21]A cunning strategy, sure to outwit any selling tactics they may unleash.
+}
+
+//Shine
+talk RandomTalk
+{
+	\s[0]I have been thinking back to the time when you described how you {nearlygotsquashed}.
+	
+	\_w[1000]\s[22]It is such a frightening tale! \s[2]But the way your eyes shone when you described it... \_w[2000]\s[21]Well, I could hardly ask you to refrain from further such adventures, could I?
+}
