@@ -747,10 +747,9 @@ talk BlacksmithsSon2
 }
 
 //List
-//TODO is it "season turns" or "seasons turn" or am i making this up entirely
 talk RandomTalk
 {
-	\s[0]I've taken on so many crochet projects lately that I've had to start a list to keep track of them all. I'm hoping to work my way through it before the seasons turn, so I can get back to a more relaxed routine.
+	\s[0]I've taken on so many crochet projects lately that I've had to start a list to keep track of them all. I'm hoping to work my way through it before the season turns, so I can get back to a more relaxed routine.
 	
 	\_w[1000]\s[2]Unfortunately, despite my best efforts, progress towards completion of the list is... slow. \s[22]Somehow, each time I cross an item off, another 3 have already been added! I wonder if I will ever make it to the end at this rate?
 	
