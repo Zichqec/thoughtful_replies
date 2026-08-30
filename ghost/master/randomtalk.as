@@ -3,14 +3,14 @@ talk RandomTalk
 	\s[30]\_w[3500]\s[3]I fear Abigail has become enamored with the stream again, judging by the puddles she has left on the floor.
 }
 
-talk RandomTalk 
+talk RandomTalk
 {
 	\s[0]I saw there was a request posted on the board at the village square. Someone wants an adventurer to find a lost {lostitem}, last seen {location}.
 
 	\s[2]Are you looking for it? \s[30]\_w[3000]\s[22]\w8\w8Please be careful.
 }
 
-talk RandomTalk 
+talk RandomTalk
 {
 	\s[1]I started crocheting a new {crochetproject}. \s[21]I promise I'll finish it this time!
 }
@@ -203,7 +203,7 @@ talk RandomTalk
 	\s[21]You can thank me for it by not {puttingadaggerthroughit} next time!
 }
 
-talk RandomTalk 
+talk RandomTalk
 {
 	%{ TalkTimer.RandomTalkQueue = [WrongPatterns1,WrongPatterns2,WrongPatterns3]; }
 	\s[2]I traded some of my crochet patterns with another fiber artist at the market, but it turns out that I was given knitting patterns instead of crochet ones... I'm not sure what to do with them.
