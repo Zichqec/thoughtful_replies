@@ -17,7 +17,7 @@ talk RandomTalk
 
 talk RandomTalk
 {
-	%{ ChainTalkQueue = ["KitchenMice1","KitchenMice2"]; }
+	%{ TalkTimer.RandomTalkQueue = [KitchenMice1,KitchenMice2]; }
 	\s[31]\_w[3000]\s[1]I suspect the chickens and I are not the only ones enjoying the house right now. \w8\w8\s[0]\w8\w8Not to say there's someone else here, but rather, there's some\f[underline,1]thing\f[underline,default] else here. \s[1]A stealthy, squeaky, food nibbling something.
 }
 
@@ -33,7 +33,7 @@ talk KitchenMice2
 
 talk RandomTalk
 {
-	%{ ChainTalkQueue = ["MerchantVisit1","MerchantVisit2"]; }
+	%{ TalkTimer.RandomTalkQueue = [MerchantVisit1,MerchantVisit2]; }
 	\s[0]A merchant passed through early this afternoon. They were on their way {intotown}.
 }
 
@@ -57,7 +57,7 @@ talk MerchantVisit1
 //Rock
 talk MerchantVisit1
 {
-	%{ ChainTalkQueue = ["MerchantVisit2@Rocks"]; }
+	%{ TalkTimer.RandomTalkQueue = [MerchantVisit2@Rocks]; }
 	\s[2]I was quite surprised to see that their bag was filled with nothing but rocks! What a strange thing to sell, \w4\s[22]much less to haul around on your back!
 	
 	\_w[1500]\s[0]Despite my initial hesitation, we talked for a while and eventually I understood... \s[20]These were not any ordinary rocks, these were carefully polished stones with strong magic imbuements.
@@ -75,7 +75,7 @@ talk MerchantVisit2@Rocks
 //Power
 talk MerchantVisit1
 {
-	%{ ChainTalkQueue = ["MerchantVisit2@PowerStaff"]; }
+	%{ TalkTimer.RandomTalkQueue = [MerchantVisit2@PowerStaff]; }
 	\s[0]They attempted to haggle with me for some sort of magical staff that they claimed would give me "great magical powers".
 	
 	\s[2]Me? Power? \s[22]What nonsense! \s[0]I simply turned and walked away.
@@ -100,7 +100,7 @@ talk MerchantVisit2
 
 talk RandomTalk
 {
-	%{ ChainTalkQueue = ["EveningStroll1","EveningStroll2"]; }
+	%{ TalkTimer.RandomTalkQueue = [EveningStroll1,EveningStroll2]; }
 	\s[20]Yesterday on my evening stroll, I found myself thinking of you, as I so often do.
 }
 
@@ -146,7 +146,7 @@ talk EveningStroll2
 
 talk RandomTalk
 {
-	%{ ChainTalkQueue = ["HerHero1","HerHero2","HerHero3","HerHero4"]; }
+	%{ TalkTimer.RandomTalkQueue = [HerHero1,HerHero2,HerHero3,HerHero4]; }
 	\s[1]One of the neighbor's children asked me when you will be coming home next. \s[21]I suspect she is waiting for another gift from you!
 }
 
@@ -205,7 +205,7 @@ talk RandomTalk
 
 talk RandomTalk 
 {
-	%{ ChainTalkQueue = ["WrongPatterns1","WrongPatterns2","WrongPatterns3"]; }
+	%{ TalkTimer.RandomTalkQueue = [WrongPatterns1,WrongPatterns2,WrongPatterns3]; }
 	\s[2]I traded some of my crochet patterns with another fiber artist at the market, but it turns out that I was given knitting patterns instead of crochet ones... I'm not sure what to do with them.
 }
 
@@ -254,7 +254,7 @@ talk RandomTalk
 
 talk RandomTalk
 {
-	%{ ChainTalkQueue = ["StrangeSounds1","StrangeSounds2"]; }
+	%{ TalkTimer.RandomTalkQueue = [StrangeSounds1,StrangeSounds2]; }
 	\s[0]I've been hearing strange sounds outside of the house. Sporadic, and always too distant for me to pin down easily. \s[2]Even the chickens have started to notice! \_w[1500]\s[130]\_w[4500]\s[0]Abigail is the only one that has been more curious than scared, but that doesn't mean they won't get themselves into trouble trying to find the source if left on their own.
 }
 
@@ -301,7 +301,7 @@ talk RandomTalk
 
 talk RandomTalk
 {
-	%{ ChainTalkQueue = ["CowIncident1","CowIncident2"]; }
+	%{ TalkTimer.RandomTalkQueue = [CowIncident1,CowIncident2]; }
 	\s[1]My goodness, I almost forgot, I wanted to tell you about the cow incident.
 	
 	There was a commotion in the village square, and when I went to investigate, what should I see but everyone gathered around an unfamiliar cow!
@@ -360,7 +360,7 @@ talk RandomTalk
 //Tile → Till → Garden stuff
 talk RandomTalk
 {
-	%{ ChainTalkQueue = ["EvilTomatoes1","EvilTomatoes2","EvilTomatoes3"]; }
+	%{ TalkTimer.RandomTalkQueue = [EvilTomatoes1,EvilTomatoes2,EvilTomatoes3]; }
 	\s[0]I have been pondering lately over what I should do with the unused corner of the garden. \s[2]It has been unplanted for some time now, and I really ought to make use of the soil.
 	
 	\s[122]\_w[2500]\s[130]\_w[4000]\s[22]\![set,balloonwait,4]Perhaps \![set,balloonwait,2]I should plant zucchini, or squash, or\_w[4000]\s[1]\_w[1000] tomatoes. \![set,balloonwait,1]\s[21]Ha, imagine, tomatoes again after all these years!
@@ -384,7 +384,7 @@ talk EvilTomatoes3
 //Turn
 talk RandomTalk
 {
-	%{ ChainTalkQueue = ["TroubleChicken1","TroubleChicken2"]; }
+	%{ TalkTimer.RandomTalkQueue = [TroubleChicken1,TroubleChicken2]; }
 	\s[0]Lately, I've had to keep a closer eye on {chicken}. \s[2]I don't know what's gotten into her, but the moment my back is turned, she gets herself into all kinds of trouble!
 }
 
@@ -602,7 +602,7 @@ talk RandomTalk
 //Trip
 talk RandomTalk
 {
-	%{ ChainTalkQueue = ["TripIntoTown"]; }
+	%{ TalkTimer.RandomTalkQueue = [TripIntoTown]; }
 	\s[0]I have been thinking about taking a trip into town to purchase a few supplies that are harder to get ahold of in the village.
 	
 	\_w[1000]\s[2]What an extraordinary hassle! I would need to arrange for someone to watch over the chickens and tend to the garden while I am away. \s[22]And to be without my usual crafts and amenities to unwind... it is always an unpleasant thing, even if only temporary.
@@ -643,7 +643,7 @@ talk RandomTalk
 
 talk RandomTalk
 {
-	%{ ChainTalkQueue = ["GardenMisfortunes1","GardenMisfortunes2","GardenMisfortunes3"]; }
+	%{ TalkTimer.RandomTalkQueue = [GardenMisfortunes1,GardenMisfortunes2,GardenMisfortunes3]; }
 	\s[0]I had a series of misfortunes today while I was tending to the garden. In retrospect, it doesn't feel like anything so major, \w4\s[2]but at the time it was stressful!
 }
 
@@ -672,7 +672,7 @@ talk GardenMisfortunes2
 {
 	%{
 		//Insert another section of chain in the middle
-		ChainTalkQueue.Insert(0,"GardenMisfortunes2@RippedDress");
+		TalkTimer.RandomTalkQueue.Insert(0,GardenMisfortunes2@RippedDress);
 	}
 	\s[0]I thought it would be a good idea to take a walk around the house to let my nerves settle a bit, so I retreated to the porch to fetch one of my walking sticks.
 	
@@ -728,7 +728,7 @@ talk RandomTalk
 //Forge
 talk RandomTalk
 {
-	%{ ChainTalkQueue = ["BlacksmithsSon1","BlacksmithsSon2"]; }
+	%{ TalkTimer.RandomTalkQueue = [BlacksmithsSon1,BlacksmithsSon2]; }
 	\s[0]We had a visitor from town today: the blacksmith's son. \s[2]Apparently, some of their supply shipments have been waylaid by bandits to the north. How frightening!
 }
 
@@ -810,7 +810,7 @@ talk RandomTalk
 //Shade
 talk RandomTalk
 {
-	%{ ChainTalkQueue = ["YarnColorHelp"]; }
+	%{ TalkTimer.RandomTalkQueue = [YarnColorHelp]; }
 	\s[0]I realized the other day that I have been delaying a crochet project for months, even though I was quite eager to start on it. \s[2]I simply can't decide which color yarn to use; I have two skeins that are the same color but a few shades apart, and I haven't been able to pick between them.
 	
 	\_w[1000]\s[22]Becoming stuck on something so basic has made me feel a little foolish! \s[23]Surely it would be better to complete the project and regret the color choice later than to not make it at all?
@@ -888,7 +888,7 @@ talk RandomTalk
 //Mint
 talk RandomTalk
 {
-	%{ ChainTalkQueue = ["CatmintTea"]; }
+	%{ TalkTimer.RandomTalkQueue = [CatmintTea]; }
 	\s[0]A new member of my fiber arts group brought in tea to share with everyone. \s[2]Unfortunately, it was mint tea. Grown in their own garden, and delightfully aromatic, but... \_w[1000]\s[22]They felt bad when I explained why I could not partake.
 	
 	\_w[1000]\s[0]Conversation turned to the topic of mint vs catmint, and very quickly they decided to grow some catmint specifically for me so that I am not left out in the future. \s[2]I am not yet certain how I feel about that as a solution! \_w[1000]\s[102]
@@ -902,7 +902,7 @@ talk CatmintTea
 //Beat → Beet
 talk RandomTalk
 {
-	%{ ChainTalkQueue = ["ExcessBeets"]; }
+	%{ TalkTimer.RandomTalkQueue = [ExcessBeets]; }
 	\s[0]My diet has been very rich in beets lately. The neighbor has had quite the bumper crop this year, and has more than they can manage to sell at the market.
 	
 	\s[1]They've been offering me beets for free to avoid seeing them go to waste.

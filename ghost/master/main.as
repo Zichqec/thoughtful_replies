@@ -11,7 +11,8 @@ function OnAosoraDefaultSaveData
 
 function OnAosoraLoad
 {
-	TalkTimer.RandomTalk = OnTalkControl;
+	TalkTimer.RandomTalk = RandomTalk;
+	TalkTimer.RandomTalkHandler = OnAITalk;
 	TalkTimer.RandomTalkIntervalSeconds = Save.Data.TalkInterval;
 	TalkBuilder.Default.Head = "\0\b[0]";
 	TodaysLetter = [];
@@ -135,33 +136,18 @@ function EnvelopeDisplay
 	else return "\![set,alpha,0,1000] \_w[1500]";
 }
 
-function OnTalkControl
+function OnAITalk
 {
 	if (!LetterFinished())
 	{
 		if (LastTalk != "") TodaysLetter.Add(CleanLetterTags(LastTalk));
 		
-		//I had to reinvent chains because the normal RandomTalkQueue doesn't route through any of my control functions when called by TalkTimer... I'll report it later but for now this should work
-		if (ChainTalkQueue.length > 0)
-		{
-			local dialogue = ChainTalkQueue[0];
-			ChainTalkQueue.Remove(0); //This is removed before running Reflection.Get because otherwise if we adjust chains on the talk side, weird stuff happens
-			LastTalk = Reflection.Get("{dialogue}")();
-		}
-		else
-		{
-			RemainingTalks--;
-			LastTalk = Reflection.Get("RandomTalk")();
-		}
+		//Do not decrease talk counter when we're in a chain
+		if (TalkTimer.RandomTalkQueue.length == 0) RemainingTalks--;
+		LastTalk = TalkTimer.CallRandomTalk();
 		
 		return LetterDisplay([LastTalk]);
 	}
-}
-
-//Catch \a, key press, etc
-function OnAITalk
-{
-	return TalkTimer.CallRandomTalk();
 }
 
 function LetterDisplay(arg)
