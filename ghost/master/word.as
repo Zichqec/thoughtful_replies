@@ -348,7 +348,7 @@ function accessory
 {
 	return Random.Select([
 		"well worn scarf",
-		"reading glasses",
+		"pair of reading glasses",
 		"felt cap",
 		"leather pouch",
 		"jeweled necklace",
