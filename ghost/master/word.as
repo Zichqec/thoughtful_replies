@@ -859,3 +859,45 @@ function nearlygotsquashed
 		"got stuck in a labyrinth and only found your way out the day after you ran out of food",
 	]);
 }
+
+function pileofcoasters
+{
+    return Random.Select([
+        "pile of coasters",
+        "pound of granny squares",
+        "excess of mug cozies",
+        "mile of scarves",
+    ]);
+}
+
+function he
+{
+    return Random.Select([
+        "he", 
+        "she", 
+        "they",
+    ]);
+}
+
+function halfanhour 
+{
+    return Random.Select([
+        "about half an hour",
+        "almost an hour",
+        "practically an eternity",
+        "too long for me to count",
+    ]);
+}
+
+function afishinglure
+{
+    return Random.Select([
+        "a fishing lure",
+        Random.Select ([
+			"a gaudy hat",
+			"a gauche hat"
+		]),
+        "a new dip pen",
+        "an avant garde art project"
+    ]);
+}

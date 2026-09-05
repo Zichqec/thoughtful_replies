@@ -1046,3 +1046,63 @@ talk RandomTalk
 	
 	\_w[1000]\s[30]\_w[2500]\s[31]\_w[3000]\s[1]\_w[500]I suppose that sort of mimicry is how it goes with children. I wonder what she thought I was even doing...?
 }
+
+talk RandomTalk
+{
+    \s[122]\_w[2000]\s[22]I was scrounging in my yarn basket today and found the process terribly tedious. 
+    
+    As any fiber artist knows, one's heart yearns for more yarn than one can use in any lifetime. \_w[1000]\s[7]Not to mention all of the scraps! 
+    
+    \_w[8000]\s[100]\w8\s[0]I've decided to use up those odds and ends. It should tidy things up a bit. Although, \w4\s[22]is a {pileofcoasters} any less cluttering?
+}
+
+talk RandomTalk
+{
+    \s[0]When walking around the village the other day, I saw an acquaintance I hadn't had the opportunity to chat with in awhile. \s[1]How exciting!
+
+    \s[0]In fact, I got so excited that {he} and I stood there for {halfanhour}, chattering the time away. By the time we'd waved good-bye, \w4\s[7]I had missed my crocheting class.
+}
+
+talk RandomTalk
+{
+    \s[0]Last winter, I was rather alarmed to find that the water for the chickens was utterly frozen solid. A bad blizzard had occurred just the day before, and the wind could chill me to the bone.
+
+    I had to go out every four hours or so to pour hot water for them to make sure it didn't freeze again. What an exhausting day! Shuffling through the high piled snow, with buckets of water, over and over...
+}
+
+talk RandomTalk
+{
+    \s[0]A famous artisan came through the village today. She was selling these gorgeous pieces of needlepoint-embellished furniture. 
+    
+    I couldn't afford any of them, but they were nice to admire. \s[100]\_w[2000]\s[0]Perhaps I should pick up the craft sometime? Let me know what you think.
+}
+
+talk RandomTalk
+{
+    \s[0]I tried pawning off some eggs today. Since they last so long in cold storage, sometimes I end up overflowing with them. \s[7]However, all my neighbors were in the same boat from the last time I tried this.
+
+    \s[0]It's not so bad as the time two different families tried growing zucchinis in the same year. Everyone in the village was receiving zucchinis on their porch in the middle of the night that summer.
+
+    Perhaps I should hard-boil them? \s[1]The eggs, I mean, not zucchinis.
+}
+
+talk RandomTalk
+{
+    \s[0]There was a snake coiled up in the chicken coop yesterday. It gave me a terrible fright. \s[2]Before I could catch it, it slithered away.
+
+    I hope it doesn't eat eggs.
+}
+
+talk RandomTalk
+{
+    \s[0]My heart nearly leapt out of my chest the other night. I was checking on the chickens in their coop, \w4\s[7]when I saw a snake on the floor!
+
+    \s[0]I jumped at least a foot in the air before gathering my wits. \s[3]Upon closer inspection, it was merely a cucumber I had tossed in there as a treat earlier. \s[30]\_w[3000]\s[0]I laugh at it now, but how embarrassed I was at the time.
+}
+
+talk RandomTalk
+{
+    \s[0]A friend of mine wanted some feathers from {chicken}. Supposedly, he was going to create {afishinglure}, but I don't know how well that will work out. 
+    
+    \s[1]He is an odd one.
+}
