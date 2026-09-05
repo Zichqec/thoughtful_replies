@@ -31,7 +31,6 @@ talk BootTalk
 	\s[1]I hope you have not been too terribly concerned by the delay. Rest assured that my next letter will be on its way to you shortly!
 }
 
-//Free
 talk BootTalk
 {
 	%{ RemainingTalks = 7; }
@@ -42,7 +41,6 @@ talk BootTalk
 	\s[22]I apologize if this letter runs short, the dearth of free time has left me wanting for sleep!
 }
 
-//Trade
 talk BootTalk
 {
 	\s[0]{Greetings} {Wanderer},
@@ -54,7 +52,6 @@ talk BootTalk
 	\_w[1000]\s[131]\_w[2500]\s[21]\_w[500]If you are dissatisfied with this deal, you may dispute it in person within 60 days. \s[1]I look forward eagerly to your next visit.
 }
 
-//Dark
 talk BootTalk
 {
 	\s[0]{Greetings} {Wanderer},
@@ -64,7 +61,6 @@ talk BootTalk
 	Prepare for a letter the likes of which you have never seen before! \s[21](Whether that is a good thing or not remains to be seen.)
 }
 
-//Wash
 talk BootTalk
 {
 	\s[0]{Greetings} {Wanderer},
@@ -78,7 +74,6 @@ talk BootTalk
 	\_w[1500]\s[20]Alas, there is naught to do but rewrite the parts I can remember. \s[0]I hope this will suffice, and I will endeavor to handle my words more carefully in the future.
 }
 
-//Fall
 talk BootTalk
 {
 	\s[0]{Greetings} {Wanderer},
@@ -88,7 +83,6 @@ talk BootTalk
 	\_w[1000]\s[1]I am certain a well-traveled soul such as yourself can understand the feeling, and will forgive me for ensuring that I had rested adequately before attempting to convey the latest happenings.
 }
 
-//Wake
 talk BootTalk
 {
 	\s[0]{Greetings} {Wanderer},
@@ -100,7 +94,6 @@ talk BootTalk
 	\_w[1000]\s[21]I've no intention of spending the rest of the night awake, so prepare to be inundated with the mundane!
 }
 
-//Safe
 talk BootTalk
 {
 	\s[0]{Greetings} {Wanderer},
@@ -112,7 +105,6 @@ talk BootTalk
 	\_w[1000]\s[30]\_w[4000]\s[2]\_w[2000]\![set,balloonwait,1.5]I really and truly am not the adventuring type, I cannot imagine doing anything so nervewracking for real. \_w[1000]\![set,balloonwait,1]\s[22]I hope that as I write this, you are safe and sound!
 }
 
-//Leg
 talk BootTalk
 {
 	%{ RemainingTalks = 7; }
@@ -125,7 +117,6 @@ talk BootTalk
 	\s[1]You will have to forgive me if this letter is a little shorter than usual. \s[21]I suspect I'll be nodding off sooner over later.
 }
 
-//Just
 talk BootTalk
 {
 	\s[0]{Greetings} {Wanderer},
@@ -163,7 +154,6 @@ talk CloseTalk
 	{Homebody}
 }
 
-//Line
 talk CloseTalk
 {
 	\s[130]\_w[1500]\s[137]\_w[1000]\s[2]Oh my, I've just seen something get tangled up on the washing line!
@@ -176,7 +166,6 @@ talk CloseTalk
 	\_w[1500]\s[2]P.S. Keep your tail away from any loose ropes or wires!
 }
 
-//Sign
 talk CloseTalk
 {
 	\s[130]\_w[1500]\s[20]A cloud has just rolled in to cover up the moon. \s[22]Perhaps that is a sign that I should return to my bed.
@@ -187,7 +176,6 @@ talk CloseTalk
 	{Homebody}
 }
 
-//Number
 talk CloseTalk
 {
 	\s[2]Ah, this letter is growing quite lengthy. \_w[500]\s[130]\_w[2500]\s[21]I wonder if you are still reading it, or if you have fallen asleep part way through?
@@ -198,7 +186,6 @@ talk CloseTalk
 	{Homebody}
 }
 
-//Point
 talk CloseTalk
 {
 	\s[0]Well, this seems like a good stopping point for now. \s[21]I still have some thoughts on my mind, but I'll save those for the next letter. It should give you something to look forward to.
@@ -209,7 +196,6 @@ talk CloseTalk
 	\_w[2000]\s[0]{postscript}
 }
 
-//Walk
 talk CloseTalk
 {
 	\s[131]\_w[1500]\s[0]Well, I think that's enough from me for now. My legs are telling me to get up and take a short walk around, then put myself back to bed.
@@ -220,7 +206,6 @@ talk CloseTalk
 	{Homebody}
 }
 
-//Scare
 talk CloseTalk
 {
 	\s[2]\_w[1500]\s[37]\_w[1500]\s[3]\_w[500]Alas, I must end my letter here. \s[23]There was a noise outside just now, and I sense there may be a fox or other predator nearby in need of a good scare.
@@ -229,7 +214,6 @@ talk CloseTalk
 	{Homebody}
 }
 
-//Heavy
 talk CloseTalk
 {
 	\s[120]\_w[2000]\s[0]\_w[500]Ah... my eyelids grow heavy once more. \s[2]Perhaps I will end this letter here before I end up spilling ink across the page and render it unreadable.
@@ -238,7 +222,6 @@ talk CloseTalk
 	{Homebody}
 }
 
-//Wave
 talk CloseTalk
 {
 	\s[20]\_w[2000]\s[0]\_w[500]I feel a wave of sleepiness setting in. \s[20]I'd best get myself back to bed before it passes.
@@ -249,7 +232,6 @@ talk CloseTalk
 	{Homebody}
 }
 
-//Grand
 talk CloseTalk
 {
 	\s[21]Well, I think it is best that I end things here and head back to bed. I'll be sure to write more soon.

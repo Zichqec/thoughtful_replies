@@ -54,7 +54,6 @@ talk MerchantVisit1
 	\s[21]As it turns out, their family grows and preserves fruit, and they sell a portion of the harvest. They had a variety of dried fruits and jarred jams! \s[31]\_w[2000]\s[1]I wonder if they keep bees as well? Surely they must! \s[7]It's hard to imagine they would have enough honey otherwise!
 }
 
-//Rock
 talk MerchantVisit1
 {
 	%{ TalkTimer.RandomTalkQueue = [MerchantVisit2@Rocks]; }
@@ -72,7 +71,6 @@ talk MerchantVisit2@Rocks
 	\s[22]I worry that such a high value item would attract unwanted attention, or that it would weigh you down at times when you cannot afford it.
 }
 
-//Power
 talk MerchantVisit1
 {
 	%{ TalkTimer.RandomTalkQueue = [MerchantVisit2@PowerStaff]; }
@@ -109,7 +107,6 @@ talk EveningStroll1
 	\s[1]Surrounded by the rustling of leaves, the smells of the forest, and walking with no particular destination in mind... \s[2]it almost makes me understand what compels you to roam so far.
 }
 
-//Flow
 talk EveningStroll1
 {
 	\s[0]I decided to follow the flow of the river and see if there was anything new since I last went that way.
@@ -119,7 +116,6 @@ talk EveningStroll1
 	\_w[1000]\s[131]\_w[2000]\s[130]\_w[2000]\s[2]\_w[500]Still, if that is the feeling you chase every day, then I think I can appreciate the appeal that wandering holds for you.
 }
 
-//Hill
 talk EveningStroll1
 {
 	\s[0]I took the time to climb up the hill, right to the very top. \s[1]The view as I looked over the village was breathtaking. I arrived in time to watch the sunset, and stayed long enough to see the soft glow of lanterns and candles light up the houses.
@@ -129,7 +125,6 @@ talk EveningStroll1
 	\_w[1000]\s[130]\_w[3500]\s[0]\_w[500]Looking out over a beautiful viewpoint after putting in great effort to get there... it must be immensely rewarding. I think I understand what draws you to it.
 }
 
-//Word → World
 talk EveningStroll1
 {
 	\s[0]It's hard for me to imagine what it's like for you, traveling to the far corners of the world. \s[20]But for a moment, I envisioned myself continuing to walk without turning back, for days and days and days... \_w[1000]\s[21]I found myself wondering how much distance I could cover in a day, then a week, then a month.
@@ -144,7 +139,6 @@ talk EveningStroll2
 	\s[3]The chill breeze is not much to my tastes, though{emdash}\s[7]brr! \s[22]I hope each time I think of you, you are warm and dry at an inn somewhere, enjoying a hearty meal.
 }
 
-//Rage
 talk EveningStroll2
 {
 	\s[0]I have not even a tenth of your bravery, though. When at last I turned for home, I spotted a bee's nest, and contemplated the possibility of harvesting some honey.
@@ -275,7 +269,6 @@ talk StrangeSounds1
 	Arms being a lantern tied to a rope, which I bravely lowered into the deep, dark caverns of the well. Shadows jumped at every movement, every bump against stone walls echoing... echoing... When suddenly, there! A branch, floating atop the water! And on that branch, a toad!
 }
 
-//Loop
 talk StrangeSounds1
 {
 	\s[2]Yesterday, I decided it was time to track down the source once and for all. I put on my walking boots, chose a hefty walking stick, and headed out into the unknown. \s[0]The unknown being the perimiter of my own land, naturally.
@@ -285,7 +278,6 @@ talk StrangeSounds1
 	\s[22]That's when I finally spotted her. \s[21]The neighbor's daughter, holding a duck call, trying her very best to imitate her beloved waterfowl.
 }
 
-//Wall
 talk StrangeSounds1
 {
 	\s[0]By chance, I spotted a strange silhouette on the stone fence yesterday. \s[2]Some sort of bird?
@@ -349,7 +341,6 @@ talk RandomTalk
 	\s[37]\_w[1000]\s[7]\_w[1000]Then I turn my head and I see her: \s[0]{chicken}, fat and happy in one of the nests. \s[20]So fat and happy that I wonder, and I judge, and she pecks but relents, and... \s[1]Yes. \s[21]You guessed it! She took \f[underline,1]all\f[underline,default] of the eggs for herself. \s[1]She really is something, isn't she?
 }
 
-//Found
 talk RandomTalk
 {
 	\s[0]I found a dusty old {brooch} that had {beenkickedundermysewingtable}. I wonder how it got there?
@@ -357,7 +348,6 @@ talk RandomTalk
 	\s[2]I don't recognize it, might it be one of yours? \s[1]Next time you return, you'll have to take a look and see. \s[131]\_w[3000]\s[21]I'll make sure it's cleaned up by then!
 }
 
-//Kick
 talk RandomTalk
 {
 	\s[0]I heard from a friend that an exquisite new spice had become available at the market. Apparently, a merchant came through recently without much fanfare, and traded quite a large supply in exchange for blankets and various other goods.
@@ -367,7 +357,6 @@ talk RandomTalk
 	\s[21]You should visit soon, or I may very well consume it all myself in a matter of fortnights.
 }
 
-//Tile → Till → Garden stuff
 talk RandomTalk
 {
 	%{ TalkTimer.RandomTalkQueue = [EvilTomatoes1,EvilTomatoes2,EvilTomatoes3]; }
@@ -391,7 +380,6 @@ talk EvilTomatoes3
 	\s[1]If you wish to protest despite this, you may. \s[21]I would be most easily persuaded by a visit wherein you bring seeds for another vegetable you would deem acceptable instead.
 }
 
-//Turn
 talk RandomTalk
 {
 	%{ TalkTimer.RandomTalkQueue = [TroubleChicken1,TroubleChicken2]; }
@@ -417,7 +405,6 @@ talk TroubleChicken1
 	\s[20]A clear set of muddy chicken tracks trailed across {pick.referent}, as if to spite me. \s[22]I'd worked so hard to get the stains out of {pick.referent}, too...
 }
 
-//Scrap
 talk TroubleChicken1
 {
 	\s[0]As you know, I prefer to take my time eating meals, savoring every morsel. \s[2]But now? I must either eat my dinner swiftly, or keep a vigilant eye on it, lest she pluck the scraps right off my plate!
@@ -425,7 +412,6 @@ talk TroubleChicken1
 	\s[22]If I do not adjust my habits, I might very well starve in my own home.
 }
 
-//Step
 talk TroubleChicken1
 {
 	\s[0]The other day as I made my way outside to tend to the garden, I didn't make it even three steps beyond the doorframe before I heard the telltale sounds of something being knocked to the floor.
@@ -433,7 +419,6 @@ talk TroubleChicken1
 	\_w[500]\s[130]\_w[2500]\s[122]\_w[1500]\s[22]\_w[500]I turned around and there she was, standing amidst {thebrokenvasepieces}. She looked so proud of herself as she searched through the carnage for seeds.
 }
 
-//Crash
 talk TroubleChicken1
 {
 	\s[0]Yesterday while I was cooking dinner, I heard a crashing sound from the living room. I rushed out and what did I find?
@@ -441,7 +426,6 @@ talk TroubleChicken1
 	\s[2]The pretty vase I'd bought at the market that day, smashed to pieces. \s[22]And a certain hen strutting proudly nearby, stepping on the stems of the flowers that the vase had been holding, as if to choke the remaining life out of them.
 }
 
-//Table
 talk TroubleChicken1
 {
 	\s[0]Just yesterday, she managed to track mud \f[underline,1]everywhere\f[underline,default] throughout the house. On the rug, through the kitchen, across the table...
@@ -451,7 +435,6 @@ talk TroubleChicken1
 	\_w[1000]\s[22]She made quite the mess for one chicken!
 }
 
-//Fold
 talk TroubleChicken1
 {
 	\s[0]Just last evening I spent half an hour dutifully folding clothes. Half an hour! \s[2]Then I got up for just a minute to stir the cooking pot, and when I returned...
@@ -459,7 +442,6 @@ talk TroubleChicken1
 	\_w[1000]\s[22]\_w[500]There she was, perched on the coffee table where the clean, freshly folded clothes had been. \s[20]Clothes which were now spilled across the floor, disheveled and gathering up every speck of dirt they could find, as if to spite me.
 }
 
-//Spring
 talk TroubleChicken1
 {
 	\s[2]Something must have startled her as I walked by the henhouse yesterday, because she suddenly sprang out, flapping her wings and hollering like there was no tomorrow.
@@ -469,7 +451,6 @@ talk TroubleChicken1
 	\_w[1500]\s[22]Suffice to say that I ended up taking a long bath later, and one of my dresses is in desperate need of washing!
 }
 
-//Cup
 talk TroubleChicken1
 {
 	\s[0]Yesterday I got up from my chair for just a minute to attend to something in the kitchen, and no sooner had I stepped through the doorframe than I heard a \f[underline,1]splash\f[underline,default] and a \f[underline,1]crack\f[underline,default], signifying the destruction of some piece of property I'd dared to leave behind with her.
@@ -484,7 +465,6 @@ talk TroubleChicken2
 	\s[21]I'm sure that if you come by, she'll teach you as well. For free, no less! Isn't she so generous?
 }
 
-//Cloud
 talk RandomTalk
 {
 	\s[0]A certain traveling merchant at the market lately has me on edge. \s[2]Each time I pass by their station, I feel an uneasy haze come over me.
@@ -494,7 +474,6 @@ talk RandomTalk
 	\_w[1000]\s[130]\_w[3000]\s[3]I don't like it. It smells of shifty business practices. \s[23]I may not have proof of anything yet, but I will certainly be on the lookout...
 }
 
-//Miss
 //TODO I think there is another dialogue (by vita?) which references a crochet group of some kind, but I don't remember the specific wording. Find that and slot it in
 talk RandomTalk
 {
@@ -505,7 +484,6 @@ talk RandomTalk
 	\s[22]\_w[500]I will miss her terribly. I'm sure we'll exchange letters, of course, but crochet club meetings will not be quite the same without her!
 }
 
-//Time
 talk RandomTalk
 {
 	\s[0]If you find the time, would you consider stopping by a fabric shop during your travels? \s[2]I am nearly out of my favorite {redyarn}, and I am hoping to find a suitable replacement to lessen the blow.
@@ -513,7 +491,6 @@ talk RandomTalk
 	\s[1]It need not be a match for what I have now, only something that is enjoyable to use. \s[21]Or delightful to simply have in my yarn basket! Yarn hoarding is one of the many great pleasures of being a crafter.
 }
 
-//Slice
 talk RandomTalk
 {
 	\s[0]I've been practicing the recipe for your favorite rhubarb pie. I would not want my skills to rust merely because you are not here to enjoy it.
@@ -521,7 +498,6 @@ talk RandomTalk
 	\s[100]\_w[1500]\s[131]\_w[2000]\s[1]\_w[500]Alas, much as I wish to send you a slice, I fear the courier would succumb to the temptation to eat it mid-transit... \s[21]You will have to visit if you would like a taste!
 }
 
-//Bow
 talk RandomTalk
 {
 	\s[1]I got another cute bow for Abigail to wear. This one is {pinkwithpolkadots}.
@@ -531,7 +507,6 @@ talk RandomTalk
 	\s[121]\_w[2000]\s[1]\_w[500]She's just darling, isn't she?\_w[1000]\s[101]
 }
 
-//Pour
 talk RandomTalk
 {
 	\s[1]Lately, I have been pouring my efforts into a gift for {anewlywedcouple}. I did some investigation to learn what colors would be favorable, and picked out my nicest yarns for the project. \s[21]Hopefully {ablanket} will be well received!
@@ -539,7 +514,6 @@ talk RandomTalk
 	\s[131]\_w[2500]\s[1]\_w[500]There has been a great deal of excitement around the village as celebrations are being prepared. \s[21]Times like these make me very happy to be a crafter.
 }
 
-//Frozen
 talk RandomTalk
 {
 	\s[0]I've sworn to myself that this previous winter is the last one in which I'll let my toes feel like they've frozen off. \s[2]Between projects I've been making socks, socks, and more socks.
@@ -547,7 +521,6 @@ talk RandomTalk
 	\s[3]This year is the year that I will always have a pair handy, no matter what I am doing or where I am at!
 }
 
-//Clay
 talk RandomTalk
 {
 	\s[0]A friend of mine has recently begun learning pottery. Apparently {theywanttostartabusiness}
@@ -557,7 +530,6 @@ talk RandomTalk
 	\_w[1500]\s[1]Ha, what a spectacular mess that would be! Clay all through my fur, claw marks in every piece I touch... \s[21]No, I think I will stick to my fiber arts. They are much more forgiving for a fur-covered creature such as I!
 }
 
-//Nugget
 talk RandomTalk
 {
 	\s[0]I was cleaning out an old chest earlier when I came across {agoldnugget} you gave to me years ago. \s[1]I thought to myself, "My, how long it has been since my dearest sibling left home!"
@@ -567,7 +539,6 @@ talk RandomTalk
 	\_w[1500]\s[122]\_w[5500]\s[2]\_w[500]Perhaps I will begin collecting materials to make a display of the trinkets you've brought me over the years. \_w[1000]\s[21]Though I would need to make such a display quite large, to accomodate future additions!
 }
 
-//Ring
 talk RandomTalk
 {
 	\s[0]When I was making my way to the market yesterday I found {aring} lying on the ground. Someone must have dropped it and not noticed.
@@ -577,7 +548,6 @@ talk RandomTalk
 	\s[22]How did it get all the way out there...? \_w[1000]\s[131]\_w[2500]\s[1]I suppose I'll never know, but I am grateful that someone turned it in.
 }
 
-//Last
 talk RandomTalk
 {
 	\s[1]I'm impressed with how long that skein of multicolored yarn you gave to me has lasted. \s[0]Rest assured I have been making good use of it! It simply seems to go on and on.
@@ -587,7 +557,6 @@ talk RandomTalk
 	\_w[2000]\s[0]\_w[500]Hm, perhaps an investigation is in order... \s[21]Should I find evidence of trickery, penalties will be applied accordingly!
 }
 
-//Name
 talk RandomTalk
 {
 	%{
@@ -600,7 +569,6 @@ talk RandomTalk
 	\_w[1000]\s[131]\_w[2000]\s[1]\_w[500]Of course, by the time this letter reaches you and you compose a reply, it is likely I will have already decided... \s[21]Tiny chicks are too adorable to remain nameless for long!
 }
 
-//Stump
 talk RandomTalk
 {
 	\s[1]Abigail has been spending a great deal of time perched on her favorite stump again.
@@ -608,7 +576,6 @@ talk RandomTalk
 	\s[21]It is a shame she always grows bored of it by the time you come to visit. Perhaps I should hire an artist to create a sketch for your benefit?
 }
 
-//Wax
 //TODO this could be expanded with a word group to cover more than just wax, if desired?
 talk RandomTalk
 {
@@ -617,7 +584,6 @@ talk RandomTalk
 	\s[1]Abigail gave me a stern lecture and told me to be more careful next time. \s[21]If this letter is not perfectly clean when you receive it, I will owe you {threejarsofjam}!
 }
 
-//Trip
 talk RandomTalk
 {
 	%{ TalkTimer.RandomTalkQueue = [TripIntoTown]; }
@@ -633,7 +599,6 @@ talk TripIntoTown
 	\_w[1000]I am not in any particular rush to obtain my desired items. \s[21]I wonder if we might be able to strike a deal?
 }
 
-//String
 talk RandomTalk
 {
 	\s[2]Earlier today I found a long string in the chicken coop. \s[2]I don't recognize it, and it isn't the right size or color to match any of my belongings. Where could they have possibly gotten it?
@@ -641,7 +606,6 @@ talk RandomTalk
 	\_w[1000]\s[130]\_w[2500]\s[22]\_w[500]Perhaps it clung to my clothes on the way home from {themarket}? \s[2]I will have to be more careful to check my clothing in the future, to ensure I am not bringing home stowaways. They could be hazardous!
 }
 
-//Pawn
 talk RandomTalk
 {
 	\s[0]A rather shifty merchant has come through the village a few times recently. \s[20]They are remarkably persistent, and approach me at every chance they get.
@@ -651,7 +615,6 @@ talk RandomTalk
 	\_w[500]\s[23]Please be on your guard the next time you come by.
 }
 
-//Log
 talk RandomTalk
 {
 	\s[0]One of the log benches in the village square has been overtaken by ants lately. I wonder what has attracted them?
@@ -665,7 +628,6 @@ talk RandomTalk
 	\s[0]I had a series of misfortunes today while I was tending to the garden. In retrospect, it doesn't feel like anything so major, \w4\s[2]but at the time it was stressful!
 }
 
-//Coil
 talk GardenMisfortunes1
 {
 	\s[2]I was harvesting some carrots, and as I reached to pull on some stems, my hand brushed by the coiled-up body of a snake!
@@ -675,7 +637,6 @@ talk GardenMisfortunes1
 	\_w[1000]\s[130]\_w[2500]\s[2]\_w[500]My pulse was racing, and the direction it was going would take it out of the garden anyway, so I decided not to pursue it.
 }
 
-//Smooth
 talk GardenMisfortunes2
 {
 	\s[2]Once I had finally smoothed my fur back down, I turned back to my work. \s[22]But just then...
@@ -685,7 +646,6 @@ talk GardenMisfortunes2
 	\s[23]Thankfully my fur is quite thick, so I managed to escape without any stings.
 }
 
-//Rip
 talk GardenMisfortunes2
 {
 	%{
@@ -709,7 +669,6 @@ talk GardenMisfortunes3
 	\s[2]After all of that, I was quite tired and decided that some rest and recuperation was in order. \s[0]I settled down with some tea and a crochet project, and in the end I felt much better for it!
 }
 
-//Layer
 talk RandomTalk
 {
 	\s[1]I have been very proud of {chicken} lately. She is quite the layer!
@@ -717,7 +676,6 @@ talk RandomTalk
 	\_w[1500]\s[131]\_w[2000]\s[0]\_w[500]That, or she is claiming eggs other than her own. \s[21]I will look into it. It never hurts to be a little skeptical with the flock.
 }
 
-//Render
 talk RandomTalk
 {
 	\s[0]Last time the courier came around, I very nearly missed my chance to send your letter. \s[2]I turned the envelope over to him, and when I reached for my coin purse, I was startled to find it was missing!
@@ -727,7 +685,6 @@ talk RandomTalk
 	\_w[1000]\s[130]\_w[2500]\s[2]\_w[500]Thankfully, he was quite kind about it, and accepted a few {slicesofcherrypie} in exchange for services rendered.
 }
 
-//Fire
 talk RandomTalk
 {
 	\s[0]As often happens around this time of year, I've been invited to various friends' houses to enjoy food over a campfire. \s[1]It is a good way to spend time with others, and I appreciate the invitations very much so.
@@ -735,7 +692,6 @@ talk RandomTalk
 	\s[2]My only regret is that I cannot bring a crochet project with me on such occasions. \s[22]Flying embers and highly flammable yarn are all too happy to mix!
 }
 
-//Cave
 talk RandomTalk
 {
 	\s[2]I have once again caved to my overwhelming desire to acquire more yarn. \s[0]The new skein is a color I already have, but it has a different texture. \s[22]The difference is important, I swear!
@@ -743,7 +699,6 @@ talk RandomTalk
 	\_w[2000]\s[130]\_w[2500]\s[0]\_w[500]Sometimes, I find myself wondering if perhaps there is dragon blood within our ancestry.
 }
 
-//Forge
 talk RandomTalk
 {
 	%{ TalkTimer.RandomTalkQueue = [BlacksmithsSon1,BlacksmithsSon2]; }
@@ -764,7 +719,6 @@ talk BlacksmithsSon2
 	\_w[1000]\s[2]I hope the town guard will deal with the bandit problem swiftly, though!
 }
 
-//List
 talk RandomTalk
 {
 	\s[0]I've taken on so many crochet projects lately that I've had to start a list to keep track of them all. I'm hoping to work my way through it before the season turns, so I can get back to a more relaxed routine.
@@ -774,7 +728,6 @@ talk RandomTalk
 	\_w[500]\s[130]\_w[2500]\s[1]\_w[500]Not that I mind having something to do with my hands at all times of day. \s[2]It's just that some of these are gifts for birthdays, anniversaries, and other such events, so they would ideally be completed by a certain time!
 }
 
-//Fair
 talk RandomTalk
 {
 	\s[0]There has been talk recently of a fair being organized in town. Many folks in the village are hoping to attend, or to send goods with friends to showcase and sell on their behalf.
@@ -784,7 +737,6 @@ talk RandomTalk
 	\_w[1000]\s[131]\_w[2500]\s[1]\_w[500]Either way, I am certain to come into possession of various fair delicacies soon. \s[21]I am looking forward to it rather hungrily!
 }
 
-//Scale
 talk RandomTalk
 {
 	\s[0]By the way, if you happen to have the opportunity to gather dragon scales, would you consider bringing some to me? I had an idea for a project involving them.
@@ -794,7 +746,6 @@ talk RandomTalk
 	\_w[1500]\s[130]\_w[3000]\s[22]\_w[500]Perhaps I should not be asking. \_w[1000]You need not do anything brash to impress me, I am quite impressed already!
 }
 
-//Clear
 talk RandomTalk
 {
 	\s[0]I have been working on clearing out a cabinet full of old odds and ends. \s[2]It was packed so full that the contents were nearly spilling out. It has taken me upwards of two moons slowly chipping away at it to see substantial progress!
@@ -806,7 +757,6 @@ talk RandomTalk
 	\_w[1500]\s[21]\_w[500]Perhaps I will have finished by the next time you visit, and you can admire my handiwork before I fill it once more.
 }
 
-//Space
 talk RandomTalk
 {
 	\s[0]My yearly effort to recover space around the house has been going well so far. This week I've been focusing on {clearingthefloor}
@@ -814,7 +764,6 @@ talk RandomTalk
 	\s[2]It's amazing how quickly things become cluttered if I don't constantly work to keep them tidy!
 }
 
-//Box → Boks → bok bok bok bok bok
 talk RandomTalk
 {
 	\s[0]Yesterday Abigail and I sat down and had a serious conversation about {thehenhouserules}. \s[1]And do you know what she said to me?
@@ -824,7 +773,6 @@ talk RandomTalk
 	\s[21]{suchwisewords}
 }
 
-//Shade
 talk RandomTalk
 {
 	%{ TalkTimer.RandomTalkQueue = [YarnColorHelp]; }
@@ -840,7 +788,6 @@ talk YarnColorHelp
 	\s[1]Yes, that would help me greatly. \s[21]Please do not rush your decision, I have other projects that I am still bringing to completion. Any time that is convenient for you is fine.
 }
 
-//Cast
 talk RandomTalk
 {
 	\s[0]A traveling minstrel visited our village recently. He offered to play music and tell grand tales for a small sum. \s[1]Everyone decided to pitch in a coin, and by the end of his performance we were glad we did. He put on quite the spectacle!
@@ -850,7 +797,6 @@ talk RandomTalk
 	\_w[1000]\s[101]\_w[2500]\s[131]\_w[2500]\s[1]\_w[500]I suspect his stories were embellished tales that he has heard from adventurers such as yourself. \_w[1000]\s[21]Even so, his blend of magic and music was very entertaining. I am sure he does well for himself.
 }
 
-//Bundle
 talk RandomTalk
 {
 	\s[0]Every year I tell myself I will crochet a new shawl in time for winter, so that I have another layer to bundle up with.
@@ -860,7 +806,6 @@ talk RandomTalk
 	\_w[1000]\s[22]Such is the life of someone who is frustratingly cold, but not intolerably so.
 }
 
-//Light
 talk RandomTalk
 {
 	\s[0]One thing I have always been grateful for when it comes to fiber arts is that my materials and the products I create are all very light. \s[2]I do not envy the booksellers at the market, nor the farmers with their heavy crates of fruits or jams, nor the lumberjack selling firewood!
@@ -868,7 +813,6 @@ talk RandomTalk
 	\_w[1000]\s[21]My craft is easy to carry with me anywhere, even if I bring many types of yarn.
 }
 
-//Wrap
 talk RandomTalk
 {
 	\s[1]I have been considering crocheting some handle covers for my baskets. Something with a cute pattern I could wrap around and fix in place.
@@ -876,7 +820,6 @@ talk RandomTalk
 	\s[21]It would serve no purpose other than to add a little more color and brightness to my life, but is that not purpose enough?
 }
 
-//Weak
 talk RandomTalk
 {
 	\s[0]That railing on the porch is still in disrepair. \s[2]I have been trying to save up the money to hire one of those energetic youths that's always scurrying around doing odd jobs to fix it, but, well...
@@ -884,7 +827,6 @@ talk RandomTalk
 	\s[21]We both know my fortitude is a bit weak when it comes to {yarnfruit}. And so, the railing remains in its current state.
 }
 
-//Train
 talk RandomTalk
 {
 	\s[1]I've been attempting to train Abigail to {bokoncommand}.
@@ -892,7 +834,6 @@ talk RandomTalk
 	\_w[1000]\s[21]Our success rate leaves much to be desired, but I am certain she will get it eventually.
 }
 
-//Bubble
 talk RandomTalk
 {
 	\s[0]Yesterday when I went down to the stream, I saw some of the neighbor kids sitting on the bank, watching the water rush around the rocks and form bubbles. \s[1]It reminded me very much of when you and I were young and did the same.
@@ -902,7 +843,6 @@ talk RandomTalk
 	\_w[2000]\s[131]\_w[4000]\s[21]\_w[500]I suppose, thinking on it now, the signs that you would be the type to roam and seek out nature's wonders were there from an early age.
 }
 
-//Mint
 talk RandomTalk
 {
 	%{ TalkTimer.RandomTalkQueue = [CatmintTea]; }
@@ -916,7 +856,6 @@ talk CatmintTea
 	\s[1]Regardless, I suppose their heart is in the right place. \s[21]And I am sure you will not turn down a few leaves if I have a surplus and send some your way.
 }
 
-//Beat → Beet
 talk RandomTalk
 {
 	%{ TalkTimer.RandomTalkQueue = [ExcessBeets]; }
@@ -934,7 +873,6 @@ talk ExcessBeets
 	\_w[1000]\s[1]\_w[500]It is a good exercise in creative meal preparation, as well. There are a hundred ways to cook and serve beets, if you take the time to learn and experiment.
 }
 
-//Skip
 talk RandomTalk
 {
 	\s[0]Lately I have been reminiscing about the lake when I settle down for my afternoon nap. The weather at this time of year makes me think about when we used to spend lazy afternoons there, skipping stones together.
@@ -944,7 +882,6 @@ talk RandomTalk
 	\_w[1500]\s[31]\_w[3500]\s[21]\_w[500]No, any records you claim to have set while I was not there to witness them do not count! Should you wish to challenge me, you will have to meet me at the lake and face off fair and square.
 }
 
-//File
 talk RandomTalk
 {
 	\s[0]I went to the general store today to get more {sugar}, but there was some sort of commotion going on. \s[2]A few dozen people were lined up outside the doors in single-file, with perhaps more inside.
@@ -952,7 +889,6 @@ talk RandomTalk
 	\s[22]Perhaps {shophandsaresick}? \s[2]I didn't stay to find out; I can get by for now, so I'll visit another time when they're less busy.
 }
 
-//Warp
 talk RandomTalk
 {
 	\s[0]I should get that warped plank on the porch fixed soon. \s[3]I caught my paw on it again the other day, and my toes still ache.
@@ -960,7 +896,6 @@ talk RandomTalk
 	\_w[1000]\s[23]\_w[500]Perhaps I will put something brightly colored overtop of it to act as a warning in the meantime...
 }
 
-//Hit
 talk RandomTalk
 {
 	%{ local sillyproject = chickenlegwarmers(); }
@@ -973,7 +908,6 @@ talk RandomTalk
 	\s[1]Once I bring in some prototype pieces for demonstration, my fiber arts group will be enthusiastic about the idea and join the revolution. When you come to visit, {sillyproject} will be all the rage!
 }
 
-//Hamper
 talk RandomTalk
 {
 	\s[0]I stopped by the basket weaver's stall at the market today. \s[1]There were many sturdy pieces on display, including all sorts of hampers, large and small.
@@ -983,13 +917,11 @@ talk RandomTalk
 	\_w[1500]\s[0]Mine does, however, need some repairs. We discussed the matter and agreed upon a fair price. \s[2]Now all I need do is estimate how quickly to save coin for the repair, based on how long I think my hamper will hold out. \s[22]If I get it wrong, the repair will become much more costly!
 }
 
-//Tell
 talk RandomTalk
 {
 	\s[1]Don't tell Abigail, but I'm making special plans for her hatchday. \s[21]She's sure to love {atinyapron}!
 }
 
-//Wing
 talk RandomTalk
 {
 	\s[1]One of the young ones in the village has been chattering nonstop about {growwingsandfly}.
@@ -997,7 +929,6 @@ talk RandomTalk
 	\s[21]She reminds me very much of you when you were that age.
 }
 
-//Deal
 talk RandomTalk
 {
 	\s[0]I attempted to sell some of my extra crochet pieces to a traveling merchant recently. \s[20]It did not go well.
@@ -1007,13 +938,11 @@ talk RandomTalk
 	\s[3]I sent them on their way, and warned the others in my fiber arts group. No one should accept such a raw deal.
 }
 
-//Arch
 talk RandomTalk
 {
 	\s[1]Abigail has once again faced down her archnemesis and lived to tell the tale. \s[21]The broom will think twice about coming near her after this!
 }
 
-//Pool
 talk RandomTalk
 {
 	\s[0]We've been having discussions at my fiber arts group about creating a pool of yarn that anyone in the group may use, especially those new to crafting.
@@ -1023,7 +952,6 @@ talk RandomTalk
 	\s[1]By having some shared supplies, we can encourage newcomers to try something new without needing to make a large supply commitment up front, and help them make informed decisions when it's time to buy materials of their own.
 }
 
-//End
 talk RandomTalk
 {
 	\s[2]I have, tragically, come to the end of one of my favorite skeins of yarn. Only a few feet remain.
@@ -1033,7 +961,6 @@ talk RandomTalk
 	\_w[1000]\s[21]Maybe if I make enough such tiny squares, I could create a tiny quilt for Abigail.
 }
 
-//Hunt
 talk RandomTalk
 {
 	\s[0]Do you browse many odds and ends during your travels? I have a sweater that has been lying around nearly finished for months. All I need do is put the buttons on it.
@@ -1043,7 +970,6 @@ talk RandomTalk
 	\s[1]Should you see any that you think are interesting, I would be glad to evaluate them. \s[21]Even if they prove not to be the right fit for this particular sweater, my button collection would certainly not be lesser for new arrivals.
 }
 
-//Matter
 talk RandomTalk
 {
 	%{
@@ -1057,7 +983,6 @@ talk RandomTalk
 	\_w[1000]\s[21]Not that I am terribly worried about it. Abigail is sure to keep an eye on them, and bring matters to me should they become too unruly.
 }
 
-//Case
 talk RandomTalk
 {
 	\s[0]I stopped by the jeweler's stall at the market to admire her latest pieces. \s[21]They always look so tantalizing behind the glass of the display cases.
@@ -1065,7 +990,6 @@ talk RandomTalk
 	\_w[1000]\s[1]Do you think my {doilies} would look nicer in a fancy case? Perhaps I should get one and try it.
 }
 
-//Condition
 talk RandomTalk
 {
 	\s[1]I must say, Abigail has been in peak condition as of late. The way the sun gleams on her feathers is simply stunning. Could any other chicken hope to compete?
@@ -1073,7 +997,6 @@ talk RandomTalk
 	\_w[1000]\s[21](No.)
 }
 
-//Fish
 talk RandomTalk
 {
 	\s[0]I decided to treat myself to some fresh fish from the fishmonger. After all, I have been quite hard at work lately, and it would do no good to toil endlessly without reward.
@@ -1081,7 +1004,6 @@ talk RandomTalk
 	\_w[1000]\s[1]This has proved to be a good decision; my bones feel rejuvenated and ready for another day's effort. \_w[1000]\s[21]I recommend you do the same if you have the opportunity.
 }
 
-//Steel
 talk RandomTalk
 {
 	\s[0]I happened to be at the village square when some members of the town guard came through. They patrolled around the area, in that performative way they always do, ensuring any would-be troublemakers see the wicked steel swords they sport on their hips.
@@ -1089,7 +1011,6 @@ talk RandomTalk
 	\_w[1000]\s[30]\_w[4500]\s[1]\_w[500]I am glad you felt called to wander rather than join up with them. They often seem as though their lives are lacking enrichment. \_w[1000]\s[21]Perhaps they should pick up crochet.
 }
 
-//Paper
 talk RandomTalk
 {
 	%{
@@ -1103,7 +1024,6 @@ talk RandomTalk
 	\_w[1000]\s[30]\_w[3500]\s[31]\_w[2500]\s[1]\_w[500]Perhaps instead of bringing my usual coin purse, I will bring a limited amount of coins in a small pouch, so that I may purchase no more than that amount. \s[21]A cunning strategy, sure to outwit any selling tactics they may unleash.
 }
 
-//Shine
 talk RandomTalk
 {
 	\s[0]I have been thinking back to the time when you described how you {nearlygotsquashed}.
@@ -1111,7 +1031,6 @@ talk RandomTalk
 	\_w[1000]\s[22]It is such a frightening tale! \s[2]But the way your eyes shone when you described it... \_w[2000]\s[21]Well, I could hardly ask you to refrain from further such adventures, could I?
 }
 
-//Toy
 talk RandomTalk
 {
 	\s[1]My fiber arts group has been working on a new joint project: crocheting small toys for some of the young ones around the village. \s[21]It will give them something to play with when the weather keeps them inside, and is sure to be appreciated by their parents.
@@ -1119,7 +1038,6 @@ talk RandomTalk
 	\_w[1000]\s[1]It has been an interesting project to set my crochet hooks to. Certainly much different from a scarf or blanket!
 }
 
-//Roll
 talk RandomTalk
 {
 	\s[2]I seem to have caused a new problem for the neighbor. One of their kids spotted me laying in the dirt on a warm day when the sun had been out for hours, and watched as I wriggled to find just the right spot to settle into.
