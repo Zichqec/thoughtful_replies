@@ -476,6 +476,24 @@ function brooch
 			"pot of ink",
 		]),
 		"sandwich",
+		"ribbon",
+		"buckle",
+		"hairpin",
+		"handkerchief",
+		"necklace",
+		"button",
+		"cufflink",
+		"mitten (with no mate)",
+		"sock",
+		"wooden die",
+		"pressed flower",
+		"four leaf clover",
+		"charm",
+		"fishing hook",
+		"bookmark",
+		"spoon",
+		"lucky crystal",
+		"pumice stone",
 	]);
 }
 
@@ -488,6 +506,13 @@ function beenkickedundermysewingtable
 		"gotten buried at the bottom of my yarn basket",
 		"been buried under a pile of old letters",
 		"been tucked away at the very back of the bookshelf",
+		"been kicked under the porch",
+		"apparently fallen into my stash of blankets",
+		"gotten itself stuck between two bowls",
+		"caught in the window sill",
+		"gotten lost at the bottom of my sock drawer",
+		"fallen into the spare water bucket",
+		"gotten buried at the bottom of the chicken feed",
 	]);
 }
 
@@ -500,6 +525,19 @@ function scarf
 		"mitten",
 		"baby blanket",
 		"leg warmer",
+		"doily",
+		"sock",
+		"tea cozy",
+		"bandana",
+		"coaster",
+		"chicken sized pillow",
+		"mug cozy",
+		"dish rag",
+		"chicken hat",
+		"tiny rug",
+		"fingerless glove",
+		"soap saver bag",
+		"kitten hat",
 	]);
 }
 
