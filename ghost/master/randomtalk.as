@@ -144,6 +144,16 @@ talk EveningStroll2
 	\s[3]The chill breeze is not much to my tastes, though{emdash}\s[7]brr! \s[22]I hope each time I think of you, you are warm and dry at an inn somewhere, enjoying a hearty meal.
 }
 
+//Rage
+talk EveningStroll2
+{
+	\s[0]I have not even a tenth of your bravery, though. When at last I turned for home, I spotted a bee's nest, and contemplated the possibility of harvesting some honey.
+	
+	\s[2]I am certain you would be brave enough to attempt such a thing, and skilled enough to make off with a delectable treat in hand, nary a sting on you. But the thought of an enraged swarm of bees chasing me home, even with my thick fur as protection...
+	
+	\s[22]I didn't dare, and gave up on the idea quickly! \s[21]I will stick to buying honey at the market from those who make it their business to work with such creatures.
+}
+
 talk RandomTalk
 {
 	%{ TalkTimer.RandomTalkQueue = [HerHero1,HerHero2,HerHero3,HerHero4]; }
@@ -457,6 +467,14 @@ talk TroubleChicken1
 	\s[0]Having an unexpected mass of feathers and beak and talons rush past my legs made me stumble and lose my footing, and given the rain we've had recently, the ground was quite soft. \s[2]I was off-balance as my toes sank into a patch of mud, and...
 	
 	\_w[1500]\s[22]Suffice to say that I ended up taking a long bath later, and one of my dresses is in desperate need of washing!
+}
+
+//Cup
+talk TroubleChicken1
+{
+	\s[0]Yesterday I got up from my chair for just a minute to attend to something in the kitchen, and no sooner had I stepped through the doorframe than I heard a \f[underline,1]splash\f[underline,default] and a \f[underline,1]crack\f[underline,default], signifying the destruction of some piece of property I'd dared to leave behind with her.
+	
+	\_w[1000]\s[2]The victim? My favorite earthenware cup, knocked mercilessly to the floor. \_w[1000]\s[22]And the tea in it, and the rug which that tea splashed onto which now needs to be cleaned...
 }
 
 talk TroubleChicken2
@@ -1091,4 +1109,22 @@ talk RandomTalk
 	\s[0]I have been thinking back to the time when you described how you {nearlygotsquashed}.
 	
 	\_w[1000]\s[22]It is such a frightening tale! \s[2]But the way your eyes shone when you described it... \_w[2000]\s[21]Well, I could hardly ask you to refrain from further such adventures, could I?
+}
+
+//Toy
+talk RandomTalk
+{
+	\s[1]My fiber arts group has been working on a new joint project: crocheting small toys for some of the young ones around the village. \s[21]It will give them something to play with when the weather keeps them inside, and is sure to be appreciated by their parents.
+	
+	\_w[1000]\s[1]It has been an interesting project to set my crochet hooks to. Certainly much different from a scarf or blanket!
+}
+
+//Roll
+talk RandomTalk
+{
+	\s[2]I seem to have caused a new problem for the neighbor. One of their kids spotted me laying in the dirt on a warm day when the sun had been out for hours, and watched as I wriggled to find just the right spot to settle into.
+	
+	\_w[1000]\s[20]Apparently, she is attempting to copy me, and has begun to roll around in the dirt. \_w[1000]\s[22]I'm told that she has required many baths, and that they can hardly keep up with the increased laundry.
+	
+	\_w[1000]\s[30]\_w[2500]\s[31]\_w[3000]\s[1]\_w[500]I suppose that sort of mimicry is how it goes with children. I wonder what she thought I was even doing...?
 }
