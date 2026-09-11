@@ -1106,3 +1106,215 @@ talk RandomTalk
     
     \s[1]He is an odd one.
 }
+
+talk RandomTalk
+{
+	\s[0]I've lately been contemplating adding a tile backsplash to my kitchen. \s[1]I visited a neighbor for tea, and she had a gorgeous design behind her sink. Reds and yellows and oranges -\w8 like a sunrise! 
+	
+	\s[0]I think something like that would brighten up the room. Although, I would have to hire someone else to do it, since you know home renovation has never been one of my strengths.
+
+}
+
+talk RandomTalk
+{
+	\s[1]A neighbor suggested that we set up an area in the village for people to drop off things they no longer need, so that instead of throwing items away people can offer them to other folk for free. \s[2]I worry though, that some people would simply use it to get rid of their trash.
+}
+
+talk RandomTalk
+{
+	\s[1]One of my friends has been growing cucumbers in her garden, and her first harvest is almost ready. She said she wanted to make pickles from this batch, so I'm hoping that I can convince her to trade a jar of pickles for some of my chicken eggs. 
+
+	\s[31]\_w[2000]\s[0]I've really been craving some {pickletype} pickles lately.
+}
+
+talk RandomTalk
+{
+	\s[0]My fiber arts group was discussing a new type of crocheting last meeting. Instead of using a hook, you simply use your fingers to make stitches. 
+	
+	\s[2]I fear that my own paws would be too large to make properly sized loops, \s[0]but it seems like an interesting concept to me. If someone is traveling and has forgotten their hooks, they can still work on a project with just yarn and their hands.
+}
+
+talk RandomTalk
+{
+	\s[0]I'll have to stop by the general store later to pick up some more extra strength thread. I was trying to mend a pair of socks, only to realize I was all out of thread in a matching color. \s[22]Rather embarrassing for me, considering how much yarn I have collected. 
+}
+
+talk RandomTalk
+{
+	\s[0]I was cleaning out the shed recently, \s[7]and thought I saw a coiled up snake in the back corner! \s[22]I was terribly frightened, but I thought of your bravery during your adventures, and mustered up the courage to get closer to see if I could chase the beast out of the shed.
+
+	\s[0]On closer inspection, it was simply some rope that was coiled in a pile. I was relieved I didn't actually have to face a snake in my shed.
+}
+
+talk RandomTalk
+{
+	\s[0]If you are headed to the northern mountains in the near future, be sure to wear many layers. \s[22]The sky watchers have been warning us of a particularly nasty storm brewing, and as bad it will be here, it will be twice as bad in areas where it already snows year round. I'm sure I've given you half a dozen shawls by this point, so please use them.
+
+	\s[1]With the things I crochet for you, I feel like a small part of myself is able to join in on your grand adventures.
+
+}
+
+talk RandomTalk
+{
+	\s[1]Really, I cannot oversell the value of having a hobby to settle into at the end of the day. After a long day of working at the market, or cleaning the house and coop, or running errands across town, it is so nice to be able to sit down and unwind with an hour or so of crochet. Well, at least until I need to redo a row!
+
+	\s[1]I hope you have that same sort of respite on your journey.
+}
+
+talk RandomTalk
+{
+	\s[0]I imagine few things must frighten you, brave adventurer that you are, but some of the tales I hear from bards who wander through our town keep me up at night! I must know.\w8.\w8.\w8 \s[7]are there really {beasties} who {scarything}?
+}
+
+talk RandomTalk
+{
+	\s[0]Do you remember the elderly couple that lives on the hill right outside of the village? I visited them recently to bring them some eggs, and they wanted to hear what you were up to. I confess that I don't feel like I entirely did justice to your travels, but they were comforted to hear that you are doing well. 
+	
+	\s[1]The next time you come back home, please drop by their cottage. If nothing else, the tea blends they have are worth climbing a hill for. 
+}
+
+talk RandomTalk
+{
+	\s[0] A group of traveling blacksmiths came through our village the other day. They had a portable forge, and were taking orders for custom pieces that would be made on site. It was quite grand to watch, even knowing nothing of the forging process myself. 
+	
+	\_w[1000]\s[120]\_w[2000]\s[0] \_w[500] I thought of purchasing something for you, but in the end I wasn't sure what weapon or trinket would be most useful for you. 
+}
+
+talk RandomTalk
+{
+	\s[0]Honestly, one of these days I should take a thorough look at my cottage and make a list of all the repairs and improvements I would like done. \_w[1000]\s[30]\_w[2000]\s[0]\_w[500]Not that it's falling apart persay, but every now and then one of the youths wants to trade labor for eggs \w4(on account of having very little in terms of coin), and I'm sure I have some sort of work I could put them to. I just have never tallied it all up. 
+}
+
+talk RandomTalk
+{
+	\s[0]Ah, I really need to clean the closet in the hallway before you visit again. I know I have a full set of matching towels somewhere, but I've been careless with putting linens away and they've all gotten mixed up. I know you don't mind using a mismatched set, \s[22]but it is a bit embarrassing for me. 
+
+	\s[0]Besides, I need some more space to store my crochet supplies, and I'm sure if the closet were neater I could fit a few more yarn balls in there.\w8.\w8.\w8\s[131]
+}
+
+talk RandomTalk
+{
+	\s[0]These days I sometimes reminisce on things I found annoying in my youth that I greatly enjoy now. My bedroom, for example. As a teenager, I hated having a room where the rising sun illuminated my walls and woke me up early in the morning. \s[1]Nowadays, I find myself getting up earlier than the sunrise! It still is nice to have the light early in the morning, though.
+}
+
+talk RandomTalk
+{
+	\s[0]I bought this bundle of fabric scraps at a rummage sale recently, but unfortunately I think they are all too small to make anything substantial with. \_w[1000]\s[31]\_w[2000]\s[0]\_w[500]Perhaps I can make some bandanas? I've never considered myself a bandana person, but maybe I only need to find the right fabric, and I have many, many options now.
+}
+
+talk RandomTalk
+{
+	We had a fierce rainstorm a few days ago, and after it finally quieted down I made the rounds to make sure nothing had been damaged. One of the chickens was unaccounted for, \s[7]and I was fearing the worst. \s[0]I am grateful that the mud around the chicken coop held impressions well! I was able to follow poor {chicken}'s trail of footprints to where she had been hiding underneath a pile of wood scraps. Damp and scared, \s[1]but hale and whole otherwise.
+}
+
+talk RandomTalk
+{
+	\s[0]Do you remember the huge boulder in the middle of farmer {farmername}’s {crop} field? He's finally had enough of working around it apparently, because he posted a reward for anyone who can get it out of the field. Now, there are plenty of strong folks in town, but I fear this boulder has been sitting in the ground long enough that only magic can get it to move. 
+	
+	\_w[1000]\s[100]\_w[2000]\s[0]\_w[500]Perhaps you've picked up something on your adventures that would help?
+}
+
+talk RandomTalk
+{
+	\s[22]I just remembered that I am down to my last bag of chicken feed, and I don't know if the store has restocked any more. \s[0]Of course, you know I like to spoil my dear chickens, so I always buy the more expensive variety. If the store is sold out, my poor birds will have to survive off the commoner's grain for the time being. 
+	
+	\s[22]Oh, I hope they will forgive me for this slight. 
+}
+
+talk RandomTalk
+{
+	\s[0]One of the neighbor's children has started collecting wax seals, of all things. Not that those are a \f[italic,true]bad\f[italic,default] thing to collect -\w8 there are certainly more problematic things a young boy could want to gather -\w8 but I find myself wondering how a child gets into wax seals in the first place. \_w[1000]\s[100]\_w[2000]\s[0]\_w[500]Perhaps he spotted one on a discarded envelope, and found it charming. 
+
+	I did give him a few of my practice seals to add to his collection. I can spare those, at least.
+}
+
+talk RandomTalk
+{
+	\s[0]Remind me the next time I beat dust out of my rugs that I should wear a face mask. I was sneezing worse than the last time I caught hayfever! I always think that my rugs haven't possibly collected that much dust from the last time I cleaned them, \s[2]and then I am promptly reminded that just because I can't see the dirt, doesn't mean it isn't there.
+}
+
+talk RandomTalk
+{
+	\s[1]I hope someday that the mages guild finally sets up that teleportation network I keep hearing rumors about. \s[0]Of course, they likely won't set up a base in a tiny village like mine, \s[1]but being able to travel across the major cities in the blink of an eye would be wonderful. Maybe then I could visit you more on your travels, instead of you always having to come back home to visit me.
+
+	\_w[1000]\s[131]\_w[2000]\s[20]\_w[500]Although, if I were away from home for a while, I would need to have someone to come over to take care of the chickens. I wonder if any of the farmers would be willing to take on the task.
+}
+
+talk RandomTalk
+{
+	\s[0]At our community meeting recently, someone suggested having a village wide wash day. As in, everyone would bring their dirty clothes in to get washed by volunteers. They said it would save time and water having everyone do their wash at once. Which is fair and likely true, \s[2]but I am not sure how I feel about strangers handling my clothing and undergarments. \s[3]What if they ruined my crocheted pieces because they were too rough with them? 
+	
+	\s[22]I think the sentiment is in the right place, but I can't see everyone agreeing to it.
+}
+
+talk RandomTalk
+{
+	\s[0]The roof of the abandoned farmhouse by the lake caved in. I kept thinking that someone from a different town was going to move in, fix up the place, and bring some new energy into our village, \s[22]but I suppose that's impossible now. \s[0]Last I heard the farmer who owned it passed and his children have no interest in the homesteading life, so they've let it fall to ruin. \s[0]I wish at least the farmland could be reclaimed for someone who would use it.
+}
+
+talk RandomTalk
+{
+	%{ TalkTimer.RandomTalkQueue = [AbigailIsACat]; }
+	\s[0]Abigail has a new quirk. She has figured out roughly the time I awake each morning, and shortly before I wake she puts her tiny chicken face right in front of mine so that she is the first thing I see when I open my eyes. The first time she did it, \s[7]I yelled and scared her off the bed. Feathers were everywhere! \s[20]I'm grateful she didn't accidentally peck my eye out. \s[0]Now I know to expect it at least. 
+}
+
+talk AbigailIsACat {
+	\s[0]Come to think of it, there are times I watch over her sleeping while I'm cleaning the house, or cooking dinner, or working on a crochet piece. Perhaps to her, I am protecting her by watching her when she is asleep, and so she wants to return the favor. I wish I could explain that she doesn't have to watch me that closely.
+}
+
+talk RandomTalk
+{
+	\s[22]We had a terrifying windstorm the other day, \s[7]and in the midst of it I heard a crash that sounded like the very earth was tearing apart! \s[0]Afterwards, I found out that the huge oak tree by farmer {farmername}'s barn had been split in two by lightning, and fallen onto the barn. Thankfully, all of the animals were safe, even with part of the roof caved in. 
+	
+	It is a testament to the builders' skill that the structural integrity of the barn wasn't damaged.
+}
+
+talk RandomTalk
+{
+	\s[0]I took a day trip to the next town over to return a library book, and happened upon a group of giants resting in a field. \s[22]I was admittedly wary at first, \s[0]but I mustered up my courage to talk to them, \s[1]and found out they were a group of scholars traveling the land to visit as many libraries as they could find. Quite an honorable quest, I think. 
+
+	\_w[1000]\s[120]\_w[2000]\s[0]\_w[500]I'm sure you’ve met many giants before in your travels, but my encounters are few and far between, and I always forget how “giant” a giant is. Of course, you hear descriptions like “legs as thick as tree trunks”, but you can't really grasp their size until you actually have one in front of you. Or at least, I struggle to visualize it.
+}
+
+talk RandomTalk
+{
+	\s[0]I read about some different types of chickens in a book recently. I didn't realize that there are many different breeds geared towards survival in hostile environments. Take volcano chickens, for example. Their bodies are covered with fire resistant feathers, and they have thick skulls to protect against falling rocks from volcanic eruptions. Curiously, they can't fly very far, as their wings are more suited for protection than flight. They are very muscular! 
+	
+	\_w[1000]\s[30]\_w[2000]\s[0]\_w[500]I wonder if Abigail would recognize these chickens as being of the same species as her.
+}
+
+talk RandomTalk
+{
+	\s[0]There was a good deal on strawberries at the market this week, so I bought several cases. \s[22]I worry now I may have overestimated my appetite, and they will rot before I can eat them all. \s[0]Maybe I should make some jars of jam to use them up? I've never actually made jam myself, but surely it can't be that hard to make a simple one. 
+	
+	I'll have to talk to the neighbors to see if they have any guidance. 
+}
+
+
+talk RandomTalk
+{
+	\s[0]There are a few boys training some new hunting dogs in the forest by my house. I have seen them from afar while cleaning the chicken coop. \s[1]I know they are working dogs, but it is very hard to resist the urge to run over and start petting them. One of them is a hound with droopy ears and jowls that reminds me a bit of grandpa, honestly. 
+
+	\_w[1000]\s[102]\_w[2000]\s[0]\_w[500]\s[0]I hope having a fresh set of hunting dogs in the town means more meat at the market. I wouldn't call the pickings slim, but meat outside of livestock has been more sparse lately.
+}
+
+talk RandomTalk
+{
+	\s[22]One of the chickens, {chicken}, appears to have caught a cold from somewhere. Either that, or it's a bad case of allergies. \s[0]I say that, but I'm not actually sure if chickens can get allergies. \s[2]Whatever it is, I've brought her to a room inside so she can be isolated from the other chickens, and I'm checking in on her condition frequently. 
+	
+	\s[21]I'm sure that with some rest and extra food she will be back to her regular self in no time. You know my chickens are hardy.
+}
+
+talk RandomTalk
+{
+	\s[1]One of my friends from my fiber arts group dropped by for a cup of tea. She had her daughter with her, and the girl told me \f[italic,true]very\f[italic,default] excitedly about her plan to befriend the crows that hang around the apple trees on the edge of the village. \s[0]She read in a book that crows will gift small trinkets to those they trust, and I could see in her eyes the mountains of shinies she must imagine she will get. 
+	
+	\s[20]Perhaps if we were closer to a city there would be interesting things in a crows hoard. Around here, I only expect it to have bottle caps, lost keys, and a few stray nails and screws. \s[0]I didn't want to dampen the girls enthusiasm of course. I simply nodded and asked her to show me whatever treasures she received. 
+}
+
+talk RandomTalk
+{
+	\s[1]I was gifted a set of patterned paper by someone in my fiber arts group. She heard me talk about how I write letters to you, and had some stationary laying around that didn't think she would use, so she gave it to me. It was a kind gesture, \s[22]but I fear that the pattern on it is too busy to be suitable for writing letters on. I don't want you to strain your eyes to read my handwriting! 
+	
+	\s[0]I could fold it into envelopes and use it that way instead? It really is lovely paper, and I don't want it to go to waste.
+}

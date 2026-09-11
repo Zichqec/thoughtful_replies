@@ -901,3 +901,76 @@ function afishinglure
         "an avant garde art project"
     ]);
 }
+
+function pickletype
+{
+	return Random.Select([
+		"bread and butter",
+		"half sour",
+		"dill",
+		"spicy",
+		"sweet"
+
+	]);
+}
+
+function beasties
+{
+	return Random.Select([
+		"bats",
+		"rats",
+		"spiders",
+		"beetles",
+		"wasps",
+		"ravens",
+		"crabs"
+
+	]);
+}
+
+function scarything
+{
+	return Random.Select([
+		"are the size of a horse",
+		"can fell a tree in one blow",
+		"have venom that can kill a grown man",
+		"never sleep",
+		"can sink ships"
+	]);
+}
+
+function farmername
+{
+	return Random.Select([
+		"McDonald",
+		"McGraw",
+		"Joseph",
+		"Bond",
+		"George",
+		"Granger",
+		"Parlan",
+		"Arthur",
+		"Clark",
+		"Luke",
+		"Peter",
+		"Grant"
+	]);
+}
+
+function crop
+{
+	return Random.Select([
+		"wheat",
+		"corn",
+		"barley",
+		"rye",
+		"millet",
+		"oat",
+		"peanut",
+		"soybean",
+		"potato",
+		"carrot",
+		"sunflower seed",
+		"flax"
+	]);
+}

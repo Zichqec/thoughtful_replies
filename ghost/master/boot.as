@@ -126,6 +126,15 @@ talk BootTalk
 	\_w[1000]\s[31]\_w[2500]\s[1]\_w[500]Your next gift is already underway. \_w[1000]\s[21]Worry not, you'll learn what it is when you have need of it!
 }
 
+talk BootTalk
+{
+	\s[0]{Greetings} {Wanderer},
+
+	\s[1]I'm writing this to you after having just put some bread in the oven. It's a new recipe for rosemary thyme rolls I'm attempting, fashioned after some rolls I had at the neighboring town's bakery that I quite enjoyed. 
+	
+	\s[0]I consulted with some of my friends to see how I might tweak my standard recipe to mimic the bakery's. \s[1]Hopefully they turn out well, or at the very least, I can refine the recipe to be perfect by the time you next visit!
+}
+
 
 //———————————————————— Close ————————————————————
 talk CloseTalk
@@ -238,6 +247,16 @@ talk CloseTalk
 	
 	\_w[1000]\s[1]I would be most delighted if you can find the time to write back. Reading about your grand adventures is always a treat!
 	
+	{Sincerely},
+	{Homebody}
+}
+
+talk CloseTalk
+{
+	\s[21]I hope this letter brought you some respite from your grand adventures. I know that you are quite the thrillseeker, but please make sure to take some time for yourself here and there. 
+	
+	\s[0]Not to belittle myself, but I feel my daily struggles must seem small compared to your trials. Still, I appreciate that you take the time to read my letters, no matter how busy you are, and that you keep me informed on your journey. 
+
 	{Sincerely},
 	{Homebody}
 }
