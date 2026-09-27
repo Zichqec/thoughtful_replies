@@ -67,6 +67,13 @@ function OnTranslate
 	}
 	
 	
+	//Workaround for Spectre so that the balloon works on all surfaces
+	if (talkstr.Contains("\![timerraise,0,1,OnSpectrePlugin.Possession]"))
+	{
+		talkstr = talkstr.Replace("\b[","\![dummy-");
+		talkstr = talkstr.Replace("\s[","\0\b[0]\s[");
+	}
+	
 	talkstr = talkstr.Replace("\0\b[0]","\0\b[{balloonnum}]");
 	
 	talkstr = AutoPause(talkstr);

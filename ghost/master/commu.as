@@ -1,9 +1,9 @@
 function OnSpectrePlugin@ConfirmCalibration
 {
-	return "\![raiseplugin,Spectre,OnCustomCalibrationConfirm,--option=exclude,sweat]";
+	return "\![raiseplugin,Spectre,OnCustomCalibrationConfirm,--option=exclude,sweat,unamused]";
 }
 
-//TODO fix the balloon tags here, they don't work in some instances and need to be moved to OnTranslate probably
+//There is also some code in OnTranslate that handles balloon tags for expressions she does not have
 function OnSpectrePlugin@Surface
 {
 	if (Shiori.Reference[0] == "normal") return "\0\b[0]\s[0]";
@@ -16,7 +16,7 @@ function OnSpectrePlugin@Surface
 	//else if (Shiori.Reference[0] == "sweat") return "\0\b[0]\s[0]";
 	else if (Shiori.Reference[0] == "indignant") return "\0\b[0]\s[23]";
 	else if (Shiori.Reference[0] == "thinking") return "\0\b[0]\s[130]";
-	else if (Shiori.Reference[0] == "unamused") return "\0\b[0]\s[30]"; //Hmm...
+	//else if (Shiori.Reference[0] == "unamused") return "\0\b[0]\s[30]";
 }
 
 function OnSpectrePlugin@Possession
