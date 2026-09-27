@@ -664,7 +664,7 @@ talk postscript
 
 function PS
 {
-	if (Random.GetIndex(0,4) == 0) //25%
+	if (Random.GetIndex(0,2) == 0) //50%
 	{
 		local output = "";
 		output += "\_w[2000]P.S. ";
