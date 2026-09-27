@@ -99,9 +99,9 @@ function AutoPause(talkstr)
 		talkstr = talkstr.Replace("! ","!\w8\w8 ");
 		talkstr = talkstr.Replace("? ","?\w8\w8 ");
 		
-		//TODO when these don't cap off a sentence it can be weird, see the one about spices adding a kick - and the one about "deals"
-		talkstr = talkstr.Replace(") ",")\w8\w8 ");
-		talkstr = talkstr.Replace('" ','"\w8\w8 ');
+		//when these don't cap off a sentence it can add weird pauses, see the dialogue about spices adding a kick - and the one about "deals"
+		//talkstr = talkstr.Replace(") ",")\w8\w8 ");
+		//talkstr = talkstr.Replace('" ','"\w8\w8 ');
 		
 		talkstr = talkstr.Replace(",\n",",\w4\n");
 		talkstr = talkstr.Replace(".\n",".\w8\w8\n");
@@ -110,6 +110,7 @@ function AutoPause(talkstr)
 		talkstr = talkstr.Replace("!\n","!\w8\w8\n");
 		talkstr = talkstr.Replace("?\n","?\w8\w8\n");
 		
+		//I think it will be fine on a linebreak
 		talkstr = talkstr.Replace(")\n",")\w8\w8\n");
 		talkstr = talkstr.Replace('"\n','"\w8\w8\n');
 	}
