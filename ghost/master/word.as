@@ -671,7 +671,7 @@ function PS
 		
 		output += Random.Select([
 			"\s[2]Have you located your missing {amulet} yet?",
-			"\s[1]I passed along your regards{emdash}they said to wish you luck in return!", //TODO is it a bit too generic? do we want to come up with a simple family name group?
+			"\s[1]I passed along your regards to the {elacans}{emdash}they said to wish you luck in return!",
 			"\s[0]Are those socks still holding up? I have a few more pairs waiting for you, but I can send some with my next letter if needed.",
 			"\s[1]Sending you a few leaves of catmint. Take your time with them!",
 		]);
@@ -704,6 +704,23 @@ function amulet
 		"brooch",
 		"scarf",
 		"ring",
+	]);
+}
+
+//Family names
+function elacans
+{
+	return Random.Select([
+		"Elacans",
+		"Sarrels",
+		"Meadowgroves",
+		"Durallis",
+		"Rosers",
+		"Bridgewaters",
+		"Nivarrises",
+		"Alqorins",
+		"Tibbets",
+		"Wyrndels",
 	]);
 }
 
