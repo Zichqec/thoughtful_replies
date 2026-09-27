@@ -884,7 +884,7 @@ talk RandomTalk
 
 talk RandomTalk
 {
-	\s[0]I went to the general store today to get more {sugar}, but there was some sort of commotion going on. \s[2]A few dozen people were lined up outside the doors in single-file, with perhaps more inside.
+	\s[0]I went to the general store today to get more {sugar}, but there was some sort of commotion happening. \s[2]A few dozen people were lined up outside the doors in single-file, with possibly more inside.
 	
 	\s[22]Perhaps {shophandsaresick}? \s[2]I didn't stay to find out; I can get by for now, so I'll visit another time when they're less busy.
 }
@@ -905,7 +905,7 @@ talk RandomTalk
 	
 	\_w[2000]\s[21]I am certain that as you are reading these words, you are filled with awe at the thought of such a thing, and admiration for your sister who is surely about to bring a great revolution to the fiber arts world.
 	
-	\s[1]Once I bring in some prototype pieces for demonstration, my fiber arts group will be enthusiastic about the idea and join the revolution. When you come to visit, {sillyproject} will be all the rage!
+	\s[1]Once I bring in some prototype pieces for demonstration, my fiber arts group will be enthusiastic about the idea and join the revolution. When next you come to visit, {sillyproject} will be all the rage!
 }
 
 talk RandomTalk
