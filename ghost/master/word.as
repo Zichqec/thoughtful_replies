@@ -649,30 +649,51 @@ function protection
 	]);
 }
 
-function postscript
+//This is a bit janky, but I was having trouble with having PS and PPS being all one function and not matching the linebreaks of talk blocks, and i'm sick so i refuse to think through this any harder
+talk postscript
 {
-	local output = "";
+	%{
+		local script1 = PS();
+		local script2 = PPS();
+		if (script1.IsNull()) return;
+	}
+	{script1}
+	
+	{script2}
+}
+
+function PS
+{
 	if (Random.GetIndex(0,4) == 0) //25%
 	{
-		output += "P.S. ";
+		local output = "";
+		output += "\_w[2000]P.S. ";
+		
 		output += Random.Select([
 			"\s[2]Have you located your missing {amulet} yet?",
 			"\s[1]I passed along your regards{emdash}they said to wish you luck in return!", //TODO is it a bit too generic? do we want to come up with a simple family name group?
-			"Are those socks still holding up? I have a few more pairs waiting for you, but I can send some with my next letter if needed.",
+			"\s[0]Are those socks still holding up? I have a few more pairs waiting for you, but I can send some with my next letter if needed.",
 			"\s[1]Sending you a few leaves of catmint. Take your time with them!",
 		]);
 		
-		//PPS
-		if (Random.GetIndex(0,4) == 0) //25%
-		{
-			output += "\w8\w8\w8\w8\n\n";
-			output += "P.P.S. ";
-			output += Random.Select([
-				"something something wah", //TODO
-			]);
-		}
+		return output;
 	}
-	return output;
+}
+
+function PPS
+{
+	if (Random.GetIndex(0,4) == 0) //25%
+	{
+		local output = "";
+		output += "\_w[2000]";
+		output += "P.P.S. ";
+		
+		output += Random.Select([
+			"something something wah", //TODO
+		]);
+		
+		return output;
+	}
 }
 
 function amulet

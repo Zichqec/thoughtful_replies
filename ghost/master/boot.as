@@ -208,7 +208,7 @@ talk CloseTalk
 	\s[1]{Sincerely},
 	{Homebody}
 	
-	\_w[2000]\s[0]{postscript}
+	{postscript}
 }
 
 talk CloseTalk
