@@ -1109,7 +1109,7 @@ talk RandomTalk
 
 talk RandomTalk
 {
-	\s[0]I've lately been contemplating adding a tile backsplash to my kitchen. \s[1]I visited a neighbor for tea, and she had a gorgeous design behind her sink. Reds and yellows and oranges -\w8 like a sunrise! 
+	\s[0]I've lately been contemplating adding a tile backsplash to my kitchen. \s[1]I visited a neighbor for tea, and she had a gorgeous design behind her sink. Reds and yellows and oranges{emdash}like a sunrise! 
 	
 	\s[0]I think something like that would brighten up the room. Although, I would have to hire someone else to do it, since you know home renovation has never been one of my strengths.
 
@@ -1223,7 +1223,7 @@ talk RandomTalk
 
 talk RandomTalk
 {
-	\s[0]One of the neighbor's children has started collecting wax seals, of all things. Not that those are a \f[italic,true]bad\f[italic,default] thing to collect -\w8 there are certainly more problematic things a young boy could want to gather -\w8 but I find myself wondering how a child gets into wax seals in the first place. \_w[1000]\s[100]\_w[2000]\s[0]\_w[500]Perhaps he spotted one on a discarded envelope, and found it charming. 
+	\s[0]One of the neighbor's children has started collecting wax seals, of all things. Not that those are a \f[italic,true]bad\f[italic,default] thing to collect{emdash}there are certainly more problematic things a young boy could want to gather{emdash}but I find myself wondering how a child gets into wax seals in the first place. \_w[1000]\s[100]\_w[2000]\s[0]\_w[500]Perhaps he spotted one on a discarded envelope, and found it charming. 
 
 	I did give him a few of my practice seals to add to his collection. I can spare those, at least.
 }
