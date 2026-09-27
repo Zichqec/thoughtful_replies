@@ -474,14 +474,13 @@ talk RandomTalk
 	\_w[1000]\s[130]\_w[3000]\s[3]I don't like it. It smells of shifty business practices. \s[23]I may not have proof of anything yet, but I will certainly be on the lookout...
 }
 
-//TODO I think there is another dialogue (by vita?) which references a crochet group of some kind, but I don't remember the specific wording. Find that and slot it in
 talk RandomTalk
 {
 	\s[130]\_w[2500]\s[2]An old friend of mine said she will be moving to the city soon. \s[0]Apparently, her family has found good job prospects out there, and doesn't want to pass up the opportunity.
 	
 	\s[0]I don't think she herself wants to go. \_w[1000]\s[102]\_w[2500]\s[130]\_w[2500]\s[2]\_w[500]However, she wants to stay close to her family, which is understandable.
 	
-	\s[22]\_w[500]I will miss her terribly. I'm sure we'll exchange letters, of course, but crochet club meetings will not be quite the same without her!
+	\s[22]\_w[500]I will miss her terribly. I'm sure we'll exchange letters, of course, but meetings at my fiber arts group will not be quite the same without her!
 }
 
 talk RandomTalk
@@ -576,7 +575,6 @@ talk RandomTalk
 	\s[21]It is a shame she always grows bored of it by the time you come to visit. Perhaps I should hire an artist to create a sketch for your benefit?
 }
 
-//TODO this could be expanded with a word group to cover more than just wax, if desired?
 talk RandomTalk
 {
 	\s[0]Ah, I nearly forgot, I wished to apologize for making somewhat of a mess of my last letter. \s[2]I got my paw a little too close to the melted wax, some of it caught in my fur, and, well... \s[22]I'm sure you saw the result!
