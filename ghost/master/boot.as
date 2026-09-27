@@ -185,7 +185,7 @@ talk CloseTalk
 	{Homebody}
 }
 
-talk CloseTalk
+talk CloseTalk if (TodaysLetter.length + 1 >= 15)
 {
 	\s[2]Ah, this letter is growing quite lengthy. \_w[500]\s[130]\_w[2500]\s[21]I wonder if you are still reading it, or if you have fallen asleep part way through?
 	
