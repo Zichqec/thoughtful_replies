@@ -652,7 +652,7 @@ function protection
 function postscript
 {
 	local output = "";
-	if (Random.GetInteger(0,4) == 0) //25%
+	if (Random.GetIndex(0,4) == 0) //25%
 	{
 		output += "P.S. ";
 		output += Random.Select([
@@ -663,7 +663,7 @@ function postscript
 		]);
 		
 		//PPS
-		if (Random.GetInteger(0,4) == 0) //25%
+		if (Random.GetIndex(0,4) == 0) //25%
 		{
 			output += "\w8\w8\w8\w8\n\n";
 			output += "P.P.S. ";
