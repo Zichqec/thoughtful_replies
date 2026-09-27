@@ -137,7 +137,7 @@ function OnNotifyBalloonInfo
 
 function LetterFinished
 {
-	if (RemainingTalks <= 0 && ChainTalkQueue.length <= 0) return true;
+	if (RemainingTalks <= 0 && TalkTimer.RandomTalkQueue.length <= 0) return true;
 	else return false;
 }
 

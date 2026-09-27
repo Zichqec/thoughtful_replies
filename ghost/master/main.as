@@ -16,7 +16,6 @@ function OnAosoraLoad
 	TalkTimer.RandomTalkIntervalSeconds = Save.Data.TalkInterval;
 	TalkBuilder.Default.Head = "\0\b[0]";
 	TodaysLetter = [];
-	ChainTalkQueue = [];
 	LastTalk = "";
 	TimeSinceLastTalk = Time.GetNowUnixEpoch();
 	SetSurfaceRestoreRand();
