@@ -80,6 +80,7 @@ function OnTranslate
 	if (IsScriptFont())
 	{
 		//Requires the pauses from autopause, otherwise it interferes with other \n[] tags...
+		//Note that this means the sign off doesn't get this treatment because it does not trip autopause
 		talkstr = talkstr.Replace("\w8\w8\n\n","\w8\w8\n\n[50]");
 		talkstr = talkstr.Replace("\w4\n\n","\w4\n\n[50]");
 	}
