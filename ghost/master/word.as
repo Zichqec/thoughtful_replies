@@ -651,12 +651,28 @@ function protection
 
 function postscript
 {
-	return "P.S. " + Random.Select([
-		"\s[2]Have you located your missing {amulet} yet?",
-		"\s[1]I passed along your regards{emdash}they said to wish you luck in return!", //TODO is it a bit too generic? do we want to come up with a simple family name group?
-		"Are those socks still holding up? I have a few more pairs waiting for you, but I can send some with my next letter if needed.",
-		"\s[1]Sending you a few leaves of catmint. Take your time with them!",
-	]);
+	local output = "";
+	if (Random.GetInteger(0,4) == 0) //25%
+	{
+		output += "P.S. ";
+		output += Random.Select([
+			"\s[2]Have you located your missing {amulet} yet?",
+			"\s[1]I passed along your regards{emdash}they said to wish you luck in return!", //TODO is it a bit too generic? do we want to come up with a simple family name group?
+			"Are those socks still holding up? I have a few more pairs waiting for you, but I can send some with my next letter if needed.",
+			"\s[1]Sending you a few leaves of catmint. Take your time with them!",
+		]);
+		
+		//PPS
+		if (Random.GetInteger(0,4) == 0) //25%
+		{
+			output += "\w8\w8\w8\w8\n\n";
+			output += "P.P.S. ";
+			output += Random.Select([
+				"something something wah", //TODO
+			]);
+		}
+	}
+	return output;
 }
 
 function amulet

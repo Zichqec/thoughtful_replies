@@ -143,6 +143,8 @@ talk CloseTalk
 	
 	{Sincerely},
 	{Homebody}
+	
+	{postscript}
 }
 
 talk CloseTalk
@@ -161,6 +163,8 @@ talk CloseTalk
 	
 	{Sincerely},
 	{Homebody}
+	
+	{postscript}
 }
 
 talk CloseTalk
@@ -183,6 +187,8 @@ talk CloseTalk
 	
 	{Sincerely},
 	{Homebody}
+	
+	{postscript}
 }
 
 talk CloseTalk if (TodaysLetter.length + 1 >= 15)
@@ -229,6 +235,8 @@ talk CloseTalk
 	
 	\s[20]{Sincerely},
 	{Homebody}
+	
+	{postscript}
 }
 
 talk CloseTalk
@@ -249,6 +257,8 @@ talk CloseTalk
 	
 	{Sincerely},
 	{Homebody}
+	
+	{postscript}
 }
 
 talk CloseTalk
@@ -259,4 +269,6 @@ talk CloseTalk
 
 	{Sincerely},
 	{Homebody}
+	
+	{postscript}
 }
