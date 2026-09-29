@@ -553,6 +553,14 @@ function dress
 		{item: "bloomers", referent: "them"},
 		{item: "pants", referent: "them"},
 		{item: "shirt", referent: "it"},
+		{item: "scarf", referent: "it"},
+		{item: "coat", referent: "it"},
+		{item: "cloak", referent: "it"},
+		{item: "nightgown", referent: "it"},
+		{item: "tunic", referent: "it"},
+		{item: "vest", referent: "it"},
+		{item: "apron", referent: "it"},
+		{item: "chemise", referent: "it"},
 	]);
 }
 
@@ -562,6 +570,26 @@ function thebrokenvasepieces
 		"the broken pieces of what used to be a vase",
 		"a dozen skeins of yarn that had rolled out of my yarn bag as it toppled over",
 		"my collection of rare crochet patterns",
+		"every single recipe in my recipe collection",
+		"the freshly-baked {muffins} I'd set out to cool",
+		"amidst the puddle my mug of tea made when she knocked it off the table",
+		"amidst the root and dirts from the plant I'd repotted just that afternoon",
+		"the eggs I'd collected that morning. I suppose she was trying to lay on them and reclaim them for herself.\e",
+		"my collection of crochet hooks I kept in an old mug. The mug did not survive the fall",
+		"what had once been my collection of neatly ordered beads",
+	]);
+}
+
+function muffins
+{
+	return Random.Select([
+		"muffins",
+		"mini pies",
+		"rolls",
+		"toasts",
+		"biscuits",
+		"cookies",
+		"mini tarts",
 	]);
 }
 
@@ -569,10 +597,19 @@ function redyarn
 {
 	return Random.Select([
 		"red yarn",
-		"blue yarn",
+		"light blue yarn",
 		"blue yarn (the extra soft one you like)",
 		"textured yarn (the blue and green one)",
 		"yellow and white yarn",
+		"green yarn (the shiny one)",
+		"orange yarn (the one I used for the mittens I gave you last winter)",
+		"white yarn (the one enchanted to protect against stains)",
+		"brown yarn (the one with the dense texture)",
+		"black yarn (the extra thick one)",
+		"yellow yarn",
+		"gray yarn",
+		"variegated yarn",
+		"pink yarn",
 	]);
 }
 
@@ -584,6 +621,12 @@ function pinkwithpolkadots
 		"a lovely shade of red that matches her comb",
 		"green",
 		"a lovely silver color",
+		"specially enchanted to be mud-proof",
+		"green and red plaid",
+		"the prettiest pink you've ever seen",
+		"blue with white trim",
+		"decorated with tiny eggs",
+		"embroidered with her name",
 	]);
 }
 
@@ -593,6 +636,7 @@ function anewlywedcouple
 		"a newlywed couple",
 		"one of the village elders who is turning {Random.Select([75,80,90,750,800,900])} this month",
 		"a couple that are expecting a baby soon",
+		"a new neighbor who just moved in from the city",
 	]);
 }
 
@@ -602,6 +646,10 @@ function ablanket
 		"a blanket",
 		"a pair of cozy hats",
 		"a matching set of socks",
+		"matching mittens",
+		"leg warmers with cute patterns",
+		"a pair of oven mitts with chicken designs",
+		"a set of egg-shaped coasters",
 	]);
 }
 
@@ -611,6 +659,13 @@ function enchanteddagger
 		"enchanted dagger",
 		"dragon fang",
 		"polished ruby",
+		"magic necklace",
+		"silver statuette",
+		"diamond charm",
+		"gold hairpin",
+		"gold bracelet",
+		"jade bracelet",
+		"amethyst ring",
 	]);
 }
 
@@ -637,6 +692,14 @@ function agoldnugget
 		"a gold nugget",
 		"a silver locket",
 		"a gold amethyst ring",
+		"a perfectly spherical stone",
+		"a diamond earring",
+		"an old clay pot",
+		"a sapphire necklace",
+		"an iron horseshoe",
+		"a queen from an ivory chess set",
+		"a carved bone charm",
+		"an obsidian arrowhead",
 	]);
 }
 
@@ -646,6 +709,13 @@ function protection
 		"protection",
 		"fortune",
 		"luck",
+		"growth",
+		"wisdom",
+		"courage",
+		"warmth",
+		"lightness",
+		"stealth",
+		"endurance",
 	]);
 }
 
@@ -662,6 +732,7 @@ talk postscript
 	{script2}
 }
 
+//TODO more PS and PPS
 function PS
 {
 	if (Random.GetIndex(0,2) == 0) //50%
@@ -689,7 +760,7 @@ function PPS
 		output += "P.P.S. ";
 		
 		output += Random.Select([
-			"something something wah", //TODO
+			"\s[0]I forgot to mention the snails! I'll write about them next time.",
 		]);
 		
 		return output;
@@ -704,6 +775,23 @@ function amulet
 		"brooch",
 		"scarf",
 		"ring",
+		"utility knife",
+		"mitten",
+		"sock",
+		"earring",
+		"letter",
+		"set of dice",
+		"warming stone",
+		"leg warmers",
+		"tail warmer",
+		"gem pouch",
+		"gauntlet",
+		"shoe",
+		"belt",
+		"mirror",
+		"bucket",
+		"bedroll",
+		"basket",
 	]);
 }
 
@@ -732,6 +820,12 @@ function aring
 		"a necklace",
 		"a \f[underline,1]very\f[underline,default] sparkly charm",
 		"an earring",
+		"a diary",
+		"a pearl necklace",
+		"a pair of spectacles",
+		"an engraved cowbell",
+		"a beaded bracelet",
+		"a woven bracelet with many colors",
 	]);
 }
 
@@ -741,6 +835,13 @@ function threejarsofjam
 		"three jars of your favorite jam",
 		"a fresh-baked rhubarb pie",
 		"a new pair of mittens",
+		"a quiche made with lots of cheese",
+		"a dozen eggs",
+		"a jar of {pickletype} pickles",
+		"a bag of jerky from the farmers market",
+		"your pick of the fishmonger's freshest fish",
+		"a new warming stone",
+		"a crocheted charm of Abigail's face",
 	]);
 }
 
@@ -750,6 +851,13 @@ function themarket
 		"the market",
 		"meeting with my fiber arts group",
 		"delivering eggs to the neighbor",
+		"the river",
+		"the general store",
+		"the village square",
+		"community center",
+		"the carpenter's",
+		"visiting some of the village elders",
+		"visiting an old friend of mine",
 	]);
 }
 
@@ -759,6 +867,14 @@ function slicesofcherrypie
 		"slices of {pieflavor} pie",
 		"blueberry tarts",
 		"pieces of apple strudel",
+		"pieces of licorice",
+		"poached pears",
+		"fritters",
+		"berry turnovers",
+		"blackberry muffins",
+		"slices of cheesecake",
+		"lemon cookies",
+		"honey rolls",
 	]);
 }
 
@@ -769,6 +885,7 @@ function pieflavor
 		"apple",
 		"shepherd's",
 		"blueberry",
+		"chocolate",
 	]);
 }
 
@@ -781,6 +898,10 @@ function clearingthefloor
 		"repotting some of the plants on the windowsill and moving them outside.",
 		"picking up odds and ends that have become strewn around the house and returning them to the drawer where they belong.",
 		"organizing the pantry.",
+		"going through the linens and getting rid of those that have become too stained.",
+		"clearing clutter out of the kitchen drawers to make more ample space for the utensils.",
+		"sorting my buttons more neatly into an organizer.",
+		"getting rid of old feathers that never found a use.",
 	]);
 }
 
@@ -790,6 +911,13 @@ function thehenhouserules
 		"the henhouse, and her enforcement of the new rules we recently laid out",
 		"what vegetables I should plant in the garden next year",
 		"what color yarn I should use for my next project",
+		"my new laundry routine",
+		"what type of pie I should prepare for the next fiber arts meeting",
+		"the progress I've made on the {crochetproject} I started last month",
+		"whether or not it's going to rain",
+		"which tablecloth I should use this week",
+		"my new plan to keep down the clutter in the kitchen",
+		"the number of pies I've been baking for friends lately",
 	]);
 }
 
@@ -801,6 +929,11 @@ function suchwisewords
 		"It's true, she did!",
 		"What an enlightening dialogue we had!",
 		"I could do naught but nod and agree. She's quite the persuasive speaker!",
+		"She really does have such a way with words.",
+		"I will have to sit for a spell and ponder what exactly she meant by that.",
+		"Such great wisdom, bestowed to me, and now shared with you too.",
+		"She really has a way of making complicated things sound simple.",
+		"How very insightful!",
 	]);
 }
 
