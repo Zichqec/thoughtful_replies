@@ -952,7 +952,7 @@ function afishinglure
 			"a gauche hat"
 		]),
         "a new dip pen",
-        "an avant garde art project"
+        "an avant garde art project",
     ]);
 }
 
@@ -963,8 +963,7 @@ function pickletype
 		"half sour",
 		"dill",
 		"spicy",
-		"sweet"
-
+		"sweet",
 	]);
 }
 
@@ -977,8 +976,7 @@ function beasties
 		"beetles",
 		"wasps",
 		"ravens",
-		"crabs"
-
+		"crabs",
 	]);
 }
 
@@ -989,7 +987,7 @@ function scarything
 		"can fell a tree in one blow",
 		"have venom that can kill a grown man",
 		"never sleep",
-		"can sink ships"
+		"can sink ships",
 	]);
 }
 
@@ -1007,7 +1005,7 @@ function farmername
 		"Clark",
 		"Luke",
 		"Peter",
-		"Grant"
+		"Grant",
 	]);
 }
 
@@ -1025,6 +1023,6 @@ function crop
 		"potato",
 		"carrot",
 		"sunflower seed",
-		"flax"
+		"flax",
 	]);
 }
