@@ -732,7 +732,6 @@ talk postscript
 	{script2}
 }
 
-//TODO more PS and PPS
 function PS
 {
 	if (Random.GetIndex(0,2) == 0) //50%
