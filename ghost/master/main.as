@@ -300,24 +300,27 @@ function sakura@portalsites
 
 function getaistateex
 {
-	local output = "";
-	local graph = AI_Graphs()[Shiori.Reference[0]];
-	if (graph.length > 0)
+	if (DebugMode)
 	{
-		items = graph;
-		for (local i = 0; i < items.length; i++)
+		local output = "";
+		local graph = AI_Graphs()[Shiori.Reference[0]];
+		if (graph.length > 0)
 		{
-			if (i > 0) output += ",";
-			output += Reflection.Get("{items[i]}").length;
+			items = graph;
+			for (local i = 0; i < items.length; i++)
+			{
+				if (i > 0) output += ",";
+				output += Reflection.Get("{items[i]}").length;
+			}
+			output += "{(1).ToAscii}";
+			for (local i = 0; i < items.length; i++)
+			{
+				if (i > 0) output += ",";
+				output += "{items[i]}";
+			}
 		}
-		output += "{(1).ToAscii}";
-		for (local i = 0; i < items.length; i++)
-		{
-			if (i > 0) output += ",";
-			output += "{items[i]}";
-		}
+		return output;
 	}
-	return output;
 }
 
 function AI_Graphs
