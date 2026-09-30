@@ -1,11 +1,14 @@
 In the quietest hours of the night, a certain homebody writes heartfelt notes by candlelight.
 
-You might get different content each time you play!
+The content will be different each time you play!
 
 ————————————————————
-Made for Ghost Jam 2026, by:
+Made by:
 
 Blue - https://www.tumblr.com/bluetheanimator
 Galla - https://gallathegalla.github.io/gtg-ghosts/
+okuajub - https://okuajub-netspace.neocities.org/
 vita - https://thatoddhaystack.neocities.org/ukagaka/
 Zichqec - https://ukagaka.zichqec.com/
+
+Initially created for Ghost Jam 2026.
