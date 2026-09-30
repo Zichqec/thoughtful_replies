@@ -9,6 +9,7 @@ function OnMainMenu(cause)
 	
 	if (!LetterFinished()) m += "\![*]\__q[OnAITalk]Next\__q";
 	else m += "\![*]\f[color,disable]Next\f[color,default]";
+	
 	//Shouldn't happen under normal circumstances, but may happen in edge cases
 	m += "  ";
 	if (LastTalk == "") m += "\![*]\f[color,disable]Replay\f[color,default]";
@@ -75,7 +76,6 @@ function OnMainMenu(cause)
 		{
 			m += "\![*]{c}\n[50]";
 		}
-		
 	}
 	
 	m += "\![unlock,balloonrepaint]";
