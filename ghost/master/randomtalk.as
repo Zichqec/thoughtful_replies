@@ -1161,7 +1161,7 @@ talk RandomTalk
 
 talk RandomTalk
 {
-	\s[0]I imagine few things must frighten you, brave adventurer that you are, but some of the tales I hear from bards who wander through our town keep me up at night! I must know.\w8.\w8.\w8 \s[7]are there really {beasties} who {scarything}?
+	\s[0]I imagine few things must frighten you, brave adventurer that you are, but some of the tales I hear from bards who wander through our town keep me up at night! I must know.\w8.\w8. \s[7]are there really {beasties} that {scarything}?
 }
 
 talk RandomTalk
