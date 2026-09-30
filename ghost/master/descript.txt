@@ -2,8 +2,8 @@ charset,UTF-8
 type,ghost
 name,Thoughtful Replies
 
-craftman,Blue & Galla & vita & Zichqec
-craftmanw,Blue & Galla & vita & Zichqec
+craftman,Blue & Galla & okuajub & vita & Zichqec
+craftmanw,Blue & Galla & okuajub & vita & Zichqec
 craftmanurl,https://github.com/Zichqec/thoughtful_replies
 
 shiori,aosora.dll

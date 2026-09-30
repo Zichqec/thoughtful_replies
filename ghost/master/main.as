@@ -281,6 +281,7 @@ function sakura@recommendsites
 	return FormatLinks([
 		{label: "Blue", url: "https://www.tumblr.com/bluetheanimator"},
 		{label: "Galla", url: "https://gallathegalla.github.io/gtg-ghosts/"},
+		{label: "okuajub", url: "https://okuajub-netspace.neocities.org/"},
 		{label: "Vita", url: "https://thatoddhaystack.neocities.org/ukagaka/"},
 		{label: "Zichqec", url: "https://ukagaka.zichqec.com/"},
 	]);
