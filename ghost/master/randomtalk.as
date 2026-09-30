@@ -822,7 +822,7 @@ talk RandomTalk
 {
 	\s[0]That railing on the porch is still in disrepair. \s[2]I have been trying to save up the money to hire one of those energetic youths that's always scurrying around doing odd jobs to fix it, but, well...
 	
-	\s[21]We both know my fortitude is a bit weak when it comes to {yarnfruit}. And so, the railing remains in its current state.
+	\s[21]We both know my fortitude is a bit weak when it comes to {yarnfruit} And so, the railing remains in its current state.
 }
 
 talk RandomTalk
@@ -1051,7 +1051,7 @@ talk RandomTalk
     
     As any fiber artist knows, one's heart yearns for more yarn than one can use in any lifetime. \_w[1000]\s[7]Not to mention all of the scraps! 
     
-    \_w[8000]\s[100]\w8\s[0]I've decided to use up those odds and ends. It should tidy things up a bit. Although, \w4\s[22]is a {pileofcoasters} any less cluttering?
+    \_w[8000]\s[100]\w8\s[0]I've decided to use up those odds and ends. It should tidy things up a bit. Although, \w4\s[22]{pileofcoasters} any less cluttering?
 }
 
 talk RandomTalk

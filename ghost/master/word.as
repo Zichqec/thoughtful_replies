@@ -745,6 +745,14 @@ function PS
 			"\s[1]I passed along your regards to the {elacans}{emdash}they said to wish you luck in return!",
 			"\s[0]Are those socks still holding up? I have a few more pairs waiting for you, but I can send some with my next letter if needed.",
 			"\s[1]Sending you a few leaves of catmint. Take your time with them!",
+			"\s[1]The {elecans} wished for me to send you their warm wishes!",
+			"\s[2]I've been searching everywhere for that {amulet} you mentioned, but I have not yet found it. I'll keep looking!",
+			"\s[1]The rhubarb crop is coming up nicely this year, there will be delicacies aplenty if you visit soon.",
+			"\s[1]Abigail pecked at the last letter I wrote to you before I sent it. I believe she would like to send her regards.",
+			"\s[1]I've decided to send along one of Abigail's feathers, it should bring you good luck.",
+			"\s[0]I've nearly finished a new scarf for you. \s[1]It should be ready in a week's time!",
+			"\s[0]How is that dagger faring since you had it repaired? Is it still holding up well?",
+			"\s[1]The {elecans} asked after your well-being, they were delighted to hear about your latest adventures. \s[21]Next time you come home, we should all get together to share a meal.",
 		]);
 		
 		return output;
@@ -761,6 +769,15 @@ function PPS
 		
 		output += Random.Select([
 			"\s[0]I forgot to mention the snails! I'll write about them next time.",
+			"\s[0]I completely forgot to tell you about Abigail's adventure {inthecreek}! \s[1]I'll write about it next time.",
+			"\s[2]I was going to include a whole section about the big project I just finished, but I forgot! \s[0]I'll have to tell you about it next time, as I am nearing the end of this page.",
+			"\s[1]There is a pie-making contest coming up in the village soon! \s[2]I'll have to tell you about it next time, since I have run out of space on this page.",
+			"\s[0]I was going to tell you about the skunk incident! I'll include it next time.",
+			"\s[1]I uncovered something you mind find interesting in the cellar. I'll tell you all about it next time if I remember! \s[21](If not, you'll have to remind me next time you are here.)",
+			"\s[2]It might actually be slightly longer than usual until my next letter, the next several days are looking to be very busy indeed!",
+			"\s[1]I am using a new writing set. Did you notice the difference?",
+			"\s[0]I forgot to tell you about what {chicken} has been up to! \s[1]I am writing myself a note right now to make mention of it next time.",
+			"\s[2]I forgot to tell you what Abigail found by the stream. I'll remember next time for sure!",
 		]);
 		
 		return output;
@@ -809,6 +826,17 @@ function elacans
 		"Alqorins",
 		"Tibbets",
 		"Wyrndels",
+	]);
+}
+
+function inthecreek
+{
+	return Random.Select([
+		"in the creek",
+		"by the wood pile",
+		"by the well",
+		"in the garden",
+		"on top of the henhouse",
 	]);
 }
 
@@ -937,23 +965,37 @@ function suchwisewords
 	]);
 }
 
+//Punctuation required at the end of each to account for parenthesis
 function yarnfruit
 {
 	return Random.Select([
-		"yarn",
-		"crochet patterns",
-		"fresh fruits at the market",
-		"catmint",
-		"getting special treats for Abigail",
+		"yarn.",
+		"crochet patterns.",
+		"fresh fruits at the market.",
+		"catmint.",
+		"getting special treats for Abigail.",
+		"new needles (sewing or otherwise).",
+		"those tiny jingly bells. (They're such fun accessories!)\w8\w8",
+		"collecting ribbons in pretty colors.",
+		"the allure of extra stationary.",
+		"treating myself to fresh fish after a hard day's work.",
 	]);
 }
 
 function bokoncommand
 {
 	return Random.Select([
-		'say "bok" on command',
+		`say "bok" on command`,
 		"wear the tiny hats I crochet for her",
 		"hold skeins of yarn while I work",
+		"fly to my arms when I call her name",
+		"leave the little lizards alone",
+		"sit on my head and help me count stitches while I crochet",
+		"nod or shake her head when I ask yes or no questions",
+		"fly through a hoop",
+		"balance on one leg",
+		`puff out her chest and flap her wings when I say "who's a pretty bird"`,
+		"count",
 	]);
 }
 
@@ -965,6 +1007,14 @@ function sugar
 		"baking powder",
 		"yeast",
 		"starch",
+		"salt",
+		"honey",
+		"vanilla",
+		"ginger",
+		"butter",
+		"vinegar",
+		"washing soda",
+		"soap",
 	]);
 }
 
@@ -975,6 +1025,23 @@ function shophandsaresick
 		"the lock on the door was stuck closed",
 		"some customer had become rowdy and was causing a scene",
 		"there was a big spill of some sort that had to be cleaned up",
+		"a wild animal got loose in the store and now they've got to catch it",
+		"a new shipment of their delicious {peachjams} had just arrived",
+		"their seasonal items were restocked",
+		"the health inspector from town was visiting",
+		"they received a shipment of rare spirits",
+		"one of the owner's nieces or nephews is helping out for the day",
+	]);
+}
+
+function peachjams
+{
+	return Random.Select([
+		"peach jams",
+		"hard candies",
+		"taffies",
+		"maple syrup",
+		"peanut brittle",
 	]);
 }
 
@@ -984,6 +1051,12 @@ function chickenlegwarmers
 		"chicken leg warmers",
 		"decorative spider webs",
 		"door handle covers",
+		"picture frame covers",
+		"mouse trap mats",
+		"luxury fishing line covers",
+		"kettle wigs",
+		"tree sweaters",
+		"wearable decoy tails",
 	]);
 }
 
@@ -994,6 +1067,12 @@ function chasedbybandits
 		"pursued by giant spiders",
 		"lost in an underground cavern",
 		"sneaking into an aristocrat's mansion",
+		"deep in a forest of enormous mushrooms",
+		"running away from an angry mob",
+		"surrounded by people who spoke a language I couldn't understand",
+		"on the back of a chicken the size of a house",
+		"searching desperately for water",
+		"being stalked by a herd of deer",
 	]);
 }
 
@@ -1003,6 +1082,13 @@ function almostgotkilledbyadragon
 		"almost got killed by a dragon",
 		"had no supplies with me whatsoever apart from a broom",
 		"barely dodged a volley of arrows from the city guard",
+		"very nearly fell into a bottomless pit",
+		"ended up getting so lost that I was sure I would never see another soul again",
+		"was almost eaten by a particularly clever mimic",
+		"fell into a pitfall trap",
+		"tripped and fell into an enchanted pool",
+		"before I knew it I was surrounded by dancing fairies that were chanting something unintelligible",
+		"gravity suddenly reversed itself",
 	]);
 }
 
@@ -1014,6 +1100,11 @@ function atinyapron
 		"another bow",
 		"a small bag of premium chicken feed",
 		"handmade chicken socks",
+		"a stuffed replica of herself",
+		"a crocheted charm in her likeness",
+		"a tiny chicken-feed pie",
+		"extra grubby grubs",
+		"a crocheted feather for her nest",
 	]);
 }
 
@@ -1022,6 +1113,14 @@ function growwingsandfly
 	return Random.Select([
 		"how she wants to grow wings and fly like a bird",
 		"how she climbed up to the top of the hill all by herself",
+		"wanting to practice swimming in the lake",
+		"how she's going to climb all the way to the top of the big tree in the village square",
+		"wanting to learn to hunt deer with a bow",
+		"catching beetles in the woods",
+		"the map she's drawn of the woods behind her family's home",
+		"how she's building a fort under her parents' rhododendron bush",
+		"how she's going to dig a hole and find out how far she can get before her parents catch her",
+		"how she's going to find vast amounts of treasure and make the village rich",
 	]);
 }
 
@@ -1032,6 +1131,13 @@ function doilies
 		"doilies",
 		"scarves",
 		"socks",
+		"mittens",
+		"tea cozies",
+		"chicken hats",
+		"ear warmers",
+		"leg warmers",
+		"pompoms",
+		"baby blankets",
 	]);
 }
 
@@ -1044,16 +1150,26 @@ function nearlygotsquashed
 		"were trying to cross over a river using some very shallow crossing stones, slipped, fell in, and nearly went over a waterfall",
 		"nearly got carried off the top of a mountain by a monstrously large eagle",
 		"got stuck in a labyrinth and only found your way out the day after you ran out of food",
+		"almost got tricked by a beast that used its camouflage to hunt you",
+		"almost got trapped inside a dragon's den with no safe way out",
+		"very nearly got crushed by a cave-in while exploring an ancient tomb",
+		"were kidnapped by bandits that thought you were some wealthy merchant",
 	]);
 }
 
 function pileofcoasters
 {
     return Random.Select([
-        "pile of coasters",
-        "pound of granny squares",
-        "excess of mug cozies",
-        "mile of scarves",
+        "is a pile of coasters",
+        "is a pound of granny squares",
+        "is an excess of mug cozies",
+        "is a mile of scarves",
+		"are a thousand chicken hats",
+		"is a crate of mittens in various sizes",
+		"are buckets and buckets",
+		"is a closet overflowing with blankets",
+		"is a 20 gallon tub of doilies",
+		"are dozens and dozens of egg holders",
     ]);
 }
 
@@ -1073,6 +1189,12 @@ function halfanhour
         "almost an hour",
         "practically an eternity",
         "too long for me to count",
+		"nearly 3 hours",
+		"most of the afternoon",
+		"the entire morning",
+		"10 minutes, then 20, then 60",
+		"so long we practically became statues",
+		"what felt like 10 minutes but could have been aeons",
     ]);
 }
 
@@ -1086,6 +1208,12 @@ function afishinglure
 		]),
         "a new dip pen",
         "an avant garde art project",
+		"a festive picture frame",
+		"a new brooch",
+		"a good luck charm",
+		"a fly swatter",
+		"some contraption to scare foxes with",
+		"a ball of feathers to be kicked around his home and pick up dust off the floor",
     ]);
 }
 
@@ -1110,6 +1238,10 @@ function beasties
 		"wasps",
 		"ravens",
 		"crabs",
+		"ants",
+		"flies",
+		"moles",
+		"hornets",
 	]);
 }
 
@@ -1121,6 +1253,11 @@ function scarything
 		"have venom that can kill a grown man",
 		"never sleep",
 		"can sink ships",
+		"can swallow a person whole",
+		"can grow to the size of a bear when angry",
+		"leave a trail of fire behind them everywhere they go",
+		"are never truly dead no matter how many times they are slain",
+		"bear curses which they afflict on whoever slays them",
 	]);
 }
 
